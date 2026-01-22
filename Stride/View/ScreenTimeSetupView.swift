@@ -16,14 +16,29 @@ struct ScreenTimeSetupView : View {
     @StateObject var authorizationManager : AuthorizationManager = AuthorizationManager()
     
     var body : some View {
-        VStack{
-            Text("hello")
+        VStack (spacing : 20){
+            Image(systemName : "figure.walk.circle.fill")
+                .resizable()
+                .scaledToFit()
+                .frame(width : 100, height : 100)
+    
+            VStack (spacing: 10){
+                Text("Request Authroization")
+                    .fontWeight(.bold)
+                    .font(.title)
+                
+                Text("To analyse your Screen Time on this iPhone Stride will need your permission")
+                    .padding()
+            }
             
+
             Button("Request Authorization"){
                 Task {
                     await authorizationManager.requestAuthorization()
                 }
             }
+            .buttonStyle(.borderedProminent)
+            .controlSize(.large)
         }
     }
 }
