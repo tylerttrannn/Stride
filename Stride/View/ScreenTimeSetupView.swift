@@ -11,10 +11,19 @@
 
 import SwiftUI
 
+
 struct ScreenTimeSetupView : View {
+    @StateObject var authorizationManager : AuthorizationManager = AuthorizationManager()
+    
     var body : some View {
         VStack{
             Text("hello")
+            
+            Button("Request Authorization"){
+                Task {
+                    await authorizationManager.requestAuthorization()
+                }
+            }
         }
     }
 }
