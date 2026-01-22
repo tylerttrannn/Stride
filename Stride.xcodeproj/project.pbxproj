@@ -6,7 +6,29 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		40DC16D02F22CE77007AD6AB /* ManagedSettings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DC16CF2F22CE77007AD6AB /* ManagedSettings.framework */; };
+		40DC16D82F22CE77007AD6AB /* StrideShieldAction.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 40DC16CD2F22CE77007AD6AB /* StrideShieldAction.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		40DC16E32F22CE87007AD6AB /* ManagedSettings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DC16CF2F22CE77007AD6AB /* ManagedSettings.framework */; };
+		40DC16E52F22CE87007AD6AB /* ManagedSettingsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DC16E42F22CE87007AD6AB /* ManagedSettingsUI.framework */; };
+		40DC16ED2F22CE87007AD6AB /* StrideShieldConfig.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 40DC16E22F22CE87007AD6AB /* StrideShieldConfig.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
+		40DC16D62F22CE77007AD6AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40DD67252F2069CA004F9929 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40DC16CC2F22CE77007AD6AB;
+			remoteInfo = StrideShieldAction;
+		};
+		40DC16EB2F22CE87007AD6AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40DD67252F2069CA004F9929 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40DC16E12F22CE87007AD6AB;
+			remoteInfo = StrideShieldConfig;
+		};
 		40DD673B2F2069CB004F9929 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 40DD67252F2069CA004F9929 /* Project object */;
@@ -23,13 +45,65 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		40DC16D92F22CE77007AD6AB /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				40DC16ED2F22CE87007AD6AB /* StrideShieldConfig.appex in Embed Foundation Extensions */,
+				40DC16D82F22CE77007AD6AB /* StrideShieldAction.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		40DC16CD2F22CE77007AD6AB /* StrideShieldAction.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StrideShieldAction.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		40DC16CF2F22CE77007AD6AB /* ManagedSettings.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManagedSettings.framework; path = System/Library/Frameworks/ManagedSettings.framework; sourceTree = SDKROOT; };
+		40DC16E22F22CE87007AD6AB /* StrideShieldConfig.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StrideShieldConfig.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		40DC16E42F22CE87007AD6AB /* ManagedSettingsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManagedSettingsUI.framework; path = System/Library/Frameworks/ManagedSettingsUI.framework; sourceTree = SDKROOT; };
 		40DD672D2F2069CA004F9929 /* Stride.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stride.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40DD673A2F2069CB004F9929 /* StrideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StrideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40DD67442F2069CB004F9929 /* StrideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StrideUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		40DC16DC2F22CE77007AD6AB /* Exceptions for "StrideShieldAction" folder in "StrideShieldAction" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 40DC16CC2F22CE77007AD6AB /* StrideShieldAction */;
+		};
+		40DC16EE2F22CE87007AD6AB /* Exceptions for "StrideShieldConfig" folder in "StrideShieldConfig" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 40DC16E12F22CE87007AD6AB /* StrideShieldConfig */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		40DC16D12F22CE77007AD6AB /* StrideShieldAction */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				40DC16DC2F22CE77007AD6AB /* Exceptions for "StrideShieldAction" folder in "StrideShieldAction" target */,
+			);
+			path = StrideShieldAction;
+			sourceTree = "<group>";
+		};
+		40DC16E62F22CE87007AD6AB /* StrideShieldConfig */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				40DC16EE2F22CE87007AD6AB /* Exceptions for "StrideShieldConfig" folder in "StrideShieldConfig" target */,
+			);
+			path = StrideShieldConfig;
+			sourceTree = "<group>";
+		};
 		40DD672F2F2069CA004F9929 /* Stride */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Stride;
@@ -48,6 +122,23 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		40DC16CA2F22CE77007AD6AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40DC16D02F22CE77007AD6AB /* ManagedSettings.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40DC16DF2F22CE87007AD6AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40DC16E32F22CE87007AD6AB /* ManagedSettings.framework in Frameworks */,
+				40DC16E52F22CE87007AD6AB /* ManagedSettingsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		40DD672A2F2069CA004F9929 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -72,12 +163,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40DC16CE2F22CE77007AD6AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40DC16CF2F22CE77007AD6AB /* ManagedSettings.framework */,
+				40DC16E42F22CE87007AD6AB /* ManagedSettingsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		40DD67242F2069CA004F9929 = {
 			isa = PBXGroup;
 			children = (
 				40DD672F2F2069CA004F9929 /* Stride */,
 				40DD673D2F2069CB004F9929 /* StrideTests */,
 				40DD67472F2069CB004F9929 /* StrideUITests */,
+				40DC16D12F22CE77007AD6AB /* StrideShieldAction */,
+				40DC16E62F22CE87007AD6AB /* StrideShieldConfig */,
+				40DC16CE2F22CE77007AD6AB /* Frameworks */,
 				40DD672E2F2069CA004F9929 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +191,8 @@
 				40DD672D2F2069CA004F9929 /* Stride.app */,
 				40DD673A2F2069CB004F9929 /* StrideTests.xctest */,
 				40DD67442F2069CB004F9929 /* StrideUITests.xctest */,
+				40DC16CD2F22CE77007AD6AB /* StrideShieldAction.appex */,
+				40DC16E22F22CE87007AD6AB /* StrideShieldConfig.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +200,50 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		40DC16CC2F22CE77007AD6AB /* StrideShieldAction */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40DC16DD2F22CE77007AD6AB /* Build configuration list for PBXNativeTarget "StrideShieldAction" */;
+			buildPhases = (
+				40DC16C92F22CE77007AD6AB /* Sources */,
+				40DC16CA2F22CE77007AD6AB /* Frameworks */,
+				40DC16CB2F22CE77007AD6AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				40DC16D12F22CE77007AD6AB /* StrideShieldAction */,
+			);
+			name = StrideShieldAction;
+			packageProductDependencies = (
+			);
+			productName = StrideShieldAction;
+			productReference = 40DC16CD2F22CE77007AD6AB /* StrideShieldAction.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		40DC16E12F22CE87007AD6AB /* StrideShieldConfig */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40DC16EF2F22CE87007AD6AB /* Build configuration list for PBXNativeTarget "StrideShieldConfig" */;
+			buildPhases = (
+				40DC16DE2F22CE87007AD6AB /* Sources */,
+				40DC16DF2F22CE87007AD6AB /* Frameworks */,
+				40DC16E02F22CE87007AD6AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				40DC16E62F22CE87007AD6AB /* StrideShieldConfig */,
+			);
+			name = StrideShieldConfig;
+			packageProductDependencies = (
+			);
+			productName = StrideShieldConfig;
+			productReference = 40DC16E22F22CE87007AD6AB /* StrideShieldConfig.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		40DD672C2F2069CA004F9929 /* Stride */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40DD674E2F2069CB004F9929 /* Build configuration list for PBXNativeTarget "Stride" */;
@@ -102,10 +251,13 @@
 				40DD67292F2069CA004F9929 /* Sources */,
 				40DD672A2F2069CA004F9929 /* Frameworks */,
 				40DD672B2F2069CA004F9929 /* Resources */,
+				40DC16D92F22CE77007AD6AB /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				40DC16D72F22CE77007AD6AB /* PBXTargetDependency */,
+				40DC16EC2F22CE87007AD6AB /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				40DD672F2F2069CA004F9929 /* Stride */,
@@ -173,6 +325,12 @@
 				LastSwiftUpdateCheck = 2620;
 				LastUpgradeCheck = 2620;
 				TargetAttributes = {
+					40DC16CC2F22CE77007AD6AB = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					40DC16E12F22CE87007AD6AB = {
+						CreatedOnToolsVersion = 26.2;
+					};
 					40DD672C2F2069CA004F9929 = {
 						CreatedOnToolsVersion = 26.2;
 					};
@@ -203,11 +361,27 @@
 				40DD672C2F2069CA004F9929 /* Stride */,
 				40DD67392F2069CB004F9929 /* StrideTests */,
 				40DD67432F2069CB004F9929 /* StrideUITests */,
+				40DC16CC2F22CE77007AD6AB /* StrideShieldAction */,
+				40DC16E12F22CE87007AD6AB /* StrideShieldConfig */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		40DC16CB2F22CE77007AD6AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40DC16E02F22CE87007AD6AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		40DD672B2F2069CA004F9929 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -232,6 +406,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		40DC16C92F22CE77007AD6AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40DC16DE2F22CE87007AD6AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		40DD67292F2069CA004F9929 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,6 +444,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		40DC16D72F22CE77007AD6AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40DC16CC2F22CE77007AD6AB /* StrideShieldAction */;
+			targetProxy = 40DC16D62F22CE77007AD6AB /* PBXContainerItemProxy */;
+		};
+		40DC16EC2F22CE87007AD6AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40DC16E12F22CE87007AD6AB /* StrideShieldConfig */;
+			targetProxy = 40DC16EB2F22CE87007AD6AB /* PBXContainerItemProxy */;
+		};
 		40DD673C2F2069CB004F9929 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 40DD672C2F2069CA004F9929 /* Stride */;
@@ -269,6 +467,122 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		40DC16DA2F22CE77007AD6AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = StrideShieldAction/StrideShieldAction.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FJA5DAQNYY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StrideShieldAction/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StrideShieldAction;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tylerttrann.Stride.StrideShieldAction;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		40DC16DB2F22CE77007AD6AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = StrideShieldAction/StrideShieldAction.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FJA5DAQNYY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StrideShieldAction/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StrideShieldAction;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tylerttrann.Stride.StrideShieldAction;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		40DC16F02F22CE87007AD6AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = StrideShieldConfig/StrideShieldConfig.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FJA5DAQNYY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StrideShieldConfig/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StrideShieldConfig;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tylerttrann.Stride.StrideShieldConfig;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		40DC16F12F22CE87007AD6AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = StrideShieldConfig/StrideShieldConfig.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FJA5DAQNYY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StrideShieldConfig/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StrideShieldConfig;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tylerttrann.Stride.StrideShieldConfig;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		40DD674C2F2069CB004F9929 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -395,6 +709,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Stride/Stride.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FJA5DAQNYY;
@@ -428,6 +743,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Stride/Stride.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FJA5DAQNYY;
@@ -543,6 +859,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		40DC16DD2F22CE77007AD6AB /* Build configuration list for PBXNativeTarget "StrideShieldAction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40DC16DA2F22CE77007AD6AB /* Debug */,
+				40DC16DB2F22CE77007AD6AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40DC16EF2F22CE87007AD6AB /* Build configuration list for PBXNativeTarget "StrideShieldConfig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40DC16F02F22CE87007AD6AB /* Debug */,
+				40DC16F12F22CE87007AD6AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		40DD67282F2069CA004F9929 /* Build configuration list for PBXProject "Stride" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
