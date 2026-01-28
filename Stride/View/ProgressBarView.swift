@@ -6,17 +6,17 @@
 //
 import SwiftUI
 
-struct CircularProgressView: View {
+struct ProgressBarView: View {
     var stepsCount: Int
     var stepsGoal: Int
     var progress: Double
     
-    var lineWidth: CGFloat = 25
+    let lineWidth: CGFloat = 25
 
-    var progressColor: Color = .blue.opacity(0.5)
-    var trackColor: Color = .blue.opacity(0.25)
+    let progressColor: Color = .blue.opacity(0.5)
+    let trackColor: Color = .blue.opacity(0.25)
     
-    init( stepsCount: Int,  stepsGoal: Int) {
+    init(stepsCount: Int, stepsGoal: Int) {
         self.stepsCount = stepsCount
         self.stepsGoal = stepsGoal
         self.progress = Double(stepsCount) / Double(stepsGoal)
@@ -25,6 +25,7 @@ struct CircularProgressView: View {
     var body: some View {
         ZStack (alignment: .leading) {
             // Tracker Circle
+            
             Circle()
                 .stroke(
                     self.trackColor,
@@ -65,5 +66,5 @@ struct CircularProgressView: View {
 }
 
 #Preview {
-    CircularProgressView(stepsCount: 100, stepsGoal: 500)
+    ProgressBarView(stepsCount: 100, stepsGoal: 500)
 }
