@@ -42,6 +42,7 @@ struct TrailInfoCardView: View {
             VStack(alignment: .leading) {
                 Text(self.trailName)
                     .font(Font.system(size: 42, design: .serif))
+                Divider()
                 // Trail Additional Info
                 VStack(alignment: .leading) {
                     Text("\(self.trailDistanceFromUser, specifier: "%.1f") mi away")
@@ -55,14 +56,14 @@ struct TrailInfoCardView: View {
             }
             .overlay(
                 GeometryReader { proxy in
-                  Color
-                     .clear
-                     .preference(key: ContentLengthPreference.self,
-                                 value: proxy.size.height)
+                    Color
+                        .clear
+                        .preference(key: ContentLengthPreference.self,
+                                    value: proxy.size.height)
                 }
-             )
+            )
             .padding(16)
-
+            
         }
         // Dynamic info card sizing based on height of text content
         .onPreferenceChange(ContentLengthPreference.self) { value in
@@ -75,15 +76,18 @@ struct TrailInfoCardView: View {
 }
 
 #Preview {
-    VStack {
-        ForEach(1...2, id: \.self) { i in
+    VStack (alignment: .leading) {
+        ForEach(1...1, id: \.self) { i in
             TrailInfoCardView(
                 trailName: "Trail \(i)",
                 trailDistanceFromUser: 10,
                 trailDifficulty: i,
                 trailLength: 1.2,
-                trailSteps: 21111
+                trailSteps: 2200
             )
         }
+        Spacer() // Pushes rest of the stack content to the top!
     }
+    .frame(maxWidth: .infinity, alignment: .topLeading)
+
 }

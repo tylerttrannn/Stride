@@ -39,12 +39,14 @@ struct ProgressBarView: View {
                     Text(String(self.stepsCount))
                         .font(Font.system(size: 72, design: .serif))
                         .fontWeight(Font.Weight.bold)
-                    Text("Goal: \(self.stepsGoal) steps")
-                        .font(Font.system(size:14, design: .serif))
-                        .foregroundStyle(.gray)
-                    Text(String(format: "%.0f", self.progress*100) + "% Completed")
-                        .font(Font.system(size:14, design: .serif))
-                        .foregroundStyle(.gray)
+
+                    VStack (alignment: .leading){
+                        Text("Goal: \(self.stepsGoal) steps")
+                        Text(String(format: "%.0f", self.progress*100) + "% Completed")
+                    }
+                    .font(Font.system(size:16, design: .serif))
+                    .foregroundColor(Color(red: 0.0, green: 0.0, blue: 0.058823529411764705)) // #00000f
+                    .opacity(0.75)
                 }
                 Circle()
                     .trim(from: 0, to: self.progress)
@@ -66,5 +68,5 @@ struct ProgressBarView: View {
 }
 
 #Preview {
-    ProgressBarView(stepsCount: 100, stepsGoal: 500)
+    ProgressBarView(stepsCount: 1000, stepsGoal: 2000)
 }
