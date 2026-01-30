@@ -14,7 +14,7 @@ struct ContentLengthPreference: PreferenceKey {
    }
 }
 
-struct TrailInfoCardView: View {
+struct TrailInfoCard: View {
     @State var textHeight: CGFloat = 0
 
     let screenSize: CGRect = UIScreen.main.bounds
@@ -78,7 +78,7 @@ struct TrailInfoCardView: View {
 #Preview {
     VStack (alignment: .leading) {
         ForEach(1...1, id: \.self) { i in
-            TrailInfoCardView(
+            TrailInfoCard(
                 trailName: "Trail \(i)",
                 trailDistanceFromUser: 10,
                 trailDifficulty: i,

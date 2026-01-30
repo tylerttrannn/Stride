@@ -16,7 +16,7 @@ struct BottomNavBarView: View {
 
     var body: some View {
         TabView (selection: $selectedTab) {
-            ProgressBarView(stepsCount: 1000, stepsGoal: 10000)
+            HomePageView()
                 .tabItem {
                     Image(systemName: "house")
                     Text("Home")
@@ -24,7 +24,7 @@ struct BottomNavBarView: View {
                 .aspectRatio(contentMode: .fit)
                 .tag(0)
             
-            TrailInfoCardView(trailName: "Turtle Rock", trailDistanceFromUser: 1.2, trailDifficulty: 1, trailLength: 1.1, trailSteps: 2000)
+            TrailInfoCard(trailName: "Turtle Rock", trailDistanceFromUser: 1.2, trailDifficulty: 1, trailLength: 1.1, trailSteps: 2000)
                 .tabItem {
                     Image(systemName: "map")
                     Text("Trails")

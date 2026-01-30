@@ -6,7 +6,7 @@
 //
 import SwiftUI
 
-struct ProgressBarView: View {
+struct ProgressBar: View {
     var stepsCount: Int
     var stepsGoal: Int
     var progress: Double
@@ -68,5 +68,5 @@ struct ProgressBarView: View {
 }
 
 #Preview {
-    ProgressBarView(stepsCount: 1000, stepsGoal: 2000)
+    ProgressBar(stepsCount: 1000, stepsGoal: 2000)
 }
