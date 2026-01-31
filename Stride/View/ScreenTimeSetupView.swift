@@ -18,7 +18,7 @@ enum ScreenTimeSetupPage{
 
 struct ScreenTimeSetupView : View {
     @State var path = NavigationPath()
-    @StateObject var authorizationManager : AuthorizationManager = AuthorizationManager()
+    @State var viewModel : ViewModel = ViewModel()
     
     var body : some View {
         NavigationStack (path : $path ){
@@ -39,14 +39,14 @@ struct ScreenTimeSetupView : View {
                 
                 Button("Request Authorization"){
                     Task {
-                        await authorizationManager.requestAuthorization()
+                        await viewModel.requestAuthorization()
                     }
                 }
                 .buttonStyle(.borderedProminent)
                 .controlSize(.large)
             }
-            .onChange(of : authorizationManager.authorizationStatus){
-                if authorizationManager.authorizationStatus == .approved {
+            .onChange(of : viewModel.authorizationStatus){
+                if viewModel.authorizationStatus == .approved {
                     path.append(ScreenTimeSetupPage.selectApps)
                 }
             }
