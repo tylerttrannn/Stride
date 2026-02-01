@@ -19,7 +19,6 @@ class HealthStore {
             return
         }
 
-        
         let typesToRead: Set<HKObjectType> = [stepCountType, calorieType]
         
         healthStore.requestAuthorization(toShare: [], read: typesToRead) { (success, error) in
@@ -65,3 +64,18 @@ class HealthStore {
     }
     
 }
+
+extension HealthStore {
+    func fetchStepsAsync() async throws -> Double {
+        try await withCheckedThrowingContinuation { continuation in
+            fetchSteps { steps, error in
+                if let error = error {
+                     continuation.resume(throwing: error)
+                } else {
+                    continuation.resume(returning: steps)
+                }
+            }
+        }
+    }
+}
+
