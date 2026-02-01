@@ -15,22 +15,25 @@ struct ContentLengthPreference: PreferenceKey {
 }
 
 struct TrailInfoCard: View {
+    var trail: Trail
+
     @State var textHeight: CGFloat = 0
 
     let screenSize: CGRect = UIScreen.main.bounds
-    let trailName: String
-    let trailDistanceFromUser: Double
-    let trailDifficulty: Int // [0...5]
-    let trailLength: Double
-    let trailSteps: Int
     
-    init(trailName: String, trailDistanceFromUser: Double, trailDifficulty: Int, trailLength: Double, trailSteps: Int) {
-        self.trailName = trailName
-        self.trailDistanceFromUser = trailDistanceFromUser
-        self.trailDifficulty = trailDifficulty
-        self.trailLength = trailLength
-        self.trailSteps = trailSteps
-    }
+//    let trailName: String
+    let trailDistanceFromUser: Double = 10
+//    let trailDifficulty: Int // [0...5]
+//    let trailLength: Double
+    let trailSteps: Int = 100
+//
+//    init(trailName: String, trailDistanceFromUser: Double, trailDifficulty: Int, trailLength: Double, trailSteps: Int) {
+//        self.trailName = trailName
+//        self.trailDistanceFromUser = trailDistanceFromUser
+//        self.trailDifficulty = trailDifficulty
+//        self.trailLength = trailLength
+//        self.trailSteps = trailSteps
+//    }
 
     var body: some View {
         ZStack (alignment: .topLeading) {
@@ -40,15 +43,17 @@ struct TrailInfoCard: View {
             
             // Trail Information
             VStack(alignment: .leading) {
-                Text(self.trailName)
+                Text(trail.trailName)
                     .font(Font.system(size: 42, design: .serif))
                 Divider()
                 // Trail Additional Info
                 VStack(alignment: .leading) {
                     Text("\(self.trailDistanceFromUser, specifier: "%.1f") mi away")
                     Text("Approx. \(self.trailSteps) steps")
-                    Text("Length: \(self.trailLength, specifier: "%.1f") miles")
-                    Text("Diffculty: \(self.trailDifficulty)/5")
+                    Text("Length: \(trail.lengthMiles, specifier: "%.2f") miles")
+                    if let difficulty = trail.difficulty {
+                        Text("Diffculty: \(String(difficulty))/5")
+                    }
                 }
                 .font(Font.system(size: 16, design: .serif))
                 .foregroundColor(Color(red: 0.0, green: 0.0, blue: 0.058823529411764705)) // #00000f
@@ -76,18 +81,18 @@ struct TrailInfoCard: View {
 }
 
 #Preview {
-    VStack (alignment: .leading) {
-        ForEach(1...1, id: \.self) { i in
-            TrailInfoCard(
-                trailName: "Trail \(i)",
-                trailDistanceFromUser: 10,
-                trailDifficulty: i,
-                trailLength: 1.2,
-                trailSteps: 2200
-            )
-        }
-        Spacer() // Pushes rest of the stack content to the top!
-    }
-    .frame(maxWidth: .infinity, alignment: .topLeading)
-
+//    VStack (alignment: .leading) {
+//        ForEach(1...1, id: \.self) { i in
+//            TrailInfoCard(
+//                trailName: "Trail \(i)",
+//                trailDistanceFromUser: 10,
+//                trailDifficulty: i,
+//                trailLength: 1.2,
+//                trailSteps: 2200
+//            )
+//        }
+//        Spacer() // Pushes rest of the stack content to the top!
+//    }
+//    .frame(maxWidth: .infinity, alignment: .topLeading)
+    TrailInfoCard(trail: trails[0])
 }
