@@ -24,13 +24,13 @@ struct BottomNavBarView: View {
                 .aspectRatio(contentMode: .fit)
                 .tag(0)
             
-            TrailInfoCard(trailName: "Turtle Rock", trailDistanceFromUser: 1.2, trailDifficulty: 1, trailLength: 1.1, trailSteps: 2000)
-                .tabItem {
-                    Image(systemName: "map")
-                    Text("Trails")
-                }
-                .aspectRatio(contentMode: .fit)
-                .tag(1)
+//            TrailInfoCard(trailName: "Turtle Rock", trailDistanceFromUser: 1.2, trailDifficulty: 1, trailLength: 1.1, trailSteps: 2000)
+//                .tabItem {
+//                    Image(systemName: "map")
+//                    Text("Trails")
+//                }
+//                .aspectRatio(contentMode: .fit)
+//                .tag(1)
         }
     }
 }

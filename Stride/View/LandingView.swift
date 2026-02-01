@@ -20,5 +20,5 @@ struct LandingView: View {
 }
 
 #Preview {
-    LandingView()
+    BottomNavBarView()
 }
