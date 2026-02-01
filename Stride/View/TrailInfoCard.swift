@@ -22,7 +22,7 @@ struct TrailInfoCard: View {
     let screenSize: CGRect = UIScreen.main.bounds
     
 //    let trailName: String
-    let trailDistanceFromUser: Double = 10
+    let trailDistanceFromUser: Double = 10  // TODO: either pass in this param or do the calculations here...
 //    let trailDifficulty: Int // [0...5]
 //    let trailLength: Double
     let trailSteps: Int = 100
@@ -44,7 +44,7 @@ struct TrailInfoCard: View {
             // Trail Information
             VStack(alignment: .leading) {
                 Text(trail.trailName)
-                    .font(Font.system(size: 42, design: .serif))
+                    .font(Font.system(size: 32, design: .serif))
                 Divider()
                 // Trail Additional Info
                 VStack(alignment: .leading) {
@@ -94,5 +94,8 @@ struct TrailInfoCard: View {
 //        Spacer() // Pushes rest of the stack content to the top!
 //    }
 //    .frame(maxWidth: .infinity, alignment: .topLeading)
-    TrailInfoCard(trail: trails[0])
+    Group {
+        TrailInfoCard(trail: trails[0])
+        TrailInfoCard(trail: trails[1])
+    }
 }

@@ -9,12 +9,14 @@ import Foundation
 import SwiftUI
 import CoreLocation
 
-struct Trail: Hashable, Codable {
+struct Trail: Hashable, Codable, Identifiable {
     var trailId: String
     var trailName: String
     var lengthMiles: Double
     var difficulty: Int?
     private var location: Coordinates
+    
+    var id: String { trailId }  // For Identifiable compliance
 
     var locationCoordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(

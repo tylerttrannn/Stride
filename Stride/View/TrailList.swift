@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct TrailList: View {
+    let screenSize: CGRect = UIScreen.main.bounds
+
     var body: some View {
-        Text("TrailList")
+        ScrollView {
+            VStack {
+                List(trails) {
+                    trail in TrailInfoCard(trail: trail)
+                }.frame(minHeight: screenSize.height*0.9).border(Color.red)
+            }
+        }
     }
 }
 
