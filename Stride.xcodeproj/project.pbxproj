@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4095E28F2F30330000C2DCD9 /* DeviceActivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4095E28E2F30330000C2DCD9 /* DeviceActivity.framework */; };
+		4095E2972F30330000C2DCD9 /* StrideActivityMonitor.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4095E28D2F30330000C2DCD9 /* StrideActivityMonitor.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		40DC16D02F22CE77007AD6AB /* ManagedSettings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DC16CF2F22CE77007AD6AB /* ManagedSettings.framework */; };
 		40DC16D82F22CE77007AD6AB /* StrideShieldAction.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 40DC16CD2F22CE77007AD6AB /* StrideShieldAction.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		40DC16E32F22CE87007AD6AB /* ManagedSettings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DC16CF2F22CE77007AD6AB /* ManagedSettings.framework */; };
@@ -15,6 +17,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4095E2952F30330000C2DCD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40DD67252F2069CA004F9929 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4095E28C2F30330000C2DCD9;
+			remoteInfo = StrideActivityMonitor;
+		};
 		40DC16D62F22CE77007AD6AB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 40DD67252F2069CA004F9929 /* Project object */;
@@ -53,6 +62,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				40DC16ED2F22CE87007AD6AB /* StrideShieldConfig.appex in Embed Foundation Extensions */,
+				4095E2972F30330000C2DCD9 /* StrideActivityMonitor.appex in Embed Foundation Extensions */,
 				40DC16D82F22CE77007AD6AB /* StrideShieldAction.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
@@ -61,6 +71,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4095E28D2F30330000C2DCD9 /* StrideActivityMonitor.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StrideActivityMonitor.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4095E28E2F30330000C2DCD9 /* DeviceActivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeviceActivity.framework; path = System/Library/Frameworks/DeviceActivity.framework; sourceTree = SDKROOT; };
 		40DC16CD2F22CE77007AD6AB /* StrideShieldAction.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StrideShieldAction.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		40DC16CF2F22CE77007AD6AB /* ManagedSettings.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManagedSettings.framework; path = System/Library/Frameworks/ManagedSettings.framework; sourceTree = SDKROOT; };
 		40DC16E22F22CE87007AD6AB /* StrideShieldConfig.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StrideShieldConfig.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +83,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		4095E2982F30330000C2DCD9 /* Exceptions for "StrideActivityMonitor" folder in "StrideActivityMonitor" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 4095E28C2F30330000C2DCD9 /* StrideActivityMonitor */;
+		};
 		40DC16DC2F22CE77007AD6AB /* Exceptions for "StrideShieldAction" folder in "StrideShieldAction" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -88,6 +107,14 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		4095E2902F30330000C2DCD9 /* StrideActivityMonitor */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				4095E2982F30330000C2DCD9 /* Exceptions for "StrideActivityMonitor" folder in "StrideActivityMonitor" target */,
+			);
+			path = StrideActivityMonitor;
+			sourceTree = "<group>";
+		};
 		40DC16D12F22CE77007AD6AB /* StrideShieldAction */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -122,6 +149,14 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4095E28A2F30330000C2DCD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4095E28F2F30330000C2DCD9 /* DeviceActivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		40DC16CA2F22CE77007AD6AB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -168,6 +203,7 @@
 			children = (
 				40DC16CF2F22CE77007AD6AB /* ManagedSettings.framework */,
 				40DC16E42F22CE87007AD6AB /* ManagedSettingsUI.framework */,
+				4095E28E2F30330000C2DCD9 /* DeviceActivity.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -180,6 +216,7 @@
 				40DD67472F2069CB004F9929 /* StrideUITests */,
 				40DC16D12F22CE77007AD6AB /* StrideShieldAction */,
 				40DC16E62F22CE87007AD6AB /* StrideShieldConfig */,
+				4095E2902F30330000C2DCD9 /* StrideActivityMonitor */,
 				40DC16CE2F22CE77007AD6AB /* Frameworks */,
 				40DD672E2F2069CA004F9929 /* Products */,
 			);
@@ -193,6 +230,7 @@
 				40DD67442F2069CB004F9929 /* StrideUITests.xctest */,
 				40DC16CD2F22CE77007AD6AB /* StrideShieldAction.appex */,
 				40DC16E22F22CE87007AD6AB /* StrideShieldConfig.appex */,
+				4095E28D2F30330000C2DCD9 /* StrideActivityMonitor.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -200,6 +238,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4095E28C2F30330000C2DCD9 /* StrideActivityMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4095E2992F30330000C2DCD9 /* Build configuration list for PBXNativeTarget "StrideActivityMonitor" */;
+			buildPhases = (
+				4095E2892F30330000C2DCD9 /* Sources */,
+				4095E28A2F30330000C2DCD9 /* Frameworks */,
+				4095E28B2F30330000C2DCD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				4095E2902F30330000C2DCD9 /* StrideActivityMonitor */,
+			);
+			name = StrideActivityMonitor;
+			packageProductDependencies = (
+			);
+			productName = StrideActivityMonitor;
+			productReference = 4095E28D2F30330000C2DCD9 /* StrideActivityMonitor.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		40DC16CC2F22CE77007AD6AB /* StrideShieldAction */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40DC16DD2F22CE77007AD6AB /* Build configuration list for PBXNativeTarget "StrideShieldAction" */;
@@ -258,6 +318,7 @@
 			dependencies = (
 				40DC16D72F22CE77007AD6AB /* PBXTargetDependency */,
 				40DC16EC2F22CE87007AD6AB /* PBXTargetDependency */,
+				4095E2962F30330000C2DCD9 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				40DD672F2F2069CA004F9929 /* Stride */,
@@ -325,6 +386,9 @@
 				LastSwiftUpdateCheck = 2620;
 				LastUpgradeCheck = 2620;
 				TargetAttributes = {
+					4095E28C2F30330000C2DCD9 = {
+						CreatedOnToolsVersion = 26.2;
+					};
 					40DC16CC2F22CE77007AD6AB = {
 						CreatedOnToolsVersion = 26.2;
 					};
@@ -363,11 +427,19 @@
 				40DD67432F2069CB004F9929 /* StrideUITests */,
 				40DC16CC2F22CE77007AD6AB /* StrideShieldAction */,
 				40DC16E12F22CE87007AD6AB /* StrideShieldConfig */,
+				4095E28C2F30330000C2DCD9 /* StrideActivityMonitor */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4095E28B2F30330000C2DCD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		40DC16CB2F22CE77007AD6AB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -406,6 +478,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4095E2892F30330000C2DCD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		40DC16C92F22CE77007AD6AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -444,6 +523,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4095E2962F30330000C2DCD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4095E28C2F30330000C2DCD9 /* StrideActivityMonitor */;
+			targetProxy = 4095E2952F30330000C2DCD9 /* PBXContainerItemProxy */;
+		};
 		40DC16D72F22CE77007AD6AB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 40DC16CC2F22CE77007AD6AB /* StrideShieldAction */;
@@ -467,6 +551,64 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		4095E29A2F30330000C2DCD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = StrideActivityMonitor/StrideActivityMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FJA5DAQNYY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StrideActivityMonitor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StrideActivityMonitor;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tylerttrann.Stride.StrideActivityMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4095E29B2F30330000C2DCD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = StrideActivityMonitor/StrideActivityMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FJA5DAQNYY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StrideActivityMonitor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StrideActivityMonitor;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tylerttrann.Stride.StrideActivityMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		40DC16DA2F22CE77007AD6AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -859,6 +1001,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4095E2992F30330000C2DCD9 /* Build configuration list for PBXNativeTarget "StrideActivityMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4095E29A2F30330000C2DCD9 /* Debug */,
+				4095E29B2F30330000C2DCD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		40DC16DD2F22CE77007AD6AB /* Build configuration list for PBXNativeTarget "StrideShieldAction" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

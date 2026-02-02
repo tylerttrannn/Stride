@@ -4,16 +4,11 @@
 //
 //  Created by Tyler Tran on 1/22/26.
 //
-
-
-// todo will probably have some form of navigation later to get
-// to this view
-
 import SwiftUI
 import FamilyControls
 
 enum ScreenTimeSetupPage{
-    case selectApps, selectTime
+    case selectApps, selectTime, activate
 }
 
 struct ScreenTimeSetupView : View {
@@ -52,8 +47,9 @@ struct ScreenTimeSetupView : View {
             }
             .navigationDestination(for : ScreenTimeSetupPage.self) { page in
                 switch page {
-                    case .selectApps : SelectAppsView()
+                    case .selectApps : SelectAppsView(path : $path)
                     case .selectTime : LandingView()
+                    case .activate : DummyBlockTest()
                 }
             }
         }

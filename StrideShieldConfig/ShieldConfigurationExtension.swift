@@ -15,6 +15,8 @@ import UIKit
 class ShieldConfigurationExtension: ShieldConfigurationDataSource {
     override func configuration(shielding application: Application) -> ShieldConfiguration {
         // Customize the shield as needed for applications.
+        
+        
         ShieldConfiguration()
     }
     

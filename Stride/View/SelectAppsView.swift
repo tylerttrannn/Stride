@@ -8,8 +8,9 @@ import SwiftUI
 import FamilyControls
 
 struct SelectAppsView : View {
+    @Binding var path : NavigationPath 
     @State private var activitySelection = FamilyActivitySelection()
-    @State private var pickerPresented = false
+    @Bindable var viewModel : ViewModel = ViewModel()
     
     var body : some View {
         VStack (spacing : 20){
@@ -28,19 +29,15 @@ struct SelectAppsView : View {
             }
             
             Button("Select"){
-                pickerPresented = true
+                viewModel.pickerPresented = true
             }
             .buttonStyle(.borderedProminent)
             .controlSize(.large)
         }
-        .familyActivityPicker(isPresented: $pickerPresented, selection: $activitySelection)
-        .onChange(of: activitySelection) {
-            print("need to store the selection in SwiftData later!")
+        .familyActivityPicker(isPresented: $viewModel.pickerPresented, selection: $viewModel.activitySelection)
+        .onChange(of: viewModel.activitySelection) {
+            viewModel.setSelection()
+            path.append(ScreenTimeSetupPage.activate)
         }
     }
-}
-
-
-#Preview {
-    SelectAppsView()
 }
