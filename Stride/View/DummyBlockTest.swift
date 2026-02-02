@@ -34,8 +34,22 @@ struct DummyBlockTest : View {
             repeats: true
         )
         
-        
-
+        let event = DeviceActivityEvent(
+            applications : AppSelectionModel.getSelection().applicationTokens,
+            threshold : DateComponents(hour : 0, minute : 1)
+        )
+   
+        do {
+            try monitor.startMonitoring(
+                activityName,
+                during : schedule,
+                events: [eventName: event]
+            )
+            print("activity started")
+        } catch{
+            print("error starting activity \(error.localizedDescription)")
+        }
+    
 
     }
 }

@@ -19,7 +19,7 @@ extension SelectAppsView {
         var pickerPresented = false
         
         func setSelection(){
-            StrideStorage.setSelection(activitySelection)
+            AppSelectionModel.setSelection(activitySelection)
         }
 
     }

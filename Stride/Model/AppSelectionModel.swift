@@ -8,8 +8,8 @@
 import Foundation
 import FamilyControls
 
-class StrideStorage {
-    private static let defaults = UserDefaults(suiteName: "group.Stride")
+class AppSelectionModel {
+    private static let defaults = UserDefaults(suiteName: "group.com.Stride.appblocker")
     private static let key = "alertSystem"
 
     static func setSelection(_ selection: FamilyActivitySelection) {
