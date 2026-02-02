@@ -17,35 +17,10 @@ extension SelectAppsView {
         var activitySelection: FamilyActivitySelection = FamilyActivitySelection()
         var timeGoal: Int = 30
         var pickerPresented = false
-        var defaults = UserDefaults(suiteName: "group.Stride")
-
+        
         func setSelection(){
-            let encoder = JSONEncoder()
-
-            do {
-                let data = try encoder.encode(activitySelection)
-                defaults?.set(data, forKey : "alertSystem")
-                defaults?.synchronize()
-                
-                print("saved data to userdefaults")
-            } catch {
-                print("Error saving data to UserDefaults \(error.localizedDescription)")
-            }
-            if let savedData = defaults?.data(forKey: "alertSystem") {
-                print("Verification: Data was saved, size: \(savedData.count) bytes")
-            } else {
-                print("Verification failed: No data found after save")
-            }
+            StrideStorage.setSelection(activitySelection)
         }
 
-        func getSelection() -> Data?{
-            if let savedData = defaults?.data(forKey: "alertSystem") {
-                print("Data exists! returning ")
-                return savedData
-            }
-            
-            return nil
-        }
-            
     }
 }
