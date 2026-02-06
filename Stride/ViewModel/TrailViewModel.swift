@@ -8,6 +8,7 @@ class TrailViewModel: ObservableObject {
     @Published var isLoading: Bool = false
     @Published var errorMessage: String?
     @Published var stepsToday: Double = 0.0
+    @Published var preferredDifficulty: Int?
     
     private let trailSerice = TrailService()
     private let healthStore = HealthStore()
@@ -16,6 +17,8 @@ class TrailViewModel: ObservableObject {
     init(locationManager: LocationManager) {
         self.locationManager = locationManager
     }
+    
+    private let userService = UserService()
     
     // TEMPORARYYYYYY
     let goalSteps = 10000.0
@@ -52,13 +55,24 @@ class TrailViewModel: ObservableObject {
             stepsToday = steps
             let remainingSteps = max(goalSteps - stepsToday, 0)
             
+            // fetch user profile
+            let profile = try await userService.fetchProfile()
+            preferredDifficulty = profile.preferred_difficulty
+            
+            print("User Id: ", profile.id)
+            print("User preferred difficulty:", preferredDifficulty as Any)
+
+            // fetch ranked trails
             trails = try await trailSerice.fetchRankedTrails(
                 latitude: location.latitude,
                 longitude: location.longitude,
                 remainingSteps: remainingSteps
             )
+            
+            print("Num of trails:" ,trails.count)
         } catch {
             errorMessage = error.localizedDescription
+            print("Error: ", error.localizedDescription)
         }
         
         isLoading = false
