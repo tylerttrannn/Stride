@@ -49,7 +49,7 @@ struct ScreenTimeSetupView : View {
                 switch page {
                     case .selectApps : SelectAppsView(path : $path)
                     case .selectTime : LandingView()
-                    case .activate : DummyBlockTest()
+                    case .activate : SelectTimeLimitView()
                 }
             }
         }

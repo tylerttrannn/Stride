@@ -10,16 +10,40 @@ import DeviceActivity
 import SwiftData
 import FamilyControls
 
-struct DummyBlockTest : View {
-    
+struct SelectTimeLimitView : View {
+    @State private var time = 50
+
     var body : some View {
         VStack{
-            Text("sdfsdfsfsd")
-            
-            Button("Press me"){
-                print("pressed")
-                startActivity()
+            VStack(spacing: 12) {
+                Text("Daily Screen Reminder")
+                    .font(.system(size: 28, weight: .bold, design: .rounded))
+                    .frame(maxWidth: .infinity, alignment: .center)
+                
+                Text("We'll nudge you to take a walk once you reach this limit on your selected apps.")
+                    .font(.body)
+                    .foregroundStyle(.secondary)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal, 40)
             }
+            .padding(.top, 40)
+            
+            Spacer()
+
+            TimerPicker(minutes: $time, color: .green)
+            
+            Spacer()
+            
+            
+            Button(action :{
+                startActivity()
+            }){
+                Text("Continue")
+                    .frame(maxWidth : .infinity)
+                    .padding(.vertical, 7)
+            }
+            .padding()
+            .buttonStyle(.borderedProminent)
         }
     }
     
@@ -49,7 +73,9 @@ struct DummyBlockTest : View {
         } catch{
             print("error starting activity \(error.localizedDescription)")
         }
-    
-
     }
+}
+
+#Preview {
+    SelectTimeLimitView()
 }
