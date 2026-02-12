@@ -11,7 +11,7 @@ import SwiftData
 import FamilyControls
 
 struct SelectTimeLimitView : View {
-    @State private var time = 50
+    @State private var time = 0
     @State private var viewModel : ViewModel = ViewModel()
 
     var body : some View {
@@ -38,7 +38,7 @@ struct SelectTimeLimitView : View {
             Button(action :{
                 viewModel.startActivity()
             }){
-                Text("Continue")
+                Text("Activate")
                     .frame(maxWidth : .infinity)
                     .padding(.vertical, 7)
             }

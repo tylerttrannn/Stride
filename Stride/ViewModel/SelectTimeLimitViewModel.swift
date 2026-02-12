@@ -14,7 +14,6 @@ extension SelectTimeLimitView{
     
     @Observable
     class ViewModel {
-        
         // this will start monitoring a users activity and see
         // when they hit a time limit on a app/category
         func startActivity(){
@@ -44,8 +43,6 @@ extension SelectTimeLimitView{
                 print("error starting activity \(error.localizedDescription)")
             }
         }
-        
-        
     }
     
     

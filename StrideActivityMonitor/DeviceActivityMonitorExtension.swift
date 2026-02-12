@@ -10,14 +10,15 @@ import SwiftData
 import Foundation
 import FamilyControls
 import ManagedSettings
+import UserNotifications
 
 // Optionally override any of the functions below.
 // Make sure that your class name matches the NSExtensionPrincipalClass in your Info.plist.
 class DeviceActivityMonitorExtension: DeviceActivityMonitor {
-    
     let defaults = UserDefaults(suiteName: "group.com.Stride.appblocker")
     let alertStore = ManagedSettingsStore()
-
+    let content = UNMutableNotificationContent()
+    
     func decodeSelection() -> FamilyActivitySelection? {
         guard let defaults = defaults else {
             return nil
@@ -39,12 +40,6 @@ class DeviceActivityMonitorExtension: DeviceActivityMonitor {
     
     override func intervalDidStart(for activity: DeviceActivityName) {
         super.intervalDidStart(for: activity)
-
-        // something is going wrong here basically in the decoding i think 
-        if let selection = decodeSelection() {
-            alertStore.shield.applications = selection.applicationTokens
-            alertStore.shield.applicationCategories = .specific(selection.categoryTokens)
-        }
     }
     
     override func intervalDidEnd(for activity: DeviceActivityName) {
@@ -55,7 +50,25 @@ class DeviceActivityMonitorExtension: DeviceActivityMonitor {
     
     override func eventDidReachThreshold(_ event: DeviceActivityEvent.Name, activity: DeviceActivityName) {
         super.eventDidReachThreshold(event, activity: activity)
-                
+        
+        
+        // if we wanna block the app in the future
+        /*
+        if let selection = decodeSelection() {
+            alertStore.shield.applications = selection.applicationTokens
+            alertStore.shield.applicationCategories = .specific(selection.categoryTokens)
+        }
+        */
+        
+        content.title = "Time Reminder Reached"
+        content.subtitle = "It's time to go on a walk!"
+        content.sound = UNNotificationSound.default
+        
+        // show this notification five seconds from now
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(request)
+
         // Handle the event reaching its threshold.
     }
     

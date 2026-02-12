@@ -8,7 +8,7 @@ import SwiftUI
 import FamilyControls
 
 enum ScreenTimeSetupPage{
-    case selectApps, selectTime, activate
+    case selectApps, selectTime, enableNotifications, activate
 }
     
 struct ScreenTimeSetupView : View {
@@ -24,6 +24,7 @@ struct ScreenTimeSetupView : View {
                         .resizable()
                         .scaledToFit()
                         .frame(width : 100, height : 100)
+                    
                     
                     Text("Request Authorization")
                         .font(.system(size: 28, weight: .bold, design: .rounded))
@@ -55,13 +56,14 @@ struct ScreenTimeSetupView : View {
             }
             .onChange(of : viewModel.authorizationStatus){
                 if viewModel.authorizationStatus == .approved {
-                    path.append(ScreenTimeSetupPage.selectApps)
+                    path.append(ScreenTimeSetupPage.enableNotifications)
                 }
             }
             .navigationDestination(for : ScreenTimeSetupPage.self) { page in
                 switch page {
                     case .selectApps : SelectAppsView(path : $path)
                     case .selectTime : LandingView()
+                    case .enableNotifications : RequestNotificationView(path : $path)
                     case .activate : SelectTimeLimitView()
                 }
             }
