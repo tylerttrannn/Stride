@@ -10,7 +10,7 @@ import FamilyControls
 enum ScreenTimeSetupPage{
     case selectApps, selectTime, activate
 }
-
+    
 struct ScreenTimeSetupView : View {
     @State var path = NavigationPath()
     @State var viewModel : ViewModel = ViewModel()
@@ -18,27 +18,40 @@ struct ScreenTimeSetupView : View {
     var body : some View {
         NavigationStack (path : $path ){
             VStack (spacing : 20){
-                Image(systemName : "figure.walk.circle.fill")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width : 100, height : 100)
-        
-                VStack (spacing: 10){
-                    Text("Request Authroization")
-                        .fontWeight(.bold)
-                        .font(.title)
+                
+                VStack(spacing: 12) {
+                    Image(systemName : "figure.walk.circle.fill")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width : 100, height : 100)
+                    
+                    Text("Request Authorization")
+                        .font(.system(size: 28, weight: .bold, design: .rounded))
+                        .frame(maxWidth: .infinity, alignment: .center)
                     
                     Text("To analyse your Screen Time on this iPhone Stride will need your permission")
-                        .padding()
+                        .font(.body)
+                        .foregroundStyle(.secondary)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 40)
                 }
+                .padding(.top, 40)
                 
-                Button("Request Authorization"){
+                Spacer()
+                
+                Button(action :{
                     Task {
                         await viewModel.requestAuthorization()
                     }
+                }){
+                    Text("Request Authorization")
+                        .frame(maxWidth : .infinity)
+                        .padding(.vertical, 7)
                 }
+                .padding()
                 .buttonStyle(.borderedProminent)
-                .controlSize(.large)
+                
+            
             }
             .onChange(of : viewModel.authorizationStatus){
                 if viewModel.authorizationStatus == .approved {

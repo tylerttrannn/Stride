@@ -14,25 +14,37 @@ struct SelectAppsView : View {
     
     var body : some View {
         VStack (spacing : 20){
-            Image(systemName : "app.badge.clock.fill")
-                .resizable()
-                .scaledToFit()
-                .frame(width : 100, height : 100)
-    
-            VStack (spacing: 10){
+            
+            VStack(spacing: 12) {
+                Image(systemName : "app.badge.clock.fill")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width : 100, height : 100)
+                
                 Text("Select Apps")
-                    .fontWeight(.bold)
-                    .font(.title)
+                    .font(.system(size: 28, weight: .bold, design: .rounded))
+                    .frame(maxWidth: .infinity, alignment: .center)
                 
                 Text("Select the apps you want Stride to track your usage on to provide reminders to take a break and go on a walk ")
-                    .padding()
+                    .font(.body)
+                    .foregroundStyle(.secondary)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal, 20)
             }
+            .padding(.top, 40)
             
-            Button("Select"){
+            Spacer()
+            
+            Button(action :{
                 viewModel.pickerPresented = true
+            }){
+                Text("Select")
+                    .frame(maxWidth : .infinity)
+                    .padding(.vertical, 7)
             }
+            .padding()
             .buttonStyle(.borderedProminent)
-            .controlSize(.large)
+            
         }
         .familyActivityPicker(isPresented: $viewModel.pickerPresented, selection: $viewModel.activitySelection)
         .onChange(of: viewModel.activitySelection) {
@@ -40,4 +52,10 @@ struct SelectAppsView : View {
             path.append(ScreenTimeSetupPage.activate)
         }
     }
+}
+
+
+#Preview {
+    @Previewable @State var mockPath : NavigationPath = NavigationPath()
+    SelectAppsView(path: $mockPath)
 }
