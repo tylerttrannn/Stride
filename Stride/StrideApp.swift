@@ -11,7 +11,7 @@ import SwiftUI
 struct StrideApp: App {
     var body: some Scene {
         WindowGroup {
-            ScreenTimeSetupView()
+            LandingView()
         }
     }
 }
