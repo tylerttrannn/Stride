@@ -12,6 +12,7 @@ import FamilyControls
 
 struct SelectTimeLimitView : View {
     @State private var time = 50
+    @State private var viewModel : ViewModel = ViewModel()
 
     var body : some View {
         VStack{
@@ -34,9 +35,8 @@ struct SelectTimeLimitView : View {
             
             Spacer()
             
-            
             Button(action :{
-                startActivity()
+                viewModel.startActivity()
             }){
                 Text("Continue")
                     .frame(maxWidth : .infinity)
@@ -46,34 +46,7 @@ struct SelectTimeLimitView : View {
             .buttonStyle(.borderedProminent)
         }
     }
-    
-    func startActivity(){
-        let monitor = DeviceActivityCenter()
-        let activityName = DeviceActivityName("timeAlert")
-        let eventName = DeviceActivityEvent.Name("timeAlert")
 
-        let schedule = DeviceActivitySchedule(
-            intervalStart: DateComponents(hour: 0, minute: 0),
-            intervalEnd: DateComponents(hour: 23, minute : 59),
-            repeats: true
-        )
-        
-        let event = DeviceActivityEvent(
-            applications : AppSelectionModel.getSelection().applicationTokens,
-            threshold : DateComponents(hour : 0, minute : 1)
-        )
-   
-        do {
-            try monitor.startMonitoring(
-                activityName,
-                during : schedule,
-                events: [eventName: event]
-            )
-            print("activity started")
-        } catch{
-            print("error starting activity \(error.localizedDescription)")
-        }
-    }
 }
 
 #Preview {
