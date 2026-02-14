@@ -14,6 +14,7 @@ struct TrailList: View {
     
     @State private var latitude: CGFloat
     @State private var longitude: CGFloat
+    @State var noticeTextHeight: CGFloat = 0
     
     private let locationManager: LocationManager = LocationManager()
     
@@ -28,6 +29,13 @@ struct TrailList: View {
                 if isLoading {
                     ProgressView("Finding trails...")
                         .padding()
+                } else if errorMessage == "Location not available" {
+                    Text("Notice: Current user location is not available. Displaying results based on trails best fit for you near UC Irvine.")
+                        .padding(16)
+                        .background(RoundedRectangle(cornerRadius: 10).fill(.yellow))
+                    ForEach(trails) { trail in
+                        TrailInfoCard(trail: trail)
+                    }
                 } else if let errorMessage = errorMessage {
                     Text("Error: \(errorMessage)")
                         .foregroundColor(.red)
@@ -49,9 +57,9 @@ struct TrailList: View {
     }
     
     private func getLocation() async {
-        while locationManager.userLocation == nil {
-            try? await Task.sleep(nanoseconds: 300_000_000)
-        }
+//        while locationManager.userLocation == nil {
+//            try? await Task.sleep(nanoseconds: 300_000_000)
+//        }
         
         guard let location = locationManager.userLocation else {
             errorMessage = "Location not available"
