@@ -16,24 +16,9 @@ struct ContentLengthPreference: PreferenceKey {
 
 struct TrailInfoCard: View {
     var trail: Trail
-
     @State var textHeight: CGFloat = 0
 
     let screenSize: CGRect = UIScreen.main.bounds
-    
-//    let trailName: String
-    let trailDistanceFromUser: Double = 10  // TODO: either pass in this param or do the calculations here...
-//    let trailDifficulty: Int // [0...5]
-//    let trailLength: Double
-    let trailSteps: Int = 100
-//
-//    init(trailName: String, trailDistanceFromUser: Double, trailDifficulty: Int, trailLength: Double, trailSteps: Int) {
-//        self.trailName = trailName
-//        self.trailDistanceFromUser = trailDistanceFromUser
-//        self.trailDifficulty = trailDifficulty
-//        self.trailLength = trailLength
-//        self.trailSteps = trailSteps
-//    }
 
     var body: some View {
         ZStack (alignment: .topLeading) {
@@ -43,14 +28,14 @@ struct TrailInfoCard: View {
             
             // Trail Information
             VStack(alignment: .leading) {
-                Text(trail.trailName)
+                Text(trail.name)
                     .font(Font.system(size: 32, design: .serif))
                 Divider()
                 // Trail Additional Info
                 VStack(alignment: .leading) {
-                    Text("\(self.trailDistanceFromUser, specifier: "%.1f") mi away")
-                    Text("Approx. \(self.trailSteps) steps")
-                    Text("Length: \(trail.lengthMiles, specifier: "%.2f") miles")
+                    Text("\(trail.distance_from_user, specifier: "%.1f") mi away")
+                    Text("Approx. \(trail.estimated_steps, specifier: "%.0f") steps")
+                    Text("Length: \(trail.length_miles, specifier: "%.2f") miles")
                     if let difficulty = trail.difficulty {
                         Text("Diffculty: \(String(difficulty))/5")
                     }
@@ -81,21 +66,9 @@ struct TrailInfoCard: View {
 }
 
 #Preview {
-//    VStack (alignment: .leading) {
-//        ForEach(1...1, id: \.self) { i in
-//            TrailInfoCard(
-//                trailName: "Trail \(i)",
-//                trailDistanceFromUser: 10,
-//                trailDifficulty: i,
-//                trailLength: 1.2,
-//                trailSteps: 2200
-//            )
-//        }
-//        Spacer() // Pushes rest of the stack content to the top!
+//    Group {
+//        TrailInfoCard(trail: trails[0])
+//        TrailInfoCard(trail: trails[1])
 //    }
-//    .frame(maxWidth: .infinity, alignment: .topLeading)
-    Group {
-        TrailInfoCard(trail: trails[0])
-        TrailInfoCard(trail: trails[1])
-    }
+    Text("Trail Card Info")
 }
