@@ -11,6 +11,9 @@ struct TrailList: View {
     @State private var isLoading = true
     @State private var errorMessage: String?
     
+    @State private var latitude: CGFloat = 33.6405
+    @State private var longitude: CGFloat = -117.8443
+    
     var body: some View {
         ScrollView {
             VStack {
@@ -39,8 +42,8 @@ struct TrailList: View {
     private func loadTrails() async {
         do {
             let results = try await TrailService().fetchRankedTrails(
-                latitude: 33.6405,
-                longitude: -117.8443,
+                latitude: latitude,
+                longitude: longitude,
                 remainingSteps: 4000
             )
             trails = results
