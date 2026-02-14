@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomePageView: View {
-    var stepsCount: Int = 1000;
+    var stepsCount: Int;
     var stepsGoal: Int = 2000;
     
     var body: some View {
@@ -17,5 +17,5 @@ struct HomePageView: View {
 }
 
 #Preview {
-    HomePageView()
+    HomePageView(stepsCount: 1000)
 }
