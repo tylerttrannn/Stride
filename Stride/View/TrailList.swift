@@ -8,6 +8,7 @@ import SwiftUI
 import CoreLocation
 
 struct TrailList: View {
+    
     @State private var trails: [Trail] = []
     @State private var isLoading = true
     @State private var errorMessage: String?
@@ -18,9 +19,13 @@ struct TrailList: View {
     
     private let locationManager: LocationManager = LocationManager()
     
-    init (latitude: CGFloat = 33.6405, longitude: CGFloat = -117.8443) {
+    private var stepsCount: Int
+    @EnvironmentObject var userVM: UserProfileViewModel
+    
+    init (latitude: CGFloat = 33.6405, longitude: CGFloat = -117.8443, stepsCount: Int = 0) {
         _latitude = State(initialValue: latitude)
         _longitude = State(initialValue: longitude)
+        self.stepsCount = stepsCount
     }
     
     var body: some View {
@@ -74,7 +79,7 @@ struct TrailList: View {
             let results = try await TrailService().fetchRankedTrails(
                 latitude: latitude,
                 longitude: longitude,
-                remainingSteps: 4000
+                remainingSteps: Double(Int(userVM.stepsGoal) - stepsCount)
             )
             trails = results
             isLoading = false
@@ -86,5 +91,6 @@ struct TrailList: View {
 }
 
 #Preview {
-    TrailList()
+    TrailList(stepsCount: 0)
+        .environmentObject(UserProfileViewModel())
 }

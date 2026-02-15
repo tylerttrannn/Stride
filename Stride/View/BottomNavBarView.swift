@@ -13,7 +13,8 @@ struct BottomNavBarView: View {
     @State var errorMessage: String?
     @State var isLoading: Bool = false
     @State private var stepCount: Double = 1
-
+    
+    @EnvironmentObject var userVM: UserProfileViewModel
 
     private let healthStore = HealthStore()
     
@@ -24,6 +25,7 @@ struct BottomNavBarView: View {
     var body: some View {
         TabView (selection: $selectedTab) {
             HomePageView(stepsCount: Int(stepCount))
+                .environmentObject(self.userVM)
                 .tabItem {
                     Image(systemName: "house")
                     Text("Home")
@@ -31,13 +33,22 @@ struct BottomNavBarView: View {
                 .aspectRatio(contentMode: .fit)
                 .tag(0)
             
-            TrailList()
+            TrailList(stepsCount: Int(stepCount))
+                .environmentObject(self.userVM)
                 .tabItem {
                     Image(systemName: "map")
                     Text("Trails")
                 }
                 .aspectRatio(0.55, contentMode: .fit)
                 .tag(1)
+            
+            SettingsPageView()
+                .tabItem {
+                    Image(systemName: "gear")
+                    Text("Settings")
+                }
+                .aspectRatio(0.55, contentMode: .fit)
+                .tag(2)
         }
         .onAppear {
             requestHealthKitAccess() // Request HealthKit permissions when view appears
@@ -70,5 +81,6 @@ struct BottomNavBarView: View {
 
 #Preview {
     BottomNavBarView()
+        .environmentObject(UserProfileViewModel())
 }
 
