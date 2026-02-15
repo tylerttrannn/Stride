@@ -8,12 +8,12 @@
 
 import SwiftUI
 
-enum DifficultySelection : String, CaseIterable {
-    case one = "1"
-    case two = "2"
-    case three = "3"
-    case four = "4"
-    case five = "5"
+enum DifficultySelection : Int, CaseIterable {
+    case one = 1
+    case two
+    case three
+    case four
+    case five
 }
 
 enum DisplayModeSelection : String, CaseIterable {
@@ -24,7 +24,6 @@ enum DisplayModeSelection : String, CaseIterable {
 
 
 struct SettingsPageView: View {
-    @State var difficultySelection: DifficultySelection = .one
     @State var displayModeSelection: DisplayModeSelection = .light
 
     @EnvironmentObject var userVM: UserProfileViewModel
@@ -48,7 +47,8 @@ struct SettingsPageView: View {
                         Text("Trail Difficulty")
                         Picker("difficulty", selection: $userVM.preferredDifficulty) {
                             ForEach(DifficultySelection.allCases, id: \.self) { option in
-                                Text(option.rawValue)
+                                Text("\(option.rawValue)")
+                                    .tag(option.rawValue)
                             }
                         }
                         .pickerStyle(SegmentedPickerStyle())

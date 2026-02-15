@@ -79,7 +79,8 @@ struct TrailList: View {
             let results = try await TrailService().fetchRankedTrails(
                 latitude: latitude,
                 longitude: longitude,
-                remainingSteps: Double(Int(userVM.stepsGoal) - stepsCount)
+                remainingSteps: Double(Int(userVM.stepsGoal) - stepsCount),
+                difficulty_pref: userVM.preferredDifficulty
             )
             trails = results
             isLoading = false

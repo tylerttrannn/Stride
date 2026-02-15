@@ -6,7 +6,8 @@ class TrailService {
     func fetchRankedTrails (
         latitude: Double,
         longitude: Double,
-        remainingSteps: Double
+        remainingSteps: Double,
+        difficulty_pref: DifficultySelection = DifficultySelection.one
     ) async throws -> [Trail] {
         
         let response = try await supabase
@@ -15,7 +16,8 @@ class TrailService {
                 params: [
                     "user_lat": latitude,
                     "user_lon": longitude,
-                    "remaining_steps": remainingSteps
+                    "remaining_steps": remainingSteps,
+                    "user_difficulty_pref": Double(difficulty_pref.rawValue)
                 ]
             )
             .execute()

@@ -13,13 +13,15 @@ import Combine
 @MainActor
 class UserProfileViewModel: ObservableObject {
     
-    @Published var preferredDifficulty: Int = 1
+    @Published var preferredDifficulty: DifficultySelection = DifficultySelection.one
     @Published var stepsGoal: Int = 5000
     
     func loadProfile() async {
         do {
             let profile = try await UserService().fetchProfile()
-            preferredDifficulty = profile.preferred_difficulty!
+            preferredDifficulty = DifficultySelection(
+                rawValue: profile.preferred_difficulty ?? 1
+            ) ?? .one
         } catch {
             print(error)
         }
