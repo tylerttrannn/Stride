@@ -1,0 +1,97 @@
+//
+//  TrailList.swift
+//  Stride
+//
+//  Created by Kathy Lo on 1/29/26.
+//
+import SwiftUI
+import CoreLocation
+
+struct TrailList: View {
+    
+    @State private var trails: [Trail] = []
+    @State private var isLoading = true
+    @State private var errorMessage: String?
+    
+    @State private var latitude: CGFloat
+    @State private var longitude: CGFloat
+    @State var noticeTextHeight: CGFloat = 0
+    
+    private let locationManager: LocationManager = LocationManager()
+    
+    private var stepsCount: Int
+    @EnvironmentObject var userVM: UserProfileViewModel
+    
+    init (latitude: CGFloat = 33.6405, longitude: CGFloat = -117.8443, stepsCount: Int = 0) {
+        _latitude = State(initialValue: latitude)
+        _longitude = State(initialValue: longitude)
+        self.stepsCount = stepsCount
+    }
+    
+    var body: some View {
+        ScrollView {
+            VStack {
+                if isLoading {
+                    ProgressView("Finding trails...")
+                        .padding()
+                } else if errorMessage == "Location not available" {
+                    Text("Notice: Current user location is not available. Displaying results based on trails best fit for you near UC Irvine.")
+                        .padding(16)
+                        .background(RoundedRectangle(cornerRadius: 10).fill(.yellow))
+                    ForEach(trails) { trail in
+                        TrailInfoCard(trail: trail)
+                    }
+                } else if let errorMessage = errorMessage {
+                    Text("Error: \(errorMessage)")
+                        .foregroundColor(.red)
+                        .padding()
+                } else if trails.isEmpty {
+                    Text("No trails found.")
+                        .padding()
+                } else {
+                    ForEach(trails) { trail in
+                        TrailInfoCard(trail: trail)
+                    }
+                }
+            }
+        }
+        .task {
+            await getLocation()
+            await loadTrails()
+        }
+    }
+    
+    private func getLocation() async {
+//        while locationManager.userLocation == nil {
+//            try? await Task.sleep(nanoseconds: 300_000_000)
+//        }
+        
+        guard let location = locationManager.userLocation else {
+            errorMessage = "Location not available"
+            isLoading = false
+            return
+        }
+        (latitude, longitude) = (location.latitude, location.longitude)
+    }
+    
+    private func loadTrails() async {
+        do {
+            let results = try await TrailService().fetchRankedTrails(
+                latitude: latitude,
+                longitude: longitude,
+                remainingSteps: Double(Int(userVM.stepsGoal) - stepsCount),
+                difficulty_pref: userVM.preferredDifficulty
+            )
+            trails = results
+            isLoading = false
+        } catch {
+            errorMessage = error.localizedDescription
+            isLoading = false
+        }
+    }
+}
+
+#Preview {
+    TrailList(stepsCount: 0)
+        .environmentObject(UserProfileViewModel())
+}

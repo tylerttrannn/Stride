@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct LandingView: View {
+    @StateObject private var userVM = UserProfileViewModel()
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        BottomNavBarView()
+            .environmentObject(userVM)
+            .task {
+                await userVM.loadProfile()
+            }
     }
 }
 

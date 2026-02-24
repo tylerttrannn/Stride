@@ -1,0 +1,5838 @@
+ [
+    {
+      "trailId": "2",
+      "trailName": "SERRANO RIDGE TRAIL",
+      "lengthMiles": 2.59,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.6154185268981,
+        "longitude": -117.774660754861
+      }
+    },
+    {
+      "trailId": "10",
+      "trailName": "MESA LOOP TRAIL",
+      "lengthMiles": 1.45,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.5514866652628,
+        "longitude": -117.5468700658
+      }
+    },
+    {
+      "trailId": "42",
+      "trailName": "UPPER LAUREL CANYON TRAIL",
+      "lengthMiles": 0.65,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.5988028781626,
+        "longitude": -117.78085161385
+      }
+    },
+    {
+      "trailId": "43",
+      "trailName": "LAUREL SPUR",
+      "lengthMiles": 0.49,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5932656441915,
+        "longitude": -117.775870743294
+      }
+    },
+    {
+      "trailId": "54",
+      "trailName": "LAGUNA BOWL ROAD",
+      "lengthMiles": 1.57,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.5575583651977,
+        "longitude": -117.782319311118
+      }
+    },
+    {
+      "trailId": "63",
+      "trailName": "UPPER BLIND CANYON",
+      "lengthMiles": 0.14,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.8241209801371,
+        "longitude": -117.74293918837
+      }
+    },
+    {
+      "trailId": "64",
+      "trailName": "UPPER BLIND CANYON",
+      "lengthMiles": 0.01,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.8231291713706,
+        "longitude": -117.742854308255
+      }
+    },
+    {
+      "trailId": "66",
+      "trailName": "UPPER BLIND CANYON",
+      "lengthMiles": 0.16,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.8235574468731,
+        "longitude": -117.743955211861
+      }
+    },
+    {
+      "trailId": "100",
+      "trailName": "RIFLE RANGE",
+      "lengthMiles": 1.48,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.8150564545847,
+        "longitude": -117.744306932068
+      }
+    },
+    {
+      "trailId": "102",
+      "trailName": "Blue Diamond Haul Road",
+      "lengthMiles": 0.8,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7618428319814,
+        "longitude": -117.70496416564
+      }
+    },
+    {
+      "trailId": "103",
+      "trailName": "EAST LOMA RIDGE",
+      "lengthMiles": 3.84,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.7285663342266,
+        "longitude": -117.698078657984
+      }
+    },
+    {
+      "trailId": "106",
+      "trailName": "Hicks Canyon Haul Road",
+      "lengthMiles": 2.31,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.7346350103743,
+        "longitude": -117.705420266244
+      }
+    },
+    {
+      "trailId": "129",
+      "trailName": "COAL MINE SCE",
+      "lengthMiles": 1.21,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7940251687413,
+        "longitude": -117.732072283215
+      }
+    },
+    {
+      "trailId": "130",
+      "trailName": "COAL MINE",
+      "lengthMiles": 2.22,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.8025118924185,
+        "longitude": -117.719023938019
+      }
+    },
+    {
+      "trailId": "134",
+      "trailName": "COAL MINE SCE",
+      "lengthMiles": 0.31,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.785905546023,
+        "longitude": -117.719314306788
+      }
+    },
+    {
+      "trailId": "135",
+      "trailName": "LAKE SHORE",
+      "lengthMiles": 3.4,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7803892070972,
+        "longitude": -117.701125052354
+      }
+    },
+    {
+      "trailId": "136",
+      "trailName": "STATE SPUR",
+      "lengthMiles": 2.11,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.7834475489021,
+        "longitude": -117.681969693711
+      }
+    },
+    {
+      "trailId": "138",
+      "trailName": "BLACK STAR CANYON ROAD",
+      "lengthMiles": 0.95,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7768656875854,
+        "longitude": -117.676224001896
+      }
+    },
+    {
+      "trailId": "144",
+      "trailName": "LOMA RIDGE",
+      "lengthMiles": 1.17,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.768649518714,
+        "longitude": -117.750470356486
+      }
+    },
+    {
+      "trailId": "151",
+      "trailName": "GRAVEL TRAIL",
+      "lengthMiles": 0.51,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.6076460490639,
+        "longitude": -117.754087821036
+      }
+    },
+    {
+      "trailId": "262",
+      "trailName": "UNKNOWN",
+      "lengthMiles": 0.28,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.5577807441069,
+        "longitude": -117.782776358519
+      }
+    },
+    {
+      "trailId": "263",
+      "trailName": "WATER TANK ROAD",
+      "lengthMiles": 0.23,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5577638287669,
+        "longitude": -117.788221426439
+      }
+    },
+    {
+      "trailId": "264",
+      "trailName": "LAGUNA RIDGE TRAIL",
+      "lengthMiles": 0.84,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.5663264095668,
+        "longitude": -117.774576463579
+      }
+    },
+    {
+      "trailId": "265",
+      "trailName": "BIG BEND TRAIL",
+      "lengthMiles": 1.37,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.5706404965196,
+        "longitude": -117.769503197866
+      }
+    },
+    {
+      "trailId": "267",
+      "trailName": "LAGUNA RIDGE TRAIL",
+      "lengthMiles": 0.4,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.5637686015712,
+        "longitude": -117.767495627639
+      }
+    },
+    {
+      "trailId": "268",
+      "trailName": "MISSING LINK",
+      "lengthMiles": 0.58,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5953166675345,
+        "longitude": -117.784761914314
+      }
+    },
+    {
+      "trailId": "269",
+      "trailName": "FENCELINE TRAIL",
+      "lengthMiles": 0.4,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5978691256642,
+        "longitude": -117.792490604062
+      }
+    },
+    {
+      "trailId": "275",
+      "trailName": "UNKNOWN",
+      "lengthMiles": 0.95,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.5951289938648,
+        "longitude": -117.821227759433
+      }
+    },
+    {
+      "trailId": "287",
+      "trailName": "LITTLE SYCAMORE CANYON TRAIL",
+      "lengthMiles": 0.34,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.6164147720048,
+        "longitude": -117.771431953415
+      }
+    },
+    {
+      "trailId": "288",
+      "trailName": "MARY'S TRAIL",
+      "lengthMiles": 0.12,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.607649182035,
+        "longitude": -117.76216775647
+      }
+    },
+    {
+      "trailId": "289",
+      "trailName": "MARY'S TRAIL",
+      "lengthMiles": 0.12,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6085418421509,
+        "longitude": -117.763162205436
+      }
+    },
+    {
+      "trailId": "310",
+      "trailName": "BOMMER CANYON ROAD",
+      "lengthMiles": 0.16,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.6239467671724,
+        "longitude": -117.802897263347
+      }
+    },
+    {
+      "trailId": "312",
+      "trailName": "CANYON TRAIL",
+      "lengthMiles": 0.36,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5969251194918,
+        "longitude": -117.755445828949
+      }
+    },
+    {
+      "trailId": "313",
+      "trailName": "TO THE LAKE TRAIL",
+      "lengthMiles": 0.32,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.5972064601371,
+        "longitude": -117.760165225563
+      }
+    },
+    {
+      "trailId": "314",
+      "trailName": "MARIPOSA TRAIL",
+      "lengthMiles": 0.13,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5970221847381,
+        "longitude": -117.759181741943
+      }
+    },
+    {
+      "trailId": "315",
+      "trailName": "MARIPOSA TRAIL",
+      "lengthMiles": 0.24,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5983976958373,
+        "longitude": -117.757230299928
+      }
+    },
+    {
+      "trailId": "317",
+      "trailName": "TO THE LAKE TRAIL",
+      "lengthMiles": 0.44,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6023070441569,
+        "longitude": -117.759768201914
+      }
+    },
+    {
+      "trailId": "318",
+      "trailName": "MARIPOSA TRAIL",
+      "lengthMiles": 0.5,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.6032058694212,
+        "longitude": -117.75494410815
+      }
+    },
+    {
+      "trailId": "319",
+      "trailName": "CANYON TRAIL",
+      "lengthMiles": 0.22,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.6015356259066,
+        "longitude": -117.753561706654
+      }
+    },
+    {
+      "trailId": "320",
+      "trailName": "RIDGE TOP TRAIL",
+      "lengthMiles": 0.85,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.5954509718024,
+        "longitude": -117.752965010201
+      }
+    },
+    {
+      "trailId": "321",
+      "trailName": "BLACK JACK TRAIL",
+      "lengthMiles": 0.22,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.5942864905012,
+        "longitude": -117.756932125963
+      }
+    },
+    {
+      "trailId": "322",
+      "trailName": "BLACKJACK TRAIL",
+      "lengthMiles": 0.02,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.5933446388303,
+        "longitude": -117.755523516362
+      }
+    },
+    {
+      "trailId": "323",
+      "trailName": "EDISON TRAIL",
+      "lengthMiles": 0.04,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.6044317926392,
+        "longitude": -117.752489217692
+      }
+    },
+    {
+      "trailId": "326",
+      "trailName": "TO THE LAKE TRAIL",
+      "lengthMiles": 0.15,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6066999171356,
+        "longitude": -117.758019419716
+      }
+    },
+    {
+      "trailId": "327",
+      "trailName": "LAGUNA LAKES TRAIL",
+      "lengthMiles": 0.45,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6121883926178,
+        "longitude": -117.756414287197
+      }
+    },
+    {
+      "trailId": "328",
+      "trailName": "UNKNOWN",
+      "lengthMiles": 0.26,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6168748443253,
+        "longitude": -117.751491132562
+      }
+    },
+    {
+      "trailId": "330",
+      "trailName": "LAGUNA LAKES TRAIL",
+      "lengthMiles": 0.26,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6166291803647,
+        "longitude": -117.753396893265
+      }
+    },
+    {
+      "trailId": "332",
+      "trailName": "UNKNOWN",
+      "lengthMiles": 0.14,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6189649473103,
+        "longitude": -117.748848835921
+      }
+    },
+    {
+      "trailId": "342",
+      "trailName": "UNKNOWN",
+      "lengthMiles": 0.71,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.5897338628999,
+        "longitude": -117.813752920837
+      }
+    },
+    {
+      "trailId": "347",
+      "trailName": "Rattlesnake Road",
+      "lengthMiles": 0.13,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7338729009669,
+        "longitude": -117.724249103292
+      }
+    },
+    {
+      "trailId": "356",
+      "trailName": "Red Rock Ridge Trail",
+      "lengthMiles": 1.83,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.7554241364798,
+        "longitude": -117.678831787075
+      }
+    },
+    {
+      "trailId": "368",
+      "trailName": "Black Star Helo Pad Access",
+      "lengthMiles": 0.08,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7567163394237,
+        "longitude": -117.675269188736
+      }
+    },
+    {
+      "trailId": "375",
+      "trailName": "Ladd Overlook",
+      "lengthMiles": 0.17,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7577354489725,
+        "longitude": -117.661740045204
+      }
+    },
+    {
+      "trailId": "379",
+      "trailName": "Baker Canyon Road",
+      "lengthMiles": 0.43,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7618333759623,
+        "longitude": -117.661406360936
+      }
+    },
+    {
+      "trailId": "383",
+      "trailName": "BAKER SOUTH",
+      "lengthMiles": 0.12,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.7650923322428,
+        "longitude": -117.662786721102
+      }
+    },
+    {
+      "trailId": "385",
+      "trailName": "BAKER SOUTH",
+      "lengthMiles": 0.07,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.7642434761205,
+        "longitude": -117.662801286616
+      }
+    },
+    {
+      "trailId": "500",
+      "trailName": "Unnamed Trail",
+      "lengthMiles": 0.21,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.738914424511,
+        "longitude": -117.655511935581
+      }
+    },
+    {
+      "trailId": "501",
+      "trailName": "Unnamed Trail",
+      "lengthMiles": 0.36,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7373016888358,
+        "longitude": -117.657841696273
+      }
+    },
+    {
+      "trailId": "508",
+      "trailName": "COAL MINE SCE",
+      "lengthMiles": 0.32,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8071811528799,
+        "longitude": -117.705732230464
+      }
+    },
+    {
+      "trailId": "517",
+      "trailName": "DONALDSON'S CAMP",
+      "lengthMiles": 0.48,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.8382698230744,
+        "longitude": -117.673698994823
+      }
+    },
+    {
+      "trailId": "538",
+      "trailName": "NORTH SILMOD LOOP",
+      "lengthMiles": 0.85,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.771391570293,
+        "longitude": -117.674493348619
+      }
+    },
+    {
+      "trailId": "542",
+      "trailName": "COAL MINE SCE",
+      "lengthMiles": 0.45,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7869920411232,
+        "longitude": -117.723517871182
+      }
+    },
+    {
+      "trailId": "544",
+      "trailName": "COAL MINE SCE",
+      "lengthMiles": 0.38,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8029463034629,
+        "longitude": -117.707393692676
+      }
+    },
+    {
+      "trailId": "545",
+      "trailName": "COAL MINE SCE",
+      "lengthMiles": 0.52,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8028077887414,
+        "longitude": -117.713725819486
+      }
+    },
+    {
+      "trailId": "546",
+      "trailName": "COAL MINE SCE",
+      "lengthMiles": 0.09,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7971535311387,
+        "longitude": -117.71376397816
+      }
+    },
+    {
+      "trailId": "547",
+      "trailName": "COAL MINE SCE",
+      "lengthMiles": 0.46,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7937524353745,
+        "longitude": -117.712893738831
+      }
+    },
+    {
+      "trailId": "550",
+      "trailName": "PIPELINE T.T.",
+      "lengthMiles": 0.09,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8696928566639,
+        "longitude": -117.68787668597
+      }
+    },
+    {
+      "trailId": "552",
+      "trailName": "PIPELINE T.T.",
+      "lengthMiles": 0.05,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8710673939839,
+        "longitude": -117.687464784503
+      }
+    },
+    {
+      "trailId": "580",
+      "trailName": "WEIR CANYON TRAIL",
+      "lengthMiles": 0.12,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.8365217628272,
+        "longitude": -117.74036198465
+      }
+    },
+    {
+      "trailId": "582",
+      "trailName": "WEIR CANYON TRAIL",
+      "lengthMiles": 0.12,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.8306007958957,
+        "longitude": -117.743428245845
+      }
+    },
+    {
+      "trailId": "585",
+      "trailName": "BARHAM RIDGE TRAIL",
+      "lengthMiles": 0.87,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.8224205101877,
+        "longitude": -117.75506166328
+      }
+    },
+    {
+      "trailId": "591",
+      "trailName": "YUCCA RIDGE TRAIL",
+      "lengthMiles": 0.56,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.8232579544305,
+        "longitude": -117.759906481867
+      }
+    },
+    {
+      "trailId": "605",
+      "trailName": "BOBCAT MEADOW TRAIL",
+      "lengthMiles": 0.19,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.8189798033504,
+        "longitude": -117.766864996675
+      }
+    },
+    {
+      "trailId": "641",
+      "trailName": "Willows Trail",
+      "lengthMiles": 0.45,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8081360038138,
+        "longitude": -117.765743622621
+      }
+    },
+    {
+      "trailId": "648",
+      "trailName": "CACTUS CANYON TRAIL",
+      "lengthMiles": 0.38,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.8200606695669,
+        "longitude": -117.760552070057
+      }
+    },
+    {
+      "trailId": "653",
+      "trailName": "Horseshoe Loop Trail",
+      "lengthMiles": 1.18,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7927925942732,
+        "longitude": -117.750857790785
+      }
+    },
+    {
+      "trailId": "674",
+      "trailName": "BOX SPRINGS",
+      "lengthMiles": 0.65,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7176407498356,
+        "longitude": -117.68283902736
+      }
+    },
+    {
+      "trailId": "676",
+      "trailName": "DRIPPING SPRINGS SPUR",
+      "lengthMiles": 0.22,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7350156028241,
+        "longitude": -117.68194671416
+      }
+    },
+    {
+      "trailId": "678",
+      "trailName": "Limestone Ridge Trail",
+      "lengthMiles": 2.43,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.7403006479405,
+        "longitude": -117.670904927174
+      }
+    },
+    {
+      "trailId": "681",
+      "trailName": "Raptor Trail",
+      "lengthMiles": 0.33,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7389555336745,
+        "longitude": -117.672196221894
+      }
+    },
+    {
+      "trailId": "691",
+      "trailName": "CATTLE POND LOOP",
+      "lengthMiles": 0.26,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6990991738817,
+        "longitude": -117.651475429326
+      }
+    },
+    {
+      "trailId": "692",
+      "trailName": "VISTA LOOKOUT ROAD",
+      "lengthMiles": 0.35,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.6982987243415,
+        "longitude": -117.656215208095
+      }
+    },
+    {
+      "trailId": "693",
+      "trailName": "CACTUS HILL TRAIL",
+      "lengthMiles": 0.51,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.6945751975301,
+        "longitude": -117.636940094428
+      }
+    },
+    {
+      "trailId": "698",
+      "trailName": "VULTURE VIEW ROAD",
+      "lengthMiles": 0.54,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.691914299114,
+        "longitude": -117.630858336729
+      }
+    },
+    {
+      "trailId": "699",
+      "trailName": "SANTIAGO RANCH ROAD",
+      "lengthMiles": 0.31,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.6913587593682,
+        "longitude": -117.632770826087
+      }
+    },
+    {
+      "trailId": "730",
+      "trailName": "Cactus Point Trail",
+      "lengthMiles": 0.49,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7818540700115,
+        "longitude": -117.763977058259
+      }
+    },
+    {
+      "trailId": "736",
+      "trailName": "Gnatcatcher Trail",
+      "lengthMiles": 0.26,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7752417409615,
+        "longitude": -117.762186890203
+      }
+    },
+    {
+      "trailId": "743",
+      "trailName": "Eucalyptus Trail",
+      "lengthMiles": 0.25,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.760044349893,
+        "longitude": -117.76963603106
+      }
+    },
+    {
+      "trailId": "781",
+      "trailName": "LYNX TRAIL",
+      "lengthMiles": 0.56,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.579351681496,
+        "longitude": -117.750072824508
+      }
+    },
+    {
+      "trailId": "783",
+      "trailName": "ROCK-IT TRAIL",
+      "lengthMiles": 1.06,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.5678538766151,
+        "longitude": -117.750797335638
+      }
+    },
+    {
+      "trailId": "792",
+      "trailName": "STAIR STEP TRAIL",
+      "lengthMiles": 0.41,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.5807349716624,
+        "longitude": -117.758234544235
+      }
+    },
+    {
+      "trailId": "793",
+      "trailName": "Park Avenue Trail",
+      "lengthMiles": 0.43,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.5509940627358,
+        "longitude": -117.763538346594
+      }
+    },
+    {
+      "trailId": "794",
+      "trailName": "Aswut Trail",
+      "lengthMiles": 0.89,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.5331920656513,
+        "longitude": -117.753590237028
+      }
+    },
+    {
+      "trailId": "806",
+      "trailName": "Aliso Creek East Trail",
+      "lengthMiles": 3.05,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.5420097475442,
+        "longitude": -117.730037233762
+      }
+    },
+    {
+      "trailId": "812",
+      "trailName": "Meadows Trail",
+      "lengthMiles": 1.46,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.539307102797,
+        "longitude": -117.746837342234
+      }
+    },
+    {
+      "trailId": "814",
+      "trailName": "Unnamed Trail",
+      "lengthMiles": 0.35,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.5349790031749,
+        "longitude": -117.752752018344
+      }
+    },
+    {
+      "trailId": "820",
+      "trailName": "Toovet Trail",
+      "lengthMiles": 0.25,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.5088022923195,
+        "longitude": -117.743645464021
+      }
+    },
+    {
+      "trailId": "821",
+      "trailName": "Valido Trail",
+      "lengthMiles": 0.41,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5089758281107,
+        "longitude": -117.741476498731
+      }
+    },
+    {
+      "trailId": "840",
+      "trailName": "LAUREL CANYON TRAIL",
+      "lengthMiles": 1.21,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5914017879646,
+        "longitude": -117.76884183346
+      }
+    },
+    {
+      "trailId": "850",
+      "trailName": "OLD EMERALD TRAIL",
+      "lengthMiles": 0.68,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.57589567254,
+        "longitude": -117.782566055279
+      }
+    },
+    {
+      "trailId": "852",
+      "trailName": "FENCELINE TRAIL",
+      "lengthMiles": 0.1,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.5959708163702,
+        "longitude": -117.78980928062
+      }
+    },
+    {
+      "trailId": "853",
+      "trailName": "MORO CANYON",
+      "lengthMiles": 0.01,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5965412784282,
+        "longitude": -117.788678744518
+      }
+    },
+    {
+      "trailId": "854",
+      "trailName": "FENCELINE TRAIL",
+      "lengthMiles": 0.09,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.5990500648678,
+        "longitude": -117.794616419832
+      }
+    },
+    {
+      "trailId": "860",
+      "trailName": "STAGECOACH SOUTH TRAIL",
+      "lengthMiles": 1.14,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5727139685913,
+        "longitude": -117.763345189814
+      }
+    },
+    {
+      "trailId": "887",
+      "trailName": "BAKER SOUTH",
+      "lengthMiles": 0.13,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7618106060573,
+        "longitude": -117.674771867065
+      }
+    },
+    {
+      "trailId": "912",
+      "trailName": "LITTLE SYCAMORE CANYON TRAIL",
+      "lengthMiles": 0.17,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.6138123886454,
+        "longitude": -117.769889633462
+      }
+    },
+    {
+      "trailId": "913",
+      "trailName": "STAGECOACH NORTH TRAIL",
+      "lengthMiles": 0.14,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6143865374264,
+        "longitude": -117.761165779021
+      }
+    },
+    {
+      "trailId": "915",
+      "trailName": "MARY'S TRAIL",
+      "lengthMiles": 0.11,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6081522314293,
+        "longitude": -117.762994059611
+      }
+    },
+    {
+      "trailId": "916",
+      "trailName": "Park Avenue Trail",
+      "lengthMiles": 0.45,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.5541552367643,
+        "longitude": -117.762365071019
+      }
+    },
+    {
+      "trailId": "941",
+      "trailName": "LITTLE SYCAMORE CANYON TRAIL",
+      "lengthMiles": 0.43,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.6098875192637,
+        "longitude": -117.767966210021
+      }
+    },
+    {
+      "trailId": "942",
+      "trailName": "STAGECOACH NORTH TRAIL",
+      "lengthMiles": 0.32,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6119475039807,
+        "longitude": -117.760113365626
+      }
+    },
+    {
+      "trailId": "943",
+      "trailName": "CAMARILLO CANYON TRAIL",
+      "lengthMiles": 0.58,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.6001566846668,
+        "longitude": -117.767032073974
+      }
+    },
+    {
+      "trailId": "991",
+      "trailName": "DONALDSON'S CAMP",
+      "lengthMiles": 0.84,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8309450788606,
+        "longitude": -117.673179609742
+      }
+    },
+    {
+      "trailId": "992",
+      "trailName": "WINDY RIDGE ROAD",
+      "lengthMiles": 1.01,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8330127876751,
+        "longitude": -117.735187420611
+      }
+    },
+    {
+      "trailId": "993",
+      "trailName": "MWD ACCESS ROAD",
+      "lengthMiles": 0.16,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8276347788653,
+        "longitude": -117.742524748786
+      }
+    },
+    {
+      "trailId": "996",
+      "trailName": "NORTH WINDY RIDGE",
+      "lengthMiles": 0.72,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8246573170469,
+        "longitude": -117.709291558924
+      }
+    },
+    {
+      "trailId": "1009",
+      "trailName": "BLACK STAR SCE",
+      "lengthMiles": 7.57,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.8097069989315,
+        "longitude": -117.669982018972
+      }
+    },
+    {
+      "trailId": "1011",
+      "trailName": "STATE SPUR ROAD",
+      "lengthMiles": 0.2,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7927542899438,
+        "longitude": -117.682939549892
+      }
+    },
+    {
+      "trailId": "1025",
+      "trailName": "Limestone Canyon Trail",
+      "lengthMiles": 3.88,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.7391991295484,
+        "longitude": -117.674057208109
+      }
+    },
+    {
+      "trailId": "1030",
+      "trailName": "MARKEL SPUR",
+      "lengthMiles": 0.43,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7201398508299,
+        "longitude": -117.658955536437
+      }
+    },
+    {
+      "trailId": "1032",
+      "trailName": "HANGMANS TREE ROAD",
+      "lengthMiles": 0.85,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.719779099738,
+        "longitude": -117.652158502899
+      }
+    },
+    {
+      "trailId": "1037",
+      "trailName": "LIMESTONE RIDGE RD.",
+      "lengthMiles": 0.12,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7126329315229,
+        "longitude": -117.650479464481
+      }
+    },
+    {
+      "trailId": "1038",
+      "trailName": "LIMESTONE RIDGE RD.",
+      "lengthMiles": 0.29,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7125745841397,
+        "longitude": -117.654783515702
+      }
+    },
+    {
+      "trailId": "1042",
+      "trailName": "Limestone Ridge Road",
+      "lengthMiles": 0.06,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7089013194286,
+        "longitude": -117.656072498695
+      }
+    },
+    {
+      "trailId": "1043",
+      "trailName": "Limestone Ridge Road",
+      "lengthMiles": 0.08,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7088851897152,
+        "longitude": -117.656435481893
+      }
+    },
+    {
+      "trailId": "1044",
+      "trailName": "BOLERO REPEATER",
+      "lengthMiles": 0.42,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7086985382492,
+        "longitude": -117.653539192792
+      }
+    },
+    {
+      "trailId": "1045",
+      "trailName": "BOLERO LOOKOUT ROAD",
+      "lengthMiles": 0.14,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7076426025318,
+        "longitude": -117.65539130372
+      }
+    },
+    {
+      "trailId": "1046",
+      "trailName": "BOLERO LOOKOUT ROAD",
+      "lengthMiles": 0.86,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7066808067224,
+        "longitude": -117.647383316965
+      }
+    },
+    {
+      "trailId": "1047",
+      "trailName": "WHITING SPUR ROAD",
+      "lengthMiles": 0.36,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.6981191208837,
+        "longitude": -117.639443382697
+      }
+    },
+    {
+      "trailId": "1049",
+      "trailName": "AGUA CHINON",
+      "lengthMiles": 2.36,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.7061818457125,
+        "longitude": -117.675975174733
+      }
+    },
+    {
+      "trailId": "1050",
+      "trailName": "WHITING ROAD",
+      "lengthMiles": 0.63,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.6915282837365,
+        "longitude": -117.635880325677
+      }
+    },
+    {
+      "trailId": "1052",
+      "trailName": "CONCOURSE ROAD",
+      "lengthMiles": 0.49,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.6880810535222,
+        "longitude": -117.63175590639
+      }
+    },
+    {
+      "trailId": "1053",
+      "trailName": "EDISON ROAD",
+      "lengthMiles": 1.08,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6908200051062,
+        "longitude": -117.641181587698
+      }
+    },
+    {
+      "trailId": "1070",
+      "trailName": "SLOW & EASY",
+      "lengthMiles": 0.13,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.5964011206709,
+        "longitude": -117.790176904182
+      }
+    },
+    {
+      "trailId": "1074",
+      "trailName": "Oso Trail",
+      "lengthMiles": 5.08,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.5943207284122,
+        "longitude": -117.540650774377
+      }
+    },
+    {
+      "trailId": "1079",
+      "trailName": "BELL RIDGE RD",
+      "lengthMiles": 0.55,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.595066661522,
+        "longitude": -117.577401984035
+      }
+    },
+    {
+      "trailId": "1081",
+      "trailName": "BOMMER SPUR",
+      "lengthMiles": 0.19,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5906210587292,
+        "longitude": -117.77703168488
+      }
+    },
+    {
+      "trailId": "1082",
+      "trailName": "WILLOW CANYON ROAD",
+      "lengthMiles": 0.1,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.5896547700618,
+        "longitude": -117.776061211963
+      }
+    },
+    {
+      "trailId": "1090",
+      "trailName": "WILLOW CANYON ROAD",
+      "lengthMiles": 1.49,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.5867390690682,
+        "longitude": -117.767489289092
+      }
+    },
+    {
+      "trailId": "1104",
+      "trailName": "COUGAR PASS",
+      "lengthMiles": 0.82,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.570825265053,
+        "longitude": -117.559497774023
+      }
+    },
+    {
+      "trailId": "1106",
+      "trailName": "BOMMER RIDGE ROAD",
+      "lengthMiles": 3.75,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5903561868098,
+        "longitude": -117.777424726065
+      }
+    },
+    {
+      "trailId": "1112",
+      "trailName": "SUN RISE TRAIL",
+      "lengthMiles": 0.53,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5658468327096,
+        "longitude": -117.560887541382
+      }
+    },
+    {
+      "trailId": "1113",
+      "trailName": "East Ridge Trail",
+      "lengthMiles": 2.8,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5615436221568,
+        "longitude": -117.55764723115
+      }
+    },
+    {
+      "trailId": "1125",
+      "trailName": "BELL CANYON TRAIL",
+      "lengthMiles": 2.68,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.5695489519665,
+        "longitude": -117.566129973479
+      }
+    },
+    {
+      "trailId": "1135",
+      "trailName": "SCE 1",
+      "lengthMiles": 0.62,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.7617046242294,
+        "longitude": -117.665683502349
+      }
+    },
+    {
+      "trailId": "1136",
+      "trailName": "Baker South",
+      "lengthMiles": 0.11,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7611973762054,
+        "longitude": -117.673002763187
+      }
+    },
+    {
+      "trailId": "1138",
+      "trailName": "Blackstar Helo Pad Road",
+      "lengthMiles": 1.21,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7536498359951,
+        "longitude": -117.668567223294
+      }
+    },
+    {
+      "trailId": "1139",
+      "trailName": "Hall Canyon Trail",
+      "lengthMiles": 1.56,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7540106387069,
+        "longitude": -117.660322415394
+      }
+    },
+    {
+      "trailId": "1148",
+      "trailName": "TOWER RD.",
+      "lengthMiles": 1.68,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.9375097445861,
+        "longitude": -117.825650592424
+      }
+    },
+    {
+      "trailId": "1163",
+      "trailName": "SAND TRAP",
+      "lengthMiles": 1.53,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.7425456198815,
+        "longitude": -117.693471144925
+      }
+    },
+    {
+      "trailId": "1165",
+      "trailName": "Westridge Trail",
+      "lengthMiles": 7.23,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.6016882645052,
+        "longitude": -117.595304173461
+      }
+    },
+    {
+      "trailId": "1167",
+      "trailName": "BURMA RD.",
+      "lengthMiles": 0.99,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.5659015535317,
+        "longitude": -117.605942740603
+      }
+    },
+    {
+      "trailId": "1188",
+      "trailName": "MUDDY CANYON",
+      "lengthMiles": 0.79,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.5844994276691,
+        "longitude": -117.816228025974
+      }
+    },
+    {
+      "trailId": "1210",
+      "trailName": "CACTUS CANYON",
+      "lengthMiles": 0.48,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7222537574516,
+        "longitude": -117.665427668636
+      }
+    },
+    {
+      "trailId": "1232",
+      "trailName": "Jeffery Road",
+      "lengthMiles": 1.59,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.723577384502,
+        "longitude": -117.728542750542
+      }
+    },
+    {
+      "trailId": "1261",
+      "trailName": "SEAWATCH TRAIL",
+      "lengthMiles": 0.75,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.5919545299221,
+        "longitude": -117.819464006298
+      }
+    },
+    {
+      "trailId": "1288",
+      "trailName": "EDISON TRAIL",
+      "lengthMiles": 0.57,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.6075603580212,
+        "longitude": -117.752697197029
+      }
+    },
+    {
+      "trailId": "1293",
+      "trailName": "BARBARA'S LAKE TRAIL",
+      "lengthMiles": 0.32,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6089102949621,
+        "longitude": -117.756116574039
+      }
+    },
+    {
+      "trailId": "1296",
+      "trailName": "STAGECOACH NORTH TRAIL",
+      "lengthMiles": 0.22,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6172443239849,
+        "longitude": -117.762354819816
+      }
+    },
+    {
+      "trailId": "1297",
+      "trailName": "STAGECOACH NORTH TRAIL",
+      "lengthMiles": 0.32,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6213437226972,
+        "longitude": -117.762636428264
+      }
+    },
+    {
+      "trailId": "1302",
+      "trailName": "WEST CANYON TRAIL",
+      "lengthMiles": 0.1,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6224930477796,
+        "longitude": -117.763400987816
+      }
+    },
+    {
+      "trailId": "1304",
+      "trailName": "WEST CANYON TRAIL",
+      "lengthMiles": 0.34,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.624085042072,
+        "longitude": -117.764314456772
+      }
+    },
+    {
+      "trailId": "1308",
+      "trailName": "STAGECOACH NORTH TRAIL",
+      "lengthMiles": 0.36,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6248178548851,
+        "longitude": -117.762488304643
+      }
+    },
+    {
+      "trailId": "1313",
+      "trailName": "LIMESTONE SPUR",
+      "lengthMiles": 0.24,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7514296291169,
+        "longitude": -117.684658399447
+      }
+    },
+    {
+      "trailId": "1314",
+      "trailName": "ROUND CANYON",
+      "lengthMiles": 2.0,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.7044148642778,
+        "longitude": -117.694325921752
+      }
+    },
+    {
+      "trailId": "1316",
+      "trailName": "UNKNOWN",
+      "lengthMiles": 1.03,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.6542289438278,
+        "longitude": -117.79105043468
+      }
+    },
+    {
+      "trailId": "1320",
+      "trailName": "Mathis Trail",
+      "lengthMiles": 1.4,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.56254953748,
+        "longitude": -117.750312628287
+      }
+    },
+    {
+      "trailId": "1326",
+      "trailName": "CAR WRECK TRAIL",
+      "lengthMiles": 0.58,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.5608798861542,
+        "longitude": -117.75300066548
+      }
+    },
+    {
+      "trailId": "1333",
+      "trailName": "CAVE ROCK",
+      "lengthMiles": 0.24,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.544286778043,
+        "longitude": -117.739960454179
+      }
+    },
+    {
+      "trailId": "1336",
+      "trailName": "KINDERGARTENS",
+      "lengthMiles": 0.02,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.5450481439774,
+        "longitude": -117.740593703732
+      }
+    },
+    {
+      "trailId": "1349",
+      "trailName": "Mentally Sensitive",
+      "lengthMiles": 0.65,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.5310813426448,
+        "longitude": -117.748103083253
+      }
+    },
+    {
+      "trailId": "1383",
+      "trailName": "5 OAKS TRAIL",
+      "lengthMiles": 0.69,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.5700816133592,
+        "longitude": -117.74314567338
+      }
+    },
+    {
+      "trailId": "1384",
+      "trailName": "ALWUT TRAIL",
+      "lengthMiles": 0.21,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.5601759972251,
+        "longitude": -117.740781562429
+      }
+    },
+    {
+      "trailId": "1386",
+      "trailName": "NATURE LOOP TRAIL",
+      "lengthMiles": 0.61,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.5587826577545,
+        "longitude": -117.744020797668
+      }
+    },
+    {
+      "trailId": "1464",
+      "trailName": "WOOD CREEK TRAIL",
+      "lengthMiles": 0.47,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.5723943586224,
+        "longitude": -117.74891193554
+      }
+    },
+    {
+      "trailId": "1515",
+      "trailName": "Westridge Trail",
+      "lengthMiles": 0.24,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.582923681279,
+        "longitude": -117.747541789421
+      }
+    },
+    {
+      "trailId": "1516",
+      "trailName": "DRIPPING CAVE TRAIL",
+      "lengthMiles": 0.71,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.5545336183527,
+        "longitude": -117.744688850524
+      }
+    },
+    {
+      "trailId": "1523",
+      "trailName": "HUNWUT TRAIL",
+      "lengthMiles": 0.47,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.559413358934,
+        "longitude": -117.737957410948
+      }
+    },
+    {
+      "trailId": "1526",
+      "trailName": "Cholla Trail",
+      "lengthMiles": 0.38,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.5819789385659,
+        "longitude": -117.747695816634
+      }
+    },
+    {
+      "trailId": "1527",
+      "trailName": "OAK GROVE TRAIL",
+      "lengthMiles": 0.28,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.5575370119753,
+        "longitude": -117.748100907837
+      }
+    },
+    {
+      "trailId": "1532",
+      "trailName": "WAGON WHEEL CANYON TRAIL",
+      "lengthMiles": 0.96,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.5793705356284,
+        "longitude": -117.593307100695
+      }
+    },
+    {
+      "trailId": "1536",
+      "trailName": "Entrance Road",
+      "lengthMiles": 0.16,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.5731314040744,
+        "longitude": -117.591965445258
+      }
+    },
+    {
+      "trailId": "1537",
+      "trailName": "Parking Lot Access",
+      "lengthMiles": 0.12,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.5723652415775,
+        "longitude": -117.593362722806
+      }
+    },
+    {
+      "trailId": "1542",
+      "trailName": "VISTA RIDGE TRAIL",
+      "lengthMiles": 0.93,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5751131540567,
+        "longitude": -117.598886542947
+      }
+    },
+    {
+      "trailId": "1543",
+      "trailName": "OAK CANYON TRAIL",
+      "lengthMiles": 1.03,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.575136722757,
+        "longitude": -117.600957111069
+      }
+    },
+    {
+      "trailId": "1545",
+      "trailName": "HORNED TOAD TRAIL",
+      "lengthMiles": 0.39,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5739215285892,
+        "longitude": -117.602604984446
+      }
+    },
+    {
+      "trailId": "1546",
+      "trailName": "SYCAMORE LOOP",
+      "lengthMiles": 0.26,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.569191974727,
+        "longitude": -117.597147874898
+      }
+    },
+    {
+      "trailId": "1548",
+      "trailName": "MULE DEER TRAIL",
+      "lengthMiles": 0.57,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.5752177607455,
+        "longitude": -117.596992967369
+      }
+    },
+    {
+      "trailId": "1549",
+      "trailName": "PHEASANT RUN TRAIL",
+      "lengthMiles": 0.44,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.576652923233,
+        "longitude": -117.595451116069
+      }
+    },
+    {
+      "trailId": "1561",
+      "trailName": "BORREGO TRAIL",
+      "lengthMiles": 1.48,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6910578991496,
+        "longitude": -117.656217336161
+      }
+    },
+    {
+      "trailId": "1562",
+      "trailName": "Borrego Trail",
+      "lengthMiles": 0.02,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.6815510546115,
+        "longitude": -117.664564369886
+      }
+    },
+    {
+      "trailId": "1563",
+      "trailName": "WATER TANK ROAD",
+      "lengthMiles": 1.08,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6968734954634,
+        "longitude": -117.645800560683
+      }
+    },
+    {
+      "trailId": "1564",
+      "trailName": "DREADED HILL ROAD",
+      "lengthMiles": 1.23,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.6878651083338,
+        "longitude": -117.6440751523
+      }
+    },
+    {
+      "trailId": "1572",
+      "trailName": "BILLY GOAT TRAIL",
+      "lengthMiles": 0.72,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.6998095241443,
+        "longitude": -117.643745863233
+      }
+    },
+    {
+      "trailId": "1573",
+      "trailName": "SAGE SCRUB TRAIL",
+      "lengthMiles": 0.21,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.6893035712246,
+        "longitude": -117.633166378268
+      }
+    },
+    {
+      "trailId": "1574",
+      "trailName": "SLEEPY HOLLOW TRAIL",
+      "lengthMiles": 0.29,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.6906515832708,
+        "longitude": -117.63416127354
+      }
+    },
+    {
+      "trailId": "1575",
+      "trailName": "LINE SHACK ROAD",
+      "lengthMiles": 1.04,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.6835365321002,
+        "longitude": -117.641778708847
+      }
+    },
+    {
+      "trailId": "1576",
+      "trailName": "SERRANO COW TRAIL",
+      "lengthMiles": 0.42,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6844037958979,
+        "longitude": -117.64217534757
+      }
+    },
+    {
+      "trailId": "1578",
+      "trailName": "COYOTE BRUSH ROAD",
+      "lengthMiles": 1.06,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.6800680842978,
+        "longitude": -117.640053600046
+      }
+    },
+    {
+      "trailId": "1582",
+      "trailName": "GRAVEL TRAIL",
+      "lengthMiles": 0.17,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6569513784267,
+        "longitude": -117.815614219241
+      }
+    },
+    {
+      "trailId": "1589",
+      "trailName": "DUSTY TRAIL",
+      "lengthMiles": 0.37,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.654658986846,
+        "longitude": -117.821583626898
+      }
+    },
+    {
+      "trailId": "1592",
+      "trailName": "MARSH TRAIL",
+      "lengthMiles": 0.35,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6547595812284,
+        "longitude": -117.825124855584
+      }
+    },
+    {
+      "trailId": "1600",
+      "trailName": "MARY'S TRAIL",
+      "lengthMiles": 0.17,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.607728948282,
+        "longitude": -117.763197979267
+      }
+    },
+    {
+      "trailId": "1601",
+      "trailName": "MARY'S TRAIL",
+      "lengthMiles": 0.22,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6084948131629,
+        "longitude": -117.759736198324
+      }
+    },
+    {
+      "trailId": "1603",
+      "trailName": "STAGECOACH NORTH TRAIL",
+      "lengthMiles": 0.05,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6184567922733,
+        "longitude": -117.762347652447
+      }
+    },
+    {
+      "trailId": "2416",
+      "trailName": "GNATCATCHER TRAIL",
+      "lengthMiles": 0.06,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.772967461532,
+        "longitude": -117.761801561684
+      }
+    },
+    {
+      "trailId": "2419",
+      "trailName": "Scout Trail",
+      "lengthMiles": 0.19,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7665764518948,
+        "longitude": -117.767732208789
+      }
+    },
+    {
+      "trailId": "2420",
+      "trailName": "Peters Canyon Creek Nature Trail",
+      "lengthMiles": 0.0,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.7690030485045,
+        "longitude": -117.766503812239
+      }
+    },
+    {
+      "trailId": "2421",
+      "trailName": "Willow Trail",
+      "lengthMiles": 0.0,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.7839733857369,
+        "longitude": -117.760035544207
+      }
+    },
+    {
+      "trailId": "2422",
+      "trailName": "OLD EMERALD FALLS TRAIL",
+      "lengthMiles": 0.78,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.5808176304848,
+        "longitude": -117.78415564952
+      }
+    },
+    {
+      "trailId": "2823",
+      "trailName": "LAGUNA LAKES TRAIL",
+      "lengthMiles": 0.18,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6186502425397,
+        "longitude": -117.756102738017
+      }
+    },
+    {
+      "trailId": "2824",
+      "trailName": "LAGUNA LAKES TRAIL",
+      "lengthMiles": 0.42,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.616302283506,
+        "longitude": -117.75811896538
+      }
+    },
+    {
+      "trailId": "2828",
+      "trailName": "LAGUNA LAKES TRAIL",
+      "lengthMiles": 0.02,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6157196512641,
+        "longitude": -117.752447645992
+      }
+    },
+    {
+      "trailId": "2830",
+      "trailName": "BLACK JACK TRAIL",
+      "lengthMiles": 0.21,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5953678821904,
+        "longitude": -117.757911177942
+      }
+    },
+    {
+      "trailId": "2832",
+      "trailName": "CANYON TRAIL",
+      "lengthMiles": 0.26,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.604088985769,
+        "longitude": -117.752236034484
+      }
+    },
+    {
+      "trailId": "2833",
+      "trailName": "SUNFLOWER TRAIL",
+      "lengthMiles": 0.37,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.601547235264,
+        "longitude": -117.758465020828
+      }
+    },
+    {
+      "trailId": "3212",
+      "trailName": "BARBARA'S LAKE TRAIL",
+      "lengthMiles": 0.01,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6080462360794,
+        "longitude": -117.759937150195
+      }
+    },
+    {
+      "trailId": "3220",
+      "trailName": "LAGUNA LAKES TRAIL",
+      "lengthMiles": 0.18,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6145785646647,
+        "longitude": -117.751884245413
+      }
+    },
+    {
+      "trailId": "3622",
+      "trailName": "Pawfoot Trail",
+      "lengthMiles": 1.13,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6531718327815,
+        "longitude": -117.598238175687
+      }
+    },
+    {
+      "trailId": "3623",
+      "trailName": "EDNA SPAULDING TRAIL",
+      "lengthMiles": 0.77,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.6546912432966,
+        "longitude": -117.607439510164
+      }
+    },
+    {
+      "trailId": "3627",
+      "trailName": "VISTA TRAIL",
+      "lengthMiles": 0.66,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.6668761375872,
+        "longitude": -117.605819785661
+      }
+    },
+    {
+      "trailId": "3628",
+      "trailName": "HOFFMAN HOMESTEAD TRAIL",
+      "lengthMiles": 1.5,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6613729376037,
+        "longitude": -117.603571488827
+      }
+    },
+    {
+      "trailId": "3629",
+      "trailName": "Coyote Canyon Trail",
+      "lengthMiles": 1.02,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6572180974733,
+        "longitude": -117.603162445813
+      }
+    },
+    {
+      "trailId": "3631",
+      "trailName": "HOFFMAN HOMESTEAD TRAIL",
+      "lengthMiles": 0.38,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6564371849871,
+        "longitude": -117.60327396588
+      }
+    },
+    {
+      "trailId": "3632",
+      "trailName": "RACCOON TRAIL",
+      "lengthMiles": 0.12,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6569142809623,
+        "longitude": -117.601671483667
+      }
+    },
+    {
+      "trailId": "3636",
+      "trailName": "Mesa Trail",
+      "lengthMiles": 1.01,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6526081937119,
+        "longitude": -117.594263721256
+      }
+    },
+    {
+      "trailId": "3638",
+      "trailName": "ARIZONA CROSSING TRAIL",
+      "lengthMiles": 0.04,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.822118253746,
+        "longitude": -117.773339617923
+      }
+    },
+    {
+      "trailId": "3641",
+      "trailName": "SCE ROAD",
+      "lengthMiles": 0.06,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8213506762189,
+        "longitude": -117.774186157437
+      }
+    },
+    {
+      "trailId": "3645",
+      "trailName": "LADY BUG TRAIL",
+      "lengthMiles": 0.04,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.8221813930835,
+        "longitude": -117.773699214018
+      }
+    },
+    {
+      "trailId": "3646",
+      "trailName": "SOUR GRASS TRAIL",
+      "lengthMiles": 0.1,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.8205233838102,
+        "longitude": -117.770950875034
+      }
+    },
+    {
+      "trailId": "3662",
+      "trailName": "DEER TRAIL",
+      "lengthMiles": 0.98,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.8217176017765,
+        "longitude": -117.750512093915
+      }
+    },
+    {
+      "trailId": "3668",
+      "trailName": "Lookout",
+      "lengthMiles": 0.05,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8167642141043,
+        "longitude": -117.760394356695
+      }
+    },
+    {
+      "trailId": "3696",
+      "trailName": "Puma Ridge Trail",
+      "lengthMiles": 0.89,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.7918384170182,
+        "longitude": -117.751872613816
+      }
+    },
+    {
+      "trailId": "3712",
+      "trailName": "NATURE LOOP TRAIL",
+      "lengthMiles": 0.92,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.5523283663406,
+        "longitude": -117.56392971791
+      }
+    },
+    {
+      "trailId": "3713",
+      "trailName": "OAK TRAIL",
+      "lengthMiles": 0.53,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.5544938458491,
+        "longitude": -117.566008803903
+      }
+    },
+    {
+      "trailId": "3714",
+      "trailName": "DICK LOSKORN TRAIL",
+      "lengthMiles": 0.6,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5528255270704,
+        "longitude": -117.569271179492
+      }
+    },
+    {
+      "trailId": "3716",
+      "trailName": "PINHEAD PEAK TRAIL",
+      "lengthMiles": 0.27,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.5455127328227,
+        "longitude": -117.562421717669
+      }
+    },
+    {
+      "trailId": "3717",
+      "trailName": "PINHEAD PEAK TRAIL",
+      "lengthMiles": 0.73,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.5405387662772,
+        "longitude": -117.562816531962
+      }
+    },
+    {
+      "trailId": "3718",
+      "trailName": "Quail Run Trail",
+      "lengthMiles": 0.41,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5511741161479,
+        "longitude": -117.559974018304
+      }
+    },
+    {
+      "trailId": "3719",
+      "trailName": "EAST FLATS TRAIL",
+      "lengthMiles": 0.7,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.546920363138,
+        "longitude": -117.556171686803
+      }
+    },
+    {
+      "trailId": "3721",
+      "trailName": "EAST FLATS TRAIL",
+      "lengthMiles": 0.24,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5400477003359,
+        "longitude": -117.554737921154
+      }
+    },
+    {
+      "trailId": "3722",
+      "trailName": "JUANENO TRAIL",
+      "lengthMiles": 3.25,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.5640490635554,
+        "longitude": -117.548547787885
+      }
+    },
+    {
+      "trailId": "3727",
+      "trailName": "San Juan Creek Trail",
+      "lengthMiles": 3.66,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.5576939589032,
+        "longitude": -117.548864890567
+      }
+    },
+    {
+      "trailId": "3730",
+      "trailName": "COLD SPRINGS TRAIL",
+      "lengthMiles": 1.08,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5919948626547,
+        "longitude": -117.524579447096
+      }
+    },
+    {
+      "trailId": "3731",
+      "trailName": "SITTON PEAK TRAIL",
+      "lengthMiles": 1.67,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5830250890044,
+        "longitude": -117.515672265886
+      }
+    },
+    {
+      "trailId": "3758",
+      "trailName": "WEST RIDGE ROAD",
+      "lengthMiles": 0.01,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.5836608620022,
+        "longitude": -117.749824865187
+      }
+    },
+    {
+      "trailId": "3768",
+      "trailName": "Limestone Ridge Road",
+      "lengthMiles": 0.83,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.7139677418715,
+        "longitude": -117.656204504199
+      }
+    },
+    {
+      "trailId": "3776",
+      "trailName": "SCE 2",
+      "lengthMiles": 0.32,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.770904356511,
+        "longitude": -117.671491557711
+      }
+    },
+    {
+      "trailId": "3781",
+      "trailName": "Silverado Creek Trail",
+      "lengthMiles": 0.87,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7524515226627,
+        "longitude": -117.669811257285
+      }
+    },
+    {
+      "trailId": "3792",
+      "trailName": "Fire Road",
+      "lengthMiles": 0.69,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.914572141947,
+        "longitude": -117.838958663104
+      }
+    },
+    {
+      "trailId": "3794",
+      "trailName": "Coyote Pass",
+      "lengthMiles": 0.08,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.9174410908589,
+        "longitude": -117.837134683842
+      }
+    },
+    {
+      "trailId": "4192",
+      "trailName": "OLD EMERALD FALLS TRAIL",
+      "lengthMiles": 0.26,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.5873543157974,
+        "longitude": -117.783197909732
+      }
+    },
+    {
+      "trailId": "6676",
+      "trailName": "RANCHO CARILLO ROAD",
+      "lengthMiles": 6.24,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.5574501765774,
+        "longitude": -117.515148761355
+      }
+    },
+    {
+      "trailId": "7161",
+      "trailName": "Anaheim Coves Trail",
+      "lengthMiles": 1.37,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8284726644205,
+        "longitude": -117.871317732103
+      }
+    },
+    {
+      "trailId": "7174",
+      "trailName": "BROGANS TRAIL",
+      "lengthMiles": 0.39,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8953076022618,
+        "longitude": -117.974202133398
+      }
+    },
+    {
+      "trailId": "7177",
+      "trailName": "Brogans Trail",
+      "lengthMiles": 0.58,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8917562247348,
+        "longitude": -117.980357694219
+      }
+    },
+    {
+      "trailId": "7178",
+      "trailName": "Emery Trail",
+      "lengthMiles": 0.37,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8974800656842,
+        "longitude": -117.982127628722
+      }
+    },
+    {
+      "trailId": "7499",
+      "trailName": "Brogans Trail",
+      "lengthMiles": 0.34,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8940433343819,
+        "longitude": -117.977003651869
+      }
+    },
+    {
+      "trailId": "7918",
+      "trailName": "Carbon Canyon Nature Trail",
+      "lengthMiles": 0.75,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.9202433112954,
+        "longitude": -117.831274235581
+      }
+    },
+    {
+      "trailId": "7940",
+      "trailName": "WAGON WHEEL TRAIL",
+      "lengthMiles": 0.59,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.5877338383239,
+        "longitude": -117.595019463261
+      }
+    },
+    {
+      "trailId": "8319",
+      "trailName": "Redwood Trail",
+      "lengthMiles": 0.54,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.9153203548478,
+        "longitude": -117.837497788385
+      }
+    },
+    {
+      "trailId": "8320",
+      "trailName": "Service Road",
+      "lengthMiles": 0.6,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.9183163146865,
+        "longitude": -117.840064954935
+      }
+    },
+    {
+      "trailId": "8321",
+      "trailName": "Telegraph Trail",
+      "lengthMiles": 0.11,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.9209372368051,
+        "longitude": -117.828350093694
+      }
+    },
+    {
+      "trailId": "8329",
+      "trailName": "BOMMER MEADOW",
+      "lengthMiles": 0.49,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.6261454862665,
+        "longitude": -117.80562137555
+      }
+    },
+    {
+      "trailId": "8332",
+      "trailName": "NATURE LOOP",
+      "lengthMiles": 0.65,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.6204305537442,
+        "longitude": -117.803844394565
+      }
+    },
+    {
+      "trailId": "8769",
+      "trailName": "BARBARA'S LAKE TRAIL",
+      "lengthMiles": 0.15,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6074963276968,
+        "longitude": -117.759487245517
+      }
+    },
+    {
+      "trailId": "9187",
+      "trailName": "BAKER SINGLE TRACK",
+      "lengthMiles": 0.97,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7563273456993,
+        "longitude": -117.668391783706
+      }
+    },
+    {
+      "trailId": "9217",
+      "trailName": "Newport Dunes Trail",
+      "lengthMiles": 0.66,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.6139134242627,
+        "longitude": -117.894209718877
+      }
+    },
+    {
+      "trailId": "9586",
+      "trailName": "HORSESHOE LOOP TRAIL",
+      "lengthMiles": 0.41,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.795853956325,
+        "longitude": -117.740376215075
+      }
+    },
+    {
+      "trailId": "9986",
+      "trailName": "BAKER SOUTH",
+      "lengthMiles": 0.07,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7726643300691,
+        "longitude": -117.667886441706
+      }
+    },
+    {
+      "trailId": "10427",
+      "trailName": "SHOESTRING",
+      "lengthMiles": 1.02,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.7609123424355,
+        "longitude": -117.71765962286
+      }
+    },
+    {
+      "trailId": "10428",
+      "trailName": "Hicks Canyon Haul Road",
+      "lengthMiles": 0.24,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.7571088221808,
+        "longitude": -117.702386415323
+      }
+    },
+    {
+      "trailId": "10430",
+      "trailName": "SHOESTRING",
+      "lengthMiles": 0.06,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.7628510384259,
+        "longitude": -117.712896503194
+      }
+    },
+    {
+      "trailId": "10438",
+      "trailName": "Trabuco Creek Bikeway",
+      "lengthMiles": 1.54,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.6299166164743,
+        "longitude": -117.620450494703
+      }
+    },
+    {
+      "trailId": "10455",
+      "trailName": "Meadows Trail",
+      "lengthMiles": 0.15,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5379099633106,
+        "longitude": -117.751983433099
+      }
+    },
+    {
+      "trailId": "10789",
+      "trailName": "Brogans Trail",
+      "lengthMiles": 0.11,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8949146126452,
+        "longitude": -117.979755255585
+      }
+    },
+    {
+      "trailId": "11189",
+      "trailName": "Silverado Truck Trail",
+      "lengthMiles": 0.91,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7387187455202,
+        "longitude": -117.661271821315
+      }
+    },
+    {
+      "trailId": "11244",
+      "trailName": "no soft trail",
+      "lengthMiles": 0.01,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8690963204904,
+        "longitude": -117.708988606719
+      }
+    },
+    {
+      "trailId": "11589",
+      "trailName": "Badger Pass",
+      "lengthMiles": 1.35,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.5820909671559,
+        "longitude": -117.541909892578
+      }
+    },
+    {
+      "trailId": "14399",
+      "trailName": "LIZARD",
+      "lengthMiles": 1.21,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.6000003379323,
+        "longitude": -117.784507779804
+      }
+    },
+    {
+      "trailId": "15196",
+      "trailName": "Pump House Road Trail",
+      "lengthMiles": 0.69,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.5412969809487,
+        "longitude": -117.54949195404
+      }
+    },
+    {
+      "trailId": "15201",
+      "trailName": "SAN JUAN CREEK TRAIL",
+      "lengthMiles": 1.14,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.5852719763284,
+        "longitude": -117.522678817469
+      }
+    },
+    {
+      "trailId": "16404",
+      "trailName": "Limestone Ridge Road",
+      "lengthMiles": 1.14,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.7054039573895,
+        "longitude": -117.663946559777
+      }
+    },
+    {
+      "trailId": "16799",
+      "trailName": "VERDUGO SPUR",
+      "lengthMiles": 1.08,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.5271080080604,
+        "longitude": -117.526557897079
+      }
+    },
+    {
+      "trailId": "16800",
+      "trailName": "VERDUGO SPUR",
+      "lengthMiles": 0.16,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.5336354429546,
+        "longitude": -117.524341309376
+      }
+    },
+    {
+      "trailId": "16801",
+      "trailName": "VERDUGO SPUR",
+      "lengthMiles": 0.49,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.5301014184418,
+        "longitude": -117.519558150688
+      }
+    },
+    {
+      "trailId": "16802",
+      "trailName": "VERDUGO SPUR",
+      "lengthMiles": 1.09,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.5393522766947,
+        "longitude": -117.52344471396
+      }
+    },
+    {
+      "trailId": "17197",
+      "trailName": "Unnamed Trail",
+      "lengthMiles": 0.28,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.4689648249297,
+        "longitude": -117.610717033735
+      }
+    },
+    {
+      "trailId": "17198",
+      "trailName": "Unnamed Trail",
+      "lengthMiles": 1.88,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.4896681391535,
+        "longitude": -117.605547388818
+      }
+    },
+    {
+      "trailId": "17199",
+      "trailName": "Unnamed Trail",
+      "lengthMiles": 1.16,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.4860254633588,
+        "longitude": -117.613157121507
+      }
+    },
+    {
+      "trailId": "17599",
+      "trailName": "UTILITY ROAD",
+      "lengthMiles": 0.12,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6214490397693,
+        "longitude": -117.761720105695
+      }
+    },
+    {
+      "trailId": "17600",
+      "trailName": "UTILITY ROAD",
+      "lengthMiles": 0.06,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6161128368583,
+        "longitude": -117.76258281783
+      }
+    },
+    {
+      "trailId": "17601",
+      "trailName": "UTILITY ROAD",
+      "lengthMiles": 0.11,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6206351143063,
+        "longitude": -117.763913495855
+      }
+    },
+    {
+      "trailId": "17602",
+      "trailName": "UTILITY ROAD",
+      "lengthMiles": 0.03,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6175592866511,
+        "longitude": -117.763269998324
+      }
+    },
+    {
+      "trailId": "17603",
+      "trailName": "UTILITY ROAD",
+      "lengthMiles": 0.03,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.615895020037,
+        "longitude": -117.762149881627
+      }
+    },
+    {
+      "trailId": "19596",
+      "trailName": "MARIPOSA",
+      "lengthMiles": 0.04,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5968382001644,
+        "longitude": -117.759194703672
+      }
+    },
+    {
+      "trailId": "19597",
+      "trailName": "TO THE LAKE TRAIL",
+      "lengthMiles": 0.11,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5964230628014,
+        "longitude": -117.759409467222
+      }
+    },
+    {
+      "trailId": "20396",
+      "trailName": "RIDGE TOP TRAIL",
+      "lengthMiles": 0.07,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6042510616669,
+        "longitude": -117.751754620564
+      }
+    },
+    {
+      "trailId": "20798",
+      "trailName": "NICKS PASTURE ROAD",
+      "lengthMiles": 1.73,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.538648304579,
+        "longitude": -117.566657387606
+      }
+    },
+    {
+      "trailId": "21198",
+      "trailName": "LUCAS CANYON ROAD",
+      "lengthMiles": 0.31,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.5720800053875,
+        "longitude": -117.515496139063
+      }
+    },
+    {
+      "trailId": "21199",
+      "trailName": "LUCAS CANYON ROAD",
+      "lengthMiles": 2.63,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.5647775226174,
+        "longitude": -117.524050851843
+      }
+    },
+    {
+      "trailId": "21598",
+      "trailName": "MAIN PARK ROAD",
+      "lengthMiles": 0.53,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.5374543225764,
+        "longitude": -117.551372334038
+      }
+    },
+    {
+      "trailId": "21599",
+      "trailName": "MAIN PARK ROAD",
+      "lengthMiles": 1.11,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.5419253621652,
+        "longitude": -117.557332104984
+      }
+    },
+    {
+      "trailId": "21600",
+      "trailName": "VISTA RIDGE TRAIL",
+      "lengthMiles": 0.14,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.5360536559814,
+        "longitude": -117.552983990538
+      }
+    },
+    {
+      "trailId": "21601",
+      "trailName": "PATH TO NATURE CENTER",
+      "lengthMiles": 0.09,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.5368721017393,
+        "longitude": -117.553332149204
+      }
+    },
+    {
+      "trailId": "21602",
+      "trailName": "PATH TO NATURE CENTER",
+      "lengthMiles": 0.01,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.5369141960362,
+        "longitude": -117.552969487633
+      }
+    },
+    {
+      "trailId": "23199",
+      "trailName": "Pecten Reef Trail",
+      "lengthMiles": 0.43,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.5883687612997,
+        "longitude": -117.713572043689
+      }
+    },
+    {
+      "trailId": "23200",
+      "trailName": "Pecten Reef Trail",
+      "lengthMiles": 0.23,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.5868532244019,
+        "longitude": -117.712273182233
+      }
+    },
+    {
+      "trailId": "23204",
+      "trailName": "AWMA ROAD",
+      "lengthMiles": 0.83,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.5490497157204,
+        "longitude": -117.723414419687
+      }
+    },
+    {
+      "trailId": "24001",
+      "trailName": "Stiton Peak Trail",
+      "lengthMiles": 0.2,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.5880896083192,
+        "longitude": -117.515626167216
+      }
+    },
+    {
+      "trailId": "25210",
+      "trailName": "East Ridge View Trail",
+      "lengthMiles": 1.51,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.7679674099487,
+        "longitude": -117.764236303222
+      }
+    },
+    {
+      "trailId": "25212",
+      "trailName": "EAST RIDGE VIEW TRAIL",
+      "lengthMiles": 0.22,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.7731502680385,
+        "longitude": -117.760489003319
+      }
+    },
+    {
+      "trailId": "25218",
+      "trailName": "COWAN HEIGHTS - SKYLINE MULTIPURPOSE REGIONAL TRAILS",
+      "lengthMiles": 0.11,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.7656192217535,
+        "longitude": -117.773334829259
+      }
+    },
+    {
+      "trailId": "26005",
+      "trailName": "Limestone Ridge Road",
+      "lengthMiles": 0.05,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.7090938788872,
+        "longitude": -117.656605959567
+      }
+    },
+    {
+      "trailId": "26006",
+      "trailName": "Limestone Ridge Road",
+      "lengthMiles": 0.01,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.709383956468,
+        "longitude": -117.656240857669
+      }
+    },
+    {
+      "trailId": "26009",
+      "trailName": "SERRANO ROAD",
+      "lengthMiles": 0.91,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6768391085138,
+        "longitude": -117.64825623467
+      }
+    },
+    {
+      "trailId": "26010",
+      "trailName": "WHITING ROAD",
+      "lengthMiles": 0.18,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.6944350760275,
+        "longitude": -117.641090185681
+      }
+    },
+    {
+      "trailId": "26011",
+      "trailName": "WHITING ROAD",
+      "lengthMiles": 0.03,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.6962097764327,
+        "longitude": -117.640753748778
+      }
+    },
+    {
+      "trailId": "26012",
+      "trailName": "CACTUS HILL TRAIL",
+      "lengthMiles": 0.31,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.6939371864071,
+        "longitude": -117.633452875918
+      }
+    },
+    {
+      "trailId": "26014",
+      "trailName": "VULTURE VIEW ROAD",
+      "lengthMiles": 0.11,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6894328580971,
+        "longitude": -117.63137752209
+      }
+    },
+    {
+      "trailId": "26809",
+      "trailName": "MOUNTAIN GOAT TRAIL",
+      "lengthMiles": 0.16,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.8174765666569,
+        "longitude": -117.761642619061
+      }
+    },
+    {
+      "trailId": "27208",
+      "trailName": "MOUNTAIN GOAT TRAIL",
+      "lengthMiles": 0.34,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.8183065594132,
+        "longitude": -117.764149156004
+      }
+    },
+    {
+      "trailId": "27613",
+      "trailName": "SANTIAGO CREEK TRAIL",
+      "lengthMiles": 0.19,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.8159028191694,
+        "longitude": -117.765611807252
+      }
+    },
+    {
+      "trailId": "28407",
+      "trailName": "SAGE RIDGE TRAIL",
+      "lengthMiles": 0.18,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.8193691026748,
+        "longitude": -117.767042942239
+      }
+    },
+    {
+      "trailId": "28408",
+      "trailName": "SAGE RIDGE TRAIL",
+      "lengthMiles": 0.0,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.8187987536685,
+        "longitude": -117.766519873768
+      }
+    },
+    {
+      "trailId": "28409",
+      "trailName": "SAGE RIDGE TRAIL",
+      "lengthMiles": 0.1,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.8202454020979,
+        "longitude": -117.769125909971
+      }
+    },
+    {
+      "trailId": "28410",
+      "trailName": "SAGE RIDGE TRAIL",
+      "lengthMiles": 0.06,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.8193582320475,
+        "longitude": -117.769670385956
+      }
+    },
+    {
+      "trailId": "28411",
+      "trailName": "SAGE RIDGE TRAIL",
+      "lengthMiles": 0.05,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.8196980930113,
+        "longitude": -117.769554070856
+      }
+    },
+    {
+      "trailId": "28805",
+      "trailName": "BUMBLE BEE TRAIL",
+      "lengthMiles": 0.12,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.8226147972983,
+        "longitude": -117.76495789463
+      }
+    },
+    {
+      "trailId": "28806",
+      "trailName": "BUMBLE BEE TRAIL",
+      "lengthMiles": 0.17,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.8203297333842,
+        "longitude": -117.76264854865
+      }
+    },
+    {
+      "trailId": "28807",
+      "trailName": "BUMBLE BEE TRAIL",
+      "lengthMiles": 0.2,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.8200249642365,
+        "longitude": -117.761631083338
+      }
+    },
+    {
+      "trailId": "28808",
+      "trailName": "BUMBLE BEE TRAIL",
+      "lengthMiles": 0.16,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.8187872424431,
+        "longitude": -117.761909637681
+      }
+    },
+    {
+      "trailId": "28811",
+      "trailName": "BUMBLE BEE TRAIL",
+      "lengthMiles": 0.09,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.8219417133965,
+        "longitude": -117.76329661612
+      }
+    },
+    {
+      "trailId": "28814",
+      "trailName": "Pony Trail",
+      "lengthMiles": 0.18,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.818260989114,
+        "longitude": -117.769658327269
+      }
+    },
+    {
+      "trailId": "28815",
+      "trailName": "WILDERNESS TRAIL",
+      "lengthMiles": 0.04,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.820174556185,
+        "longitude": -117.77015448603
+      }
+    },
+    {
+      "trailId": "28819",
+      "trailName": "WILDERNESS TRAIL",
+      "lengthMiles": 0.2,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.8232554370236,
+        "longitude": -117.774511528007
+      }
+    },
+    {
+      "trailId": "28820",
+      "trailName": "RINKER GROVE TRAIL",
+      "lengthMiles": 0.07,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.8213793267431,
+        "longitude": -117.772803891342
+      }
+    },
+    {
+      "trailId": "28821",
+      "trailName": "RINKER GROVE TRAIL",
+      "lengthMiles": 0.09,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.820647023658,
+        "longitude": -117.771752633531
+      }
+    },
+    {
+      "trailId": "28823",
+      "trailName": "WILDERNESS TRAIL",
+      "lengthMiles": 0.25,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.8219435403323,
+        "longitude": -117.77237448456
+      }
+    },
+    {
+      "trailId": "28825",
+      "trailName": "RINKER GROVE TRAIL",
+      "lengthMiles": 0.12,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8197703555815,
+        "longitude": -117.770638395569
+      }
+    },
+    {
+      "trailId": "29206",
+      "trailName": "PERALTA HILLS TRAIL",
+      "lengthMiles": 0.21,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.8247226380139,
+        "longitude": -117.768758063473
+      }
+    },
+    {
+      "trailId": "29207",
+      "trailName": "PERALTA HILLS TRAIL",
+      "lengthMiles": 0.05,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.8233493755069,
+        "longitude": -117.770399828458
+      }
+    },
+    {
+      "trailId": "29208",
+      "trailName": "PERALTA HILLS TRAIL",
+      "lengthMiles": 0.01,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.8231649946569,
+        "longitude": -117.770862842242
+      }
+    },
+    {
+      "trailId": "29209",
+      "trailName": "PERALTA HILLS TRAIL",
+      "lengthMiles": 0.17,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.8224985730907,
+        "longitude": -117.770504843818
+      }
+    },
+    {
+      "trailId": "29214",
+      "trailName": "Chutes Trail",
+      "lengthMiles": 0.37,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8167182179912,
+        "longitude": -117.758916072398
+      }
+    },
+    {
+      "trailId": "29215",
+      "trailName": "Chutes Trail",
+      "lengthMiles": 0.09,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8142621748907,
+        "longitude": -117.758485452918
+      }
+    },
+    {
+      "trailId": "29216",
+      "trailName": "CHUTES RIDGELINE TRAIL",
+      "lengthMiles": 0.09,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.8166839022087,
+        "longitude": -117.759291193645
+      }
+    },
+    {
+      "trailId": "29221",
+      "trailName": "DUSTY TRAIL",
+      "lengthMiles": 0.06,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6541386973574,
+        "longitude": -117.826136329279
+      }
+    },
+    {
+      "trailId": "29222",
+      "trailName": "DUSTY TRAIL",
+      "lengthMiles": 0.02,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6546886468513,
+        "longitude": -117.826418841947
+      }
+    },
+    {
+      "trailId": "29223",
+      "trailName": "DUSTY TRAIL",
+      "lengthMiles": 0.02,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6545666211989,
+        "longitude": -117.826449190995
+      }
+    },
+    {
+      "trailId": "29224",
+      "trailName": "COYOTE TRAIL",
+      "lengthMiles": 0.02,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6563445660635,
+        "longitude": -117.820353442938
+      }
+    },
+    {
+      "trailId": "29225",
+      "trailName": "COYOTE TRAIL",
+      "lengthMiles": 0.03,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6562498588155,
+        "longitude": -117.820247460686
+      }
+    },
+    {
+      "trailId": "29226",
+      "trailName": "COYOTE TRAIL",
+      "lengthMiles": 0.11,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6571270348106,
+        "longitude": -117.820319867017
+      }
+    },
+    {
+      "trailId": "29227",
+      "trailName": "SAND CANYON WASH TRAIL",
+      "lengthMiles": 0.85,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6561605401315,
+        "longitude": -117.820273137418
+      }
+    },
+    {
+      "trailId": "29228",
+      "trailName": "SAND CANYON WASH TRAIL",
+      "lengthMiles": 0.58,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6565367204905,
+        "longitude": -117.81119058174
+      }
+    },
+    {
+      "trailId": "29229",
+      "trailName": "SAND CANYON WASH TRAIL",
+      "lengthMiles": 0.04,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6581129022959,
+        "longitude": -117.814643729432
+      }
+    },
+    {
+      "trailId": "29230",
+      "trailName": "RAPTOR ROAD",
+      "lengthMiles": 0.06,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6745839450378,
+        "longitude": -117.641919505008
+      }
+    },
+    {
+      "trailId": "29231",
+      "trailName": "RAPTOR ROAD",
+      "lengthMiles": 0.53,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.674095751893,
+        "longitude": -117.647183466776
+      }
+    },
+    {
+      "trailId": "29232",
+      "trailName": "COYOTE RUN TRAIL",
+      "lengthMiles": 0.5,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.5576772679156,
+        "longitude": -117.742193978114
+      }
+    },
+    {
+      "trailId": "29233",
+      "trailName": "Coyote Run Trail",
+      "lengthMiles": 0.64,
+      "difficulty": 1,
+      "location": {
+        "latitude": [
+          -117.747714795094,
+          33.5679899248827
+        ],
+        "longitude": [
+          -117.747706217915,
+          33.5680160517105
+        ]
+      }
+    },
+    {
+      "trailId": "29235",
+      "trailName": "DRIPPING SPRINGS",
+      "lengthMiles": 0.9,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7350608983046,
+        "longitude": -117.686900643358
+      }
+    },
+    {
+      "trailId": "29236",
+      "trailName": "DRIPPING SPRINGS",
+      "lengthMiles": 0.6,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.738354757473,
+        "longitude": -117.682677844588
+      }
+    },
+    {
+      "trailId": "29238",
+      "trailName": "BOAT ROAD",
+      "lengthMiles": 0.02,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5542043441265,
+        "longitude": -117.79761416276
+      }
+    },
+    {
+      "trailId": "29239",
+      "trailName": "BOAT ROAD",
+      "lengthMiles": 0.12,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5542250466558,
+        "longitude": -117.79844959207
+      }
+    },
+    {
+      "trailId": "29240",
+      "trailName": "BOAT ROAD",
+      "lengthMiles": 0.26,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5563657459845,
+        "longitude": -117.797613854306
+      }
+    },
+    {
+      "trailId": "29241",
+      "trailName": "BOAT ROAD",
+      "lengthMiles": 0.67,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5531773889235,
+        "longitude": -117.796139692897
+      }
+    },
+    {
+      "trailId": "29242",
+      "trailName": "BOAT ROAD",
+      "lengthMiles": 0.03,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5585438387388,
+        "longitude": -117.794114203816
+      }
+    },
+    {
+      "trailId": "29243",
+      "trailName": "BOAT ROAD",
+      "lengthMiles": 0.04,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5588566502752,
+        "longitude": -117.794815828778
+      }
+    },
+    {
+      "trailId": "29244",
+      "trailName": "BOAT ROAD",
+      "lengthMiles": 0.12,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5579641842378,
+        "longitude": -117.796181637231
+      }
+    },
+    {
+      "trailId": "29245",
+      "trailName": "BOAT ROAD",
+      "lengthMiles": 0.03,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5589213154386,
+        "longitude": -117.794988573899
+      }
+    },
+    {
+      "trailId": "29246",
+      "trailName": "BOAT ROAD",
+      "lengthMiles": 0.03,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.558944727507,
+        "longitude": -117.794619633822
+      }
+    },
+    {
+      "trailId": "29247",
+      "trailName": "BOAT ROAD",
+      "lengthMiles": 1.16,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5659523926148,
+        "longitude": -117.790077226653
+      }
+    },
+    {
+      "trailId": "29251",
+      "trailName": "HORSESHOE LOOP TRAIL",
+      "lengthMiles": 0.06,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7967982380419,
+        "longitude": -117.743785921997
+      }
+    },
+    {
+      "trailId": "29252",
+      "trailName": "Horseshoe Loop Trail",
+      "lengthMiles": 0.64,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7996488387895,
+        "longitude": -117.748308661674
+      }
+    },
+    {
+      "trailId": "29253",
+      "trailName": "HORSESHOE LOOP TRAIL",
+      "lengthMiles": 0.08,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7970568525468,
+        "longitude": -117.744343569504
+      }
+    },
+    {
+      "trailId": "29254",
+      "trailName": "HORSESHOE LOOP TRAIL",
+      "lengthMiles": 0.12,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7974681707094,
+        "longitude": -117.745237942677
+      }
+    },
+    {
+      "trailId": "29262",
+      "trailName": "Peters Canyon East Trail",
+      "lengthMiles": 1.09,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.7265627230105,
+        "longitude": -117.77690226715
+      }
+    },
+    {
+      "trailId": "29317",
+      "trailName": "INTERPRETIVE CENTER ROAD",
+      "lengthMiles": 0.02,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.572322763256,
+        "longitude": -117.592516737774
+      }
+    },
+    {
+      "trailId": "29318",
+      "trailName": "INTERPRETIVE CENTER ROAD",
+      "lengthMiles": 0.05,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.5723414919376,
+        "longitude": -117.592392390518
+      }
+    },
+    {
+      "trailId": "29319",
+      "trailName": "ROAD RUNNER TRAIL",
+      "lengthMiles": 0.09,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6549182825904,
+        "longitude": -117.826302292946
+      }
+    },
+    {
+      "trailId": "29320",
+      "trailName": "ROAD RUNNER TRAIL",
+      "lengthMiles": 0.01,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6554462143081,
+        "longitude": -117.826021352234
+      }
+    },
+    {
+      "trailId": "29321",
+      "trailName": "ROAD RUNNER TRAIL",
+      "lengthMiles": 0.01,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6554165770364,
+        "longitude": -117.826109211564
+      }
+    },
+    {
+      "trailId": "29322",
+      "trailName": "STAGECOACH NORTH TRAIL",
+      "lengthMiles": 0.04,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6152675336386,
+        "longitude": -117.760863915877
+      }
+    },
+    {
+      "trailId": "29323",
+      "trailName": "STAGECOACH NORTH TRAIL",
+      "lengthMiles": 0.07,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6157578431665,
+        "longitude": -117.761347454231
+      }
+    },
+    {
+      "trailId": "29324",
+      "trailName": "LAKE VIEW",
+      "lengthMiles": 1.52,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.7868877287589,
+        "longitude": -117.712558566788
+      }
+    },
+    {
+      "trailId": "29325",
+      "trailName": "LAKE VIEW",
+      "lengthMiles": 0.35,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.7901051905142,
+        "longitude": -117.701261758759
+      }
+    },
+    {
+      "trailId": "29326",
+      "trailName": "LAKE VIEW",
+      "lengthMiles": 0.52,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.792158756056,
+        "longitude": -117.699361955943
+      }
+    },
+    {
+      "trailId": "29327",
+      "trailName": "LAKE VIEW",
+      "lengthMiles": 2.02,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.7913804080105,
+        "longitude": -117.687510719543
+      }
+    },
+    {
+      "trailId": "29328",
+      "trailName": "WINDY RIDGE",
+      "lengthMiles": 3.41,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.8224116799382,
+        "longitude": -117.705853896497
+      }
+    },
+    {
+      "trailId": "29329",
+      "trailName": "WINDY RIDGE",
+      "lengthMiles": 0.34,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.833794756787,
+        "longitude": -117.683241986639
+      }
+    },
+    {
+      "trailId": "29330",
+      "trailName": "METROPOLITAN WATER DISTRICT ROAD",
+      "lengthMiles": 1.1,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.7969681893021,
+        "longitude": -117.732072080074
+      }
+    },
+    {
+      "trailId": "29331",
+      "trailName": "METROPOLITAN WATER DISTRICT ROAD",
+      "lengthMiles": 0.26,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.7987923218648,
+        "longitude": -117.742744133191
+      }
+    },
+    {
+      "trailId": "29332",
+      "trailName": "METROPOLITAN WATER DISTRICT ROAD",
+      "lengthMiles": 0.48,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.8024040597587,
+        "longitude": -117.747062299775
+      }
+    },
+    {
+      "trailId": "29362",
+      "trailName": "BOBCAT TRAIL",
+      "lengthMiles": 0.05,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6557570603696,
+        "longitude": -117.818732188163
+      }
+    },
+    {
+      "trailId": "29376",
+      "trailName": "RED ROCK TRAIL",
+      "lengthMiles": 0.43,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.7008314736067,
+        "longitude": -117.649923202972
+      }
+    },
+    {
+      "trailId": "29377",
+      "trailName": "RED ROCK TRAIL",
+      "lengthMiles": 0.14,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.7035300226192,
+        "longitude": -117.647835930136
+      }
+    },
+    {
+      "trailId": "29378",
+      "trailName": "Aliso Peak Trail",
+      "lengthMiles": 0.37,
+      "difficulty": 1,
+      "location": {
+        "latitude": [
+          -117.739186536268,
+          33.5116075329251
+        ],
+        "longitude": [
+          -117.739172298645,
+          33.5116077032781
+        ]
+      }
+    },
+    {
+      "trailId": "29380",
+      "trailName": "Aliso Summit Trail",
+      "lengthMiles": 2.72,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.5242239862125,
+        "longitude": -117.728232770735
+      }
+    },
+    {
+      "trailId": "29384",
+      "trailName": "SANTIAGO CREEK TRAIL",
+      "lengthMiles": 0.05,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.7964620840145,
+        "longitude": -117.761202571559
+      }
+    },
+    {
+      "trailId": "29385",
+      "trailName": "SANTIAGO CREEK TRAIL",
+      "lengthMiles": 0.04,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.7965984361364,
+        "longitude": -117.760876328027
+      }
+    },
+    {
+      "trailId": "29387",
+      "trailName": "SANTIAGO CREEK TRAIL",
+      "lengthMiles": 0.41,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.7984056427276,
+        "longitude": -117.750886457948
+      }
+    },
+    {
+      "trailId": "29388",
+      "trailName": "SANTIAGO CREEK TRAIL",
+      "lengthMiles": 0.0,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.7996273906426,
+        "longitude": -117.753315941291
+      }
+    },
+    {
+      "trailId": "29389",
+      "trailName": "ROAD RUNNER LOOP",
+      "lengthMiles": 0.01,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.8006416357474,
+        "longitude": -117.755485616706
+      }
+    },
+    {
+      "trailId": "29390",
+      "trailName": "ROAD RUNNER LOOP",
+      "lengthMiles": 0.21,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.8008227908248,
+        "longitude": -117.757476221694
+      }
+    },
+    {
+      "trailId": "29396",
+      "trailName": "TOYON TRAIL",
+      "lengthMiles": 0.02,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7967933433292,
+        "longitude": -117.7472550013
+      }
+    },
+    {
+      "trailId": "29397",
+      "trailName": "Toyon Trail",
+      "lengthMiles": 0.21,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7976440915623,
+        "longitude": -117.747612247627
+      }
+    },
+    {
+      "trailId": "29399",
+      "trailName": "Lone Pine Ridge Trail",
+      "lengthMiles": 0.17,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7963681786443,
+        "longitude": -117.746337365516
+      }
+    },
+    {
+      "trailId": "29400",
+      "trailName": "Lone Pine Vista Trail",
+      "lengthMiles": 0.08,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.796378429025,
+        "longitude": -117.745209756593
+      }
+    },
+    {
+      "trailId": "29402",
+      "trailName": "El Cajon Trail",
+      "lengthMiles": 0.27,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8862751028491,
+        "longitude": -117.809938196384
+      }
+    },
+    {
+      "trailId": "29413",
+      "trailName": "STAGECOACH SOUTH TRAIL",
+      "lengthMiles": 1.35,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.6059940503003,
+        "longitude": -117.767758197742
+      }
+    },
+    {
+      "trailId": "29414",
+      "trailName": "STAGECOACH SOUTH TRAIL",
+      "lengthMiles": 1.86,
+      "difficulty": 2,
+      "location": {
+        "latitude": [
+          -117.761877709563,
+          33.590817775144
+        ],
+        "longitude": [
+          -117.761887410399,
+          33.5908291871121
+        ]
+      }
+    },
+    {
+      "trailId": "29415",
+      "trailName": "CANYON ACRES TRAIL",
+      "lengthMiles": 0.35,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.5537266587536,
+        "longitude": -117.768318334488
+      }
+    },
+    {
+      "trailId": "29416",
+      "trailName": "CANYON ACRES TRAIL",
+      "lengthMiles": 0.35,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.5548680617269,
+        "longitude": -117.771590867325
+      }
+    },
+    {
+      "trailId": "29417",
+      "trailName": "CANYON ACRES TRAIL",
+      "lengthMiles": 0.1,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.5582563659274,
+        "longitude": -117.760867320003
+      }
+    },
+    {
+      "trailId": "29418",
+      "trailName": "CANYON ACRES TRAIL",
+      "lengthMiles": 0.22,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.5569527538704,
+        "longitude": -117.761466190028
+      }
+    },
+    {
+      "trailId": "29419",
+      "trailName": "CANYON ACRES TRAIL",
+      "lengthMiles": 0.54,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.5573088049095,
+        "longitude": -117.767283769071
+      }
+    },
+    {
+      "trailId": "29429",
+      "trailName": "UTILITY ROAD",
+      "lengthMiles": 0.17,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6210975514746,
+        "longitude": -117.763758687679
+      }
+    },
+    {
+      "trailId": "29430",
+      "trailName": "UTILITY ROAD",
+      "lengthMiles": 0.26,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6185782846733,
+        "longitude": -117.763779700273
+      }
+    },
+    {
+      "trailId": "29431",
+      "trailName": "UTILITY ROAD",
+      "lengthMiles": 0.39,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6135206587726,
+        "longitude": -117.762134491722
+      }
+    },
+    {
+      "trailId": "29432",
+      "trailName": "WATER TANK ROAD",
+      "lengthMiles": 1.41,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5601922747166,
+        "longitude": -117.787430453469
+      }
+    },
+    {
+      "trailId": "29433",
+      "trailName": "WATER TANK ROAD",
+      "lengthMiles": 0.11,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5514334839808,
+        "longitude": -117.786043682839
+      }
+    },
+    {
+      "trailId": "29434",
+      "trailName": "WATER TANK ROAD",
+      "lengthMiles": 0.1,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.5503662269912,
+        "longitude": -117.784855771209
+      }
+    },
+    {
+      "trailId": "29450",
+      "trailName": "Water Works Trail",
+      "lengthMiles": 0.67,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.5773741136655,
+        "longitude": -117.635988268219
+      }
+    },
+    {
+      "trailId": "29469",
+      "trailName": "COACHWHIP TRAIL",
+      "lengthMiles": 0.56,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.8217907124172,
+        "longitude": -117.759062894137
+      }
+    },
+    {
+      "trailId": "29470",
+      "trailName": "COACHWHIP TRAIL",
+      "lengthMiles": 0.49,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.8225320738407,
+        "longitude": -117.756685275243
+      }
+    },
+    {
+      "trailId": "29473",
+      "trailName": "GRASSHOPPER TRAIL",
+      "lengthMiles": 0.13,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.8222408061189,
+        "longitude": -117.763931745108
+      }
+    },
+    {
+      "trailId": "29474",
+      "trailName": "GRASSHOPPER TRAIL",
+      "lengthMiles": 0.31,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.8207256565378,
+        "longitude": -117.767135190071
+      }
+    },
+    {
+      "trailId": "29475",
+      "trailName": "PERALTA HILLS TRAIL",
+      "lengthMiles": 0.07,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8211853914669,
+        "longitude": -117.770141145035
+      }
+    },
+    {
+      "trailId": "29476",
+      "trailName": "PERALTA HILLS TRAIL",
+      "lengthMiles": 0.02,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8209852473611,
+        "longitude": -117.770435021083
+      }
+    },
+    {
+      "trailId": "29487",
+      "trailName": "West Ridge Trail",
+      "lengthMiles": 1.26,
+      "difficulty": 1,
+      "location": {
+        "latitude": [
+          -117.754944783172,
+          33.5776520791829
+        ],
+        "longitude": [
+          -117.754946565966,
+          33.5776727503209
+        ]
+      }
+    },
+    {
+      "trailId": "29489",
+      "trailName": "West Ridge Trail",
+      "lengthMiles": 0.92,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.5615148888899,
+        "longitude": -117.759320448331
+      }
+    },
+    {
+      "trailId": "29490",
+      "trailName": "MOUNTAIN GOAT ENHANCEMENT TRAIL",
+      "lengthMiles": 0.29,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.8180321051622,
+        "longitude": -117.764592555355
+      }
+    },
+    {
+      "trailId": "29492",
+      "trailName": "HAWK TRAIL",
+      "lengthMiles": 0.21,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.8199565971343,
+        "longitude": -117.765289296558
+      }
+    },
+    {
+      "trailId": "29493",
+      "trailName": "HAWK TRAIL",
+      "lengthMiles": 0.09,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.8186961953213,
+        "longitude": -117.765885474514
+      }
+    },
+    {
+      "trailId": "29494",
+      "trailName": "Peters Canyon Trail",
+      "lengthMiles": 0.48,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.758709036985,
+        "longitude": -117.770439430191
+      }
+    },
+    {
+      "trailId": "29498",
+      "trailName": "MUSTARD ROAD",
+      "lengthMiles": 1.64,
+      "difficulty": 3,
+      "location": {
+        "latitude": [
+          -117.650647828462,
+          33.6973508602834
+        ],
+        "longitude": [
+          -117.650656052796,
+          33.6973535243098
+        ]
+      }
+    },
+    {
+      "trailId": "29499",
+      "trailName": "MUSTARD ROAD",
+      "lengthMiles": 1.01,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.6962681428264,
+        "longitude": -117.660607342717
+      }
+    },
+    {
+      "trailId": "29500",
+      "trailName": "SANTIAGO RANCH ROAD",
+      "lengthMiles": 0.01,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.6899391002524,
+        "longitude": -117.6314375081
+      }
+    },
+    {
+      "trailId": "29501",
+      "trailName": "SANTIAGO RANCH ROAD",
+      "lengthMiles": 0.07,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.6894741458746,
+        "longitude": -117.631846383609
+      }
+    },
+    {
+      "trailId": "29606",
+      "trailName": "Chutes Trail",
+      "lengthMiles": 0.19,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8125548731171,
+        "longitude": -117.757351904416
+      }
+    },
+    {
+      "trailId": "29607",
+      "trailName": "Chutes Trail",
+      "lengthMiles": 0.12,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8116562803194,
+        "longitude": -117.757648005821
+      }
+    },
+    {
+      "trailId": "30006",
+      "trailName": "CHUTES RIDGELINE TRAIL",
+      "lengthMiles": 0.09,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.8106618504945,
+        "longitude": -117.758608552178
+      }
+    },
+    {
+      "trailId": "30407",
+      "trailName": "ROAD RUNNER LOOP",
+      "lengthMiles": 0.07,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.8083017070469,
+        "longitude": -117.758434020476
+      }
+    },
+    {
+      "trailId": "30408",
+      "trailName": "ROAD RUNNER LOOP",
+      "lengthMiles": 0.01,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.8098336819805,
+        "longitude": -117.758747146456
+      }
+    },
+    {
+      "trailId": "30409",
+      "trailName": "ROAD RUNNER LOOP",
+      "lengthMiles": 0.04,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.8092667963445,
+        "longitude": -117.758501504871
+      }
+    },
+    {
+      "trailId": "30806",
+      "trailName": "ROAD RUNNER LOOP",
+      "lengthMiles": 0.04,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.8096712979246,
+        "longitude": -117.75841900591
+      }
+    },
+    {
+      "trailId": "30808",
+      "trailName": "WILLOWS TRAIL",
+      "lengthMiles": 0.04,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8097984303245,
+        "longitude": -117.766725175853
+      }
+    },
+    {
+      "trailId": "30809",
+      "trailName": "WILLOWS TRAIL",
+      "lengthMiles": 0.02,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8100227121861,
+        "longitude": -117.766587401107
+      }
+    },
+    {
+      "trailId": "30810",
+      "trailName": "Egret Trail",
+      "lengthMiles": 0.84,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8081227573904,
+        "longitude": -117.766546254448
+      }
+    },
+    {
+      "trailId": "31207",
+      "trailName": "WEIR CANYON TRAIL",
+      "lengthMiles": 0.8,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.84255290485,
+        "longitude": -117.733777086712
+      }
+    },
+    {
+      "trailId": "31606",
+      "trailName": "WEIR CANYON TRAIL",
+      "lengthMiles": 0.16,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8393265139538,
+        "longitude": -117.735207496894
+      }
+    },
+    {
+      "trailId": "31607",
+      "trailName": "WEIR CANYON TRAIL",
+      "lengthMiles": 0.21,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8380861617943,
+        "longitude": -117.736029393151
+      }
+    },
+    {
+      "trailId": "31608",
+      "trailName": "WEIR CANYON TRAIL",
+      "lengthMiles": 0.35,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8362599086685,
+        "longitude": -117.738186432438
+      }
+    },
+    {
+      "trailId": "31609",
+      "trailName": "WEIR CANYON TRAIL",
+      "lengthMiles": 0.04,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.834528609758,
+        "longitude": -117.738564590118
+      }
+    },
+    {
+      "trailId": "32006",
+      "trailName": "COAL - GYPSUM CANYON TRAIL",
+      "lengthMiles": 2.93,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8432599810562,
+        "longitude": -117.70574461305
+      }
+    },
+    {
+      "trailId": "32007",
+      "trailName": "UPPER WEIR CANYON TRAIL",
+      "lengthMiles": 0.81,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8330953544988,
+        "longitude": -117.725026428225
+      }
+    },
+    {
+      "trailId": "32406",
+      "trailName": "CHUTES RIDGELINE TRAIL",
+      "lengthMiles": 0.11,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.8152916519982,
+        "longitude": -117.758623769574
+      }
+    },
+    {
+      "trailId": "32407",
+      "trailName": "CHUTES RIDGELINE TRAIL",
+      "lengthMiles": 0.28,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.8125349856738,
+        "longitude": -117.757870940541
+      }
+    },
+    {
+      "trailId": "32408",
+      "trailName": "LOWER WEIR CANYON",
+      "lengthMiles": 0.1,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.8197731525693,
+        "longitude": -117.747229949315
+      }
+    },
+    {
+      "trailId": "32411",
+      "trailName": "UPPER BLIND CANYON",
+      "lengthMiles": 1.41,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.8142282819112,
+        "longitude": -117.713731731725
+      }
+    },
+    {
+      "trailId": "32412",
+      "trailName": "UPPER BLIND CANYON",
+      "lengthMiles": 1.04,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.8180750031046,
+        "longitude": -117.71500569477
+      }
+    },
+    {
+      "trailId": "32413",
+      "trailName": "UPPER BLIND CANYON",
+      "lengthMiles": 0.17,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.8191135843462,
+        "longitude": -117.720543667929
+      }
+    },
+    {
+      "trailId": "32414",
+      "trailName": "UPPER BLIND CANYON",
+      "lengthMiles": 2.07,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.8203965439986,
+        "longitude": -117.730021060476
+      }
+    },
+    {
+      "trailId": "32417",
+      "trailName": "MOUNTAIN GOAT ENHANCEMENT TRAIL",
+      "lengthMiles": 0.31,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.8172822331615,
+        "longitude": -117.760849989699
+      }
+    },
+    {
+      "trailId": "32418",
+      "trailName": "MOUNTAIN GOAT ENHANCEMENT TRAIL",
+      "lengthMiles": 0.0,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.8171138549825,
+        "longitude": -117.76006714698
+      }
+    },
+    {
+      "trailId": "32419",
+      "trailName": "TOWHEE TRAIL",
+      "lengthMiles": 0.08,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.8219740564644,
+        "longitude": -117.772857598935
+      }
+    },
+    {
+      "trailId": "32423",
+      "trailName": "WEIR CANYON TRAIL",
+      "lengthMiles": 0.07,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8450698483693,
+        "longitude": -117.735559620811
+      }
+    },
+    {
+      "trailId": "32424",
+      "trailName": "WEIR CANYON TRAIL",
+      "lengthMiles": 0.27,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8434525179643,
+        "longitude": -117.736573872529
+      }
+    },
+    {
+      "trailId": "32425",
+      "trailName": "WEIR CANYON TRAIL",
+      "lengthMiles": 0.11,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8426068283159,
+        "longitude": -117.738551482993
+      }
+    },
+    {
+      "trailId": "32426",
+      "trailName": "WEIR CANYON TRAIL",
+      "lengthMiles": 0.34,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8399014833289,
+        "longitude": -117.738880358469
+      }
+    },
+    {
+      "trailId": "32427",
+      "trailName": "WEIR CANYON TRAIL",
+      "lengthMiles": 0.09,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8343690348658,
+        "longitude": -117.739506181025
+      }
+    },
+    {
+      "trailId": "32428",
+      "trailName": "WEIR CANYON TRAIL",
+      "lengthMiles": 0.63,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8322484194361,
+        "longitude": -117.740731760913
+      }
+    },
+    {
+      "trailId": "32429",
+      "trailName": "WEIR CANYON TRAIL",
+      "lengthMiles": 0.05,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8285470208442,
+        "longitude": -117.743429132345
+      }
+    },
+    {
+      "trailId": "32430",
+      "trailName": "WEIR CANYON TRAIL",
+      "lengthMiles": 0.26,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8334254360954,
+        "longitude": -117.743067555491
+      }
+    },
+    {
+      "trailId": "32431",
+      "trailName": "WEIR CANYON TRAIL",
+      "lengthMiles": 0.22,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8353127963295,
+        "longitude": -117.741825294437
+      }
+    },
+    {
+      "trailId": "32432",
+      "trailName": "WEIR CANYON TRAIL",
+      "lengthMiles": 0.12,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8353997729705,
+        "longitude": -117.740374987852
+      }
+    },
+    {
+      "trailId": "33206",
+      "trailName": "4WD Road",
+      "lengthMiles": 0.35,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.6482725257126,
+        "longitude": -117.947670852004
+      }
+    },
+    {
+      "trailId": "33207",
+      "trailName": "4WD Road",
+      "lengthMiles": 0.09,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.6453149398706,
+        "longitude": -117.945667093015
+      }
+    },
+    {
+      "trailId": "33208",
+      "trailName": "4WD Road",
+      "lengthMiles": 0.37,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.6433293086715,
+        "longitude": -117.946916562245
+      }
+    },
+    {
+      "trailId": "33209",
+      "trailName": "4WD Road",
+      "lengthMiles": 0.23,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.6470367741514,
+        "longitude": -117.951139093007
+      }
+    },
+    {
+      "trailId": "33210",
+      "trailName": "4WD Road",
+      "lengthMiles": 0.23,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.646213547987,
+        "longitude": -117.945355960775
+      }
+    },
+    {
+      "trailId": "33211",
+      "trailName": "4WD Road",
+      "lengthMiles": 0.04,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.6474276627457,
+        "longitude": -117.945613042485
+      }
+    },
+    {
+      "trailId": "33212",
+      "trailName": "4WD Road",
+      "lengthMiles": 0.1,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.643870217517,
+        "longitude": -117.948370338528
+      }
+    },
+    {
+      "trailId": "33213",
+      "trailName": "4WD Road",
+      "lengthMiles": 0.19,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.6462568111301,
+        "longitude": -117.948882274689
+      }
+    },
+    {
+      "trailId": "33214",
+      "trailName": "CAMARILLO CANYON TRAIL",
+      "lengthMiles": 0.32,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.6024103757835,
+        "longitude": -117.774699230648
+      }
+    },
+    {
+      "trailId": "34016",
+      "trailName": "PACIFICA TRAIL",
+      "lengthMiles": 0.44,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.8190141695129,
+        "longitude": -117.773612746325
+      }
+    },
+    {
+      "trailId": "34019",
+      "trailName": "Children's Garden Trail",
+      "lengthMiles": 0.28,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7969140913309,
+        "longitude": -117.755432799059
+      }
+    },
+    {
+      "trailId": "35214",
+      "trailName": "WINDES NATURE TRAIL",
+      "lengthMiles": 0.27,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.8196715196875,
+        "longitude": -117.772949684062
+      }
+    },
+    {
+      "trailId": "35215",
+      "trailName": "HISTORIC DAM TRAIL",
+      "lengthMiles": 0.07,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.819749781979,
+        "longitude": -117.77192587953
+      }
+    },
+    {
+      "trailId": "35216",
+      "trailName": "HISTORIC DAM TRAIL",
+      "lengthMiles": 0.19,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.820334182632,
+        "longitude": -117.773074253266
+      }
+    },
+    {
+      "trailId": "35217",
+      "trailName": "TOWHEE TRAIL",
+      "lengthMiles": 0.02,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.821383446614,
+        "longitude": -117.773681953016
+      }
+    },
+    {
+      "trailId": "36014",
+      "trailName": "SOUTH SILMOD LOOP",
+      "lengthMiles": 0.85,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7630668601261,
+        "longitude": -117.671779301642
+      }
+    },
+    {
+      "trailId": "36414",
+      "trailName": "HICKS HAUL ROAD",
+      "lengthMiles": 0.56,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7362585986275,
+        "longitude": -117.712233747632
+      }
+    },
+    {
+      "trailId": "37643",
+      "trailName": "MARKEL SPUR Connection Trail",
+      "lengthMiles": 0.43,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7205231878474,
+        "longitude": -117.653650741901
+      }
+    },
+    {
+      "trailId": "37712",
+      "trailName": "Whispering Hills Main Trail",
+      "lengthMiles": 0.7,
+      "difficulty": null,
+      "location": {
+        "latitude": [
+          -117.626063257732,
+          33.4916324673538
+        ],
+        "longitude": [
+          -117.626113557068,
+          33.4916024671674
+        ]
+      }
+    },
+    {
+      "trailId": "37715",
+      "trailName": "South Los Mares Trail",
+      "lengthMiles": 0.67,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.4799205678986,
+        "longitude": -117.633117657603
+      }
+    },
+    {
+      "trailId": "42617",
+      "trailName": "WEST LOMA RIDGE",
+      "lengthMiles": 0.98,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.7625939962767,
+        "longitude": -117.743864436428
+      }
+    },
+    {
+      "trailId": "42618",
+      "trailName": "PRESIDA CANYON",
+      "lengthMiles": 0.72,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.7600019867905,
+        "longitude": -117.734335795443
+      }
+    },
+    {
+      "trailId": "46297",
+      "trailName": "PHILLIPS STREET",
+      "lengthMiles": 0.22,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.5785691397528,
+        "longitude": -117.75996717377
+      }
+    },
+    {
+      "trailId": "47097",
+      "trailName": "ACCESS ROAD",
+      "lengthMiles": 0.06,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6817428345787,
+        "longitude": -117.66502103227
+      }
+    },
+    {
+      "trailId": "48312",
+      "trailName": "Bells Vireo Trail",
+      "lengthMiles": 0.1,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.9188639640264,
+        "longitude": -117.836886138571
+      }
+    },
+    {
+      "trailId": "48313",
+      "trailName": "Bells Vireo Trail",
+      "lengthMiles": 0.23,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.9171727501407,
+        "longitude": -117.838725803457
+      }
+    },
+    {
+      "trailId": "49512",
+      "trailName": "4WD Road",
+      "lengthMiles": 0.09,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.6475096350969,
+        "longitude": -117.948095289682
+      }
+    },
+    {
+      "trailId": "49513",
+      "trailName": "4WD Road",
+      "lengthMiles": 0.25,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.6448554956952,
+        "longitude": -117.951985088579
+      }
+    },
+    {
+      "trailId": "49514",
+      "trailName": "4WD Road",
+      "lengthMiles": 0.24,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.645703663341,
+        "longitude": -117.946929444341
+      }
+    },
+    {
+      "trailId": "49515",
+      "trailName": "4WD Road",
+      "lengthMiles": 0.04,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.647476612461,
+        "longitude": -117.94531381138
+      }
+    },
+    {
+      "trailId": "49516",
+      "trailName": "4WD Road",
+      "lengthMiles": 0.15,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.6481336048601,
+        "longitude": -117.943625613854
+      }
+    },
+    {
+      "trailId": "49517",
+      "trailName": "4WD Road",
+      "lengthMiles": 0.12,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.6448572656011,
+        "longitude": -117.94777833917
+      }
+    },
+    {
+      "trailId": "49917",
+      "trailName": "4WD Road",
+      "lengthMiles": 0.02,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.6447371955616,
+        "longitude": -117.948651720958
+      }
+    },
+    {
+      "trailId": "49918",
+      "trailName": "4WD Road",
+      "lengthMiles": 0.07,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.6440696403545,
+        "longitude": -117.94564781878
+      }
+    },
+    {
+      "trailId": "51929",
+      "trailName": "Harding Nature Loop",
+      "lengthMiles": 0.15,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7931746744392,
+        "longitude": -117.751045999502
+      }
+    },
+    {
+      "trailId": "51930",
+      "trailName": "Harding Nature Loop",
+      "lengthMiles": 0.06,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7932959497526,
+        "longitude": -117.751011259154
+      }
+    },
+    {
+      "trailId": "51931",
+      "trailName": "Harding Nature Loop",
+      "lengthMiles": 0.01,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7931522423856,
+        "longitude": -117.750378590554
+      }
+    },
+    {
+      "trailId": "51934",
+      "trailName": "WEST LOMA RIDGE",
+      "lengthMiles": 0.27,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.754658583279,
+        "longitude": -117.740596308376
+      }
+    },
+    {
+      "trailId": "51936",
+      "trailName": "WEST LOMA RIDGE",
+      "lengthMiles": 2.04,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.7505919721068,
+        "longitude": -117.719138332398
+      }
+    },
+    {
+      "trailId": "52328",
+      "trailName": "SERRANO ROAD",
+      "lengthMiles": 0.0,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.6717114080241,
+        "longitude": -117.656489970264
+      }
+    },
+    {
+      "trailId": "53977",
+      "trailName": "West Ridge Trail",
+      "lengthMiles": 1.07,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.5524413450586,
+        "longitude": -117.572919619985
+      }
+    },
+    {
+      "trailId": "56811",
+      "trailName": "Egret Trail",
+      "lengthMiles": 0.03,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.8056886472509,
+        "longitude": -117.766836880196
+      }
+    },
+    {
+      "trailId": "57623",
+      "trailName": "ROAD RUNNER LOOP",
+      "lengthMiles": 0.06,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.8086393577726,
+        "longitude": -117.758063769386
+      }
+    },
+    {
+      "trailId": "59247",
+      "trailName": "Red Rock Ridge Trail",
+      "lengthMiles": 0.87,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.7721629579183,
+        "longitude": -117.692104406509
+      }
+    },
+    {
+      "trailId": "60031",
+      "trailName": "UPPER LAUREL CANYON TRAIL",
+      "lengthMiles": 0.41,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6019866019145,
+        "longitude": -117.786255498709
+      }
+    },
+    {
+      "trailId": "60430",
+      "trailName": "Las Flores Ridge Trail",
+      "lengthMiles": 0.62,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.5787772221723,
+        "longitude": -117.627356050034
+      }
+    },
+    {
+      "trailId": "60431",
+      "trailName": "The Undertaker Trail",
+      "lengthMiles": 0.38,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.577822902547,
+        "longitude": -117.633036305814
+      }
+    },
+    {
+      "trailId": "66030",
+      "trailName": "Lakeview Trail",
+      "lengthMiles": 0.26,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7847457369135,
+        "longitude": -117.761337895831
+      }
+    },
+    {
+      "trailId": "68432",
+      "trailName": "BOAT ROAD",
+      "lengthMiles": 0.12,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.5538100622464,
+        "longitude": -117.798741304693
+      }
+    },
+    {
+      "trailId": "68434",
+      "trailName": "LAGUNA LAUREL",
+      "lengthMiles": 0.56,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.6221568524021,
+        "longitude": -117.754847283733
+      }
+    },
+    {
+      "trailId": "68436",
+      "trailName": "MARY'S TRAIL",
+      "lengthMiles": 0.08,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6087411255892,
+        "longitude": -117.764167768837
+      }
+    },
+    {
+      "trailId": "68437",
+      "trailName": "MARY'S TRAIL",
+      "lengthMiles": 0.1,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6074292002089,
+        "longitude": -117.761341346168
+      }
+    },
+    {
+      "trailId": "68438",
+      "trailName": "MARY'S TRAIL",
+      "lengthMiles": 0.09,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.6085534907169,
+        "longitude": -117.765029268172
+      }
+    },
+    {
+      "trailId": "68439",
+      "trailName": "MARY'S TRAIL",
+      "lengthMiles": 0.07,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.6090122536445,
+        "longitude": -117.764339129808
+      }
+    },
+    {
+      "trailId": "68440",
+      "trailName": "UTILITY ROAD",
+      "lengthMiles": 0.13,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6169466187626,
+        "longitude": -117.763427042986
+      }
+    },
+    {
+      "trailId": "68441",
+      "trailName": "SERRANO RIDGE TRAIL",
+      "lengthMiles": 0.41,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.6280961294333,
+        "longitude": -117.767790317212
+      }
+    },
+    {
+      "trailId": "68442",
+      "trailName": "SEAWATCH TRAIL",
+      "lengthMiles": 0.22,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.5863702736992,
+        "longitude": -117.820506080145
+      }
+    },
+    {
+      "trailId": "68832",
+      "trailName": "AGUA CHINON",
+      "lengthMiles": 0.24,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.6951081666571,
+        "longitude": -117.690169144412
+      }
+    },
+    {
+      "trailId": "68833",
+      "trailName": "HICKS HAUL ROAD",
+      "lengthMiles": 0.44,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7356982095664,
+        "longitude": -117.720783498964
+      }
+    },
+    {
+      "trailId": "68837",
+      "trailName": "LOMA RIDGE",
+      "lengthMiles": 0.08,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7714547902207,
+        "longitude": -117.741734205176
+      }
+    },
+    {
+      "trailId": "68838",
+      "trailName": "Red Rock Ridge Trail",
+      "lengthMiles": 0.5,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.7698733405073,
+        "longitude": -117.68358053637
+      }
+    },
+    {
+      "trailId": "68839",
+      "trailName": "STATE SPUR ROAD",
+      "lengthMiles": 0.03,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7934834601037,
+        "longitude": -117.681836941563
+      }
+    },
+    {
+      "trailId": "68841",
+      "trailName": "HORSESHOE LOOP TRAIL",
+      "lengthMiles": 0.5,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7960452071287,
+        "longitude": -117.746340279332
+      }
+    },
+    {
+      "trailId": "68843",
+      "trailName": "SANTIAGO CREEK",
+      "lengthMiles": 0.14,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7972402966671,
+        "longitude": -117.742459103636
+      }
+    },
+    {
+      "trailId": "69232",
+      "trailName": "Egret Trail",
+      "lengthMiles": 0.47,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7987227949711,
+        "longitude": -117.763969666505
+      }
+    },
+    {
+      "trailId": "69233",
+      "trailName": "Willows Trail",
+      "lengthMiles": 0.45,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.8005968853037,
+        "longitude": -117.762362003048
+      }
+    },
+    {
+      "trailId": "69235",
+      "trailName": "Jamboree Road",
+      "lengthMiles": 0.99,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7940789409507,
+        "longitude": -117.760900490585
+      }
+    },
+    {
+      "trailId": "69242",
+      "trailName": "SANTIAGO CREEK TRAIL",
+      "lengthMiles": 0.03,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.7994485282217,
+        "longitude": -117.753139872133
+      }
+    },
+    {
+      "trailId": "69252",
+      "trailName": "MOFRE",
+      "lengthMiles": 0.24,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7909682325467,
+        "longitude": -117.722803177538
+      }
+    },
+    {
+      "trailId": "69253",
+      "trailName": "Water Works",
+      "lengthMiles": 0.41,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.791305659961,
+        "longitude": -117.728649916677
+      }
+    },
+    {
+      "trailId": "69254",
+      "trailName": "Water Works",
+      "lengthMiles": 0.58,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7953635648343,
+        "longitude": -117.736513980142
+      }
+    },
+    {
+      "trailId": "69255",
+      "trailName": "MWD ACCESS ROAD",
+      "lengthMiles": 0.08,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.82882922757,
+        "longitude": -117.74400827938
+      }
+    },
+    {
+      "trailId": "69256",
+      "trailName": "BLACK STAR CANYON ROAD",
+      "lengthMiles": 0.53,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7820619093691,
+        "longitude": -117.667202555645
+      }
+    },
+    {
+      "trailId": "69262",
+      "trailName": "Baker Canyon Road",
+      "lengthMiles": 0.06,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7580359155415,
+        "longitude": -117.662773259434
+      }
+    },
+    {
+      "trailId": "69263",
+      "trailName": "Baker Canyon Road",
+      "lengthMiles": 0.89,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7574457030041,
+        "longitude": -117.67007224305
+      }
+    },
+    {
+      "trailId": "69264",
+      "trailName": "Baker Canyon Road",
+      "lengthMiles": 0.06,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7587922897544,
+        "longitude": -117.66189874642
+      }
+    },
+    {
+      "trailId": "69265",
+      "trailName": "Baker Canyon Road",
+      "lengthMiles": 0.0,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7584457347821,
+        "longitude": -117.662204000792
+      }
+    },
+    {
+      "trailId": "69266",
+      "trailName": "Baker Canyon Road",
+      "lengthMiles": 0.02,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7592987170993,
+        "longitude": -117.66167582062
+      }
+    },
+    {
+      "trailId": "69267",
+      "trailName": "Baker Canyon Road",
+      "lengthMiles": 0.42,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7605819607671,
+        "longitude": -117.658514526947
+      }
+    },
+    {
+      "trailId": "69268",
+      "trailName": "SCE 1",
+      "lengthMiles": 0.2,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.7602635949957,
+        "longitude": -117.672170741914
+      }
+    },
+    {
+      "trailId": "69271",
+      "trailName": "Irvine Mesa Trail",
+      "lengthMiles": 1.21,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7426543189443,
+        "longitude": -117.645267817541
+      }
+    },
+    {
+      "trailId": "69272",
+      "trailName": "Irvine Mesa Trail",
+      "lengthMiles": 1.03,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7448749184377,
+        "longitude": -117.664981937484
+      }
+    },
+    {
+      "trailId": "69276",
+      "trailName": "Black Star",
+      "lengthMiles": 1.14,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7560057498854,
+        "longitude": -117.676823318475
+      }
+    },
+    {
+      "trailId": "69278",
+      "trailName": "SCE 2",
+      "lengthMiles": 0.18,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7740701907881,
+        "longitude": -117.667861914799
+      }
+    },
+    {
+      "trailId": "70833",
+      "trailName": "Rock It Trail",
+      "lengthMiles": 0.27,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.5757253584809,
+        "longitude": -117.753765172915
+      }
+    },
+    {
+      "trailId": "73633",
+      "trailName": "Lake View Trail",
+      "lengthMiles": 0.2,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7827321927523,
+        "longitude": -117.766473412239
+      }
+    },
+    {
+      "trailId": "75636",
+      "trailName": "Mentally Sensitive",
+      "lengthMiles": 0.06,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.5314807436266,
+        "longitude": -117.752640864327
+      }
+    },
+    {
+      "trailId": "77239",
+      "trailName": "Loma Valley",
+      "lengthMiles": 0.81,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7768311170361,
+        "longitude": -117.749457758592
+      }
+    },
+    {
+      "trailId": "77242",
+      "trailName": "Hangmans Monument",
+      "lengthMiles": 0.12,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7609601190554,
+        "longitude": -117.733941625211
+      }
+    },
+    {
+      "trailId": "77243",
+      "trailName": "Hangmans Monument",
+      "lengthMiles": 0.08,
+      "difficulty": null,
+      "location": {
+        "latitude": 33.7629482328663,
+        "longitude": -117.733900654806
+      }
+    },
+    {
+      "trailId": "86037",
+      "trailName": "Red Rock Ridge Trail",
+      "lengthMiles": 0.33,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.7467392618101,
+        "longitude": -117.665383203803
+      }
+    },
+    {
+      "trailId": "86837",
+      "trailName": "Augustine",
+      "lengthMiles": 0.23,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.757013031854,
+        "longitude": -117.700575042105
+      }
+    },
+    {
+      "trailId": "86838",
+      "trailName": "SAND TRAP",
+      "lengthMiles": 0.21,
+      "difficulty": 2,
+      "location": {
+        "latitude": 33.7374553408808,
+        "longitude": -117.695857939286
+      }
+    },
+    {
+      "trailId": "86839",
+      "trailName": "Limestone Ridge Trail",
+      "lengthMiles": 0.5,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.721029395087,
+        "longitude": -117.661475257748
+      }
+    },
+    {
+      "trailId": "87237",
+      "trailName": "WEST LOMA RIDGE",
+      "lengthMiles": 0.51,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.7629790518938,
+        "longitude": -117.730533754596
+      }
+    },
+    {
+      "trailId": "87637",
+      "trailName": "SHOESTRING",
+      "lengthMiles": 0.69,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.7615442356429,
+        "longitude": -117.708339147001
+      }
+    },
+    {
+      "trailId": "89238",
+      "trailName": "Aliso Creek East Trail",
+      "lengthMiles": 0.08,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.5506114597512,
+        "longitude": -117.71646808665
+      }
+    },
+    {
+      "trailId": "90037",
+      "trailName": "Aliso Summit Trail",
+      "lengthMiles": 0.0,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.5129023852258,
+        "longitude": -117.735416544221
+      }
+    },
+    {
+      "trailId": "92039",
+      "trailName": "Aliso Summit Trail",
+      "lengthMiles": 0.0,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.5121856008675,
+        "longitude": -117.738727633523
+      }
+    },
+    {
+      "trailId": "92438",
+      "trailName": "Bell View Regional Riding and Hiking Trail",
+      "lengthMiles": 0.0,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.6608193822028,
+        "longitude": -117.560366119072
+      }
+    },
+    {
+      "trailId": "92439",
+      "trailName": "Bell View Regional Riding and Hiking Trail",
+      "lengthMiles": 0.0,
+      "difficulty": 3,
+      "location": {
+        "latitude": 33.6487806526332,
+        "longitude": -117.567216271598
+      }
+    },
+    {
+      "trailId": "93238",
+      "trailName": "IRVINE COAST/SHADY CANYON TRAIL",
+      "lengthMiles": 0.0,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6582120895579,
+        "longitude": -117.807951082879
+      }
+    },
+    {
+      "trailId": "93637",
+      "trailName": "IRVINE COAST/SHADY CANYON TRAIL",
+      "lengthMiles": 0.0,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6304382770057,
+        "longitude": -117.814982073888
+      }
+    },
+    {
+      "trailId": "94037",
+      "trailName": "IRVINE COAST/SHADY CANYON TRAIL",
+      "lengthMiles": 0.0,
+      "difficulty": 1,
+      "location": {
+        "latitude": 33.6547199530294,
+        "longitude": -117.827104801754
+      }
+    }
+  ]
