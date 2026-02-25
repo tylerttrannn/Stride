@@ -24,9 +24,8 @@ struct TrailList: View {
     private var stepCount: Int
     private var walkingStrideLength: Double
     private let INCHES_PER_MILE: Double = 63360.0
-    
+
     @EnvironmentObject var userVM: UserProfileViewModel
-    
     
     init (latitude: CGFloat = 33.6405, longitude: CGFloat = -117.8443, stepCount: Int = 0, walkingStrideLength: Double = 25) {
         _latitude = State(initialValue: latitude)
@@ -51,6 +50,8 @@ struct TrailList: View {
                         } label: {
                             TrailInfoCard(trail: trail, ratingsVM: ratingsVM)
                         }
+                        
+                        
                     }
                 } else if errorMessage == "Location not available" {
                     Text("Notice: Current user location is not available. Please fix in settings.")
