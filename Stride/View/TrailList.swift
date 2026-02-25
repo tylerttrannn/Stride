@@ -17,6 +17,8 @@ struct TrailList: View {
     @State private var longitude: CGFloat
     @State var noticeTextHeight: CGFloat = 0
     
+    @StateObject private var ratingsVM = RatingViewModel()
+    
     private let locationManager: LocationManager = LocationManager()
     
     private var stepsCount: Int
@@ -39,7 +41,7 @@ struct TrailList: View {
                         .padding(16)
                         .background(RoundedRectangle(cornerRadius: 10).fill(.yellow))
                     ForEach(trails) { trail in
-                        TrailInfoCard(trail: trail)
+                        TrailInfoCard(trail: trail, ratingsVM: ratingsVM)
                     }
                 } else if let errorMessage = errorMessage {
                     Text("Error: \(errorMessage)")
@@ -50,7 +52,7 @@ struct TrailList: View {
                         .padding()
                 } else {
                     ForEach(trails) { trail in
-                        TrailInfoCard(trail: trail)
+                        TrailInfoCard(trail: trail, ratingsVM: ratingsVM)
                     }
                 }
             }
@@ -58,6 +60,7 @@ struct TrailList: View {
         .task {
             await getLocation()
             await loadTrails()
+            await ratingsVM.loadUserRatings()
         }
     }
     

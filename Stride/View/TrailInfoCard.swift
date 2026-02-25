@@ -17,7 +17,8 @@ struct ContentLengthPreference: PreferenceKey {
 struct TrailInfoCard: View {
     var trail: Trail
     @State var textHeight: CGFloat = 0
-
+    @ObservedObject var ratingsVM: RatingViewModel
+    
     let screenSize: CGRect = UIScreen.main.bounds
 
     var body: some View {
@@ -40,6 +41,18 @@ struct TrailInfoCard: View {
                     if let difficulty = trail.difficulty {
                         Text("Diffculty: \(String(difficulty))/5")
                     }
+                    StarRatingView(
+                        rating: Binding(
+                            get: {ratingsVM.ratings[trail.id] ?? 0 },
+                            set: { newValue in
+                                ratingsVM.ratings[trail.id] = newValue
+                                Task {
+                                    await ratingsVM.updateRating(for: trail.id, rating: newValue)
+                                }
+                            }
+                        )
+                    )
+                    .padding(.top, 1)
                 }
                 .font(Font.system(size: 16, design: .serif))
                 .foregroundColor(Color(red: 0.0, green: 0.0, blue: 0.058823529411764705)) // #00000f
