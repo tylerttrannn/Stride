@@ -13,6 +13,7 @@ struct BottomNavBarView: View {
     @State var errorMessage: String?
     @State var isLoading: Bool = false
     @State private var stepCount: Double = 1
+    @State private var walkingStrideLength: Double = 25  // 25 inches
     
     @EnvironmentObject var userVM: UserProfileViewModel
 
@@ -33,7 +34,7 @@ struct BottomNavBarView: View {
                 .aspectRatio(contentMode: .fit)
                 .tag(0)
             
-            TrailList(stepsCount: Int(stepCount))
+            TrailList(stepsCount: Int(stepCount), walkingStrideLength: walkingStrideLength)
                 .environmentObject(self.userVM)
                 .tabItem {
                     Image(systemName: "map")
@@ -42,7 +43,7 @@ struct BottomNavBarView: View {
                 .aspectRatio(0.55, contentMode: .fit)
                 .tag(1)
             
-            SettingsPageView()
+            SettingsPageView(walkingStrideLength: Double(walkingStrideLength))
                 .tabItem {
                     Image(systemName: "gear")
                     Text("Settings")
@@ -55,6 +56,8 @@ struct BottomNavBarView: View {
         }
         .task {
             await loadSteps()
+            await loadWalkingStrideLength()
+            
         }
     }
 
@@ -73,7 +76,17 @@ struct BottomNavBarView: View {
             stepCount = try await healthStore.fetchStepsAsync()
         } catch {
             errorMessage = error.localizedDescription
-            print("Error:", errorMessage ?? "")
+            print("Error: loadSteps", errorMessage ?? "")
+        }
+    }
+    
+    func loadWalkingStrideLength() async {
+        do {
+            walkingStrideLength = try await healthStore.fetchWalkingStrideLengthAsync()
+            print("walkingStrideLength: ", walkingStrideLength)
+        } catch {
+            errorMessage = error.localizedDescription
+            print("Error: loadWalkingStrideLength ", errorMessage ?? "")
         }
     }
 

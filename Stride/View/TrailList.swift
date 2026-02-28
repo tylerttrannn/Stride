@@ -22,12 +22,18 @@ struct TrailList: View {
     private let locationManager: LocationManager = LocationManager()
     
     private var stepsCount: Int
+    private var walkingStrideLength: Double
+
+    private let INCHES_PER_MILE: Double = 63360.0
+    
     @EnvironmentObject var userVM: UserProfileViewModel
     
-    init (latitude: CGFloat = 33.6405, longitude: CGFloat = -117.8443, stepsCount: Int = 0) {
+    
+    init (latitude: CGFloat = 33.6405, longitude: CGFloat = -117.8443, stepsCount: Int = 0, walkingStrideLength: Double = 25) {
         _latitude = State(initialValue: latitude)
         _longitude = State(initialValue: longitude)
         self.stepsCount = stepsCount
+        self.walkingStrideLength = walkingStrideLength
     }
     
     var body: some View {
@@ -83,7 +89,8 @@ struct TrailList: View {
                 latitude: latitude,
                 longitude: longitude,
                 remainingSteps: Double(Int(userVM.stepsGoal) - stepsCount),
-                difficulty_pref: userVM.preferredDifficulty
+                difficulty_pref: userVM.preferredDifficulty,
+                user_steps_per_mile: Int(INCHES_PER_MILE / walkingStrideLength)
             )
             trails = results
             isLoading = false
@@ -95,6 +102,6 @@ struct TrailList: View {
 }
 
 #Preview {
-    TrailList(stepsCount: 0)
+    TrailList(stepsCount: 0, walkingStrideLength: 0)
         .environmentObject(UserProfileViewModel())
 }

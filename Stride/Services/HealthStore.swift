@@ -4,6 +4,7 @@ import HealthKit
 
 class HealthStore {
     let healthStore = HKHealthStore()
+    let INCHES_PER_METER: Double = 39.3701
     
     // request permission from user to read HealthKit data
     func requestAuthorization(completion: @escaping (Bool, Error?) -> Void) {
@@ -81,8 +82,8 @@ class HealthStore {
         
         let query = HKStatisticsQuery(
             quantityType: walkingStrideLengthType,
-            quantitySamplePredicate: nil,
-            options: [])
+            quantitySamplePredicate: predicate,
+            options: .discreteAverage)
         { _, result, error in
             DispatchQueue.main.async {
                 if let error = error {
@@ -90,12 +91,12 @@ class HealthStore {
                     return
                 }
                 
-                let walkingStrideLength = result?.sumQuantity()?.doubleValue(for: HKUnit.mile())
-                completion(walkingStrideLength!, nil)
+                let walkingStrideLength = result?.averageQuantity()?.doubleValue(for: HKUnit.meter()) ?? 0.63
+                completion(walkingStrideLength * self.INCHES_PER_METER, nil)  // convert from meters to inches
             }
         }
+        healthStore.execute(query)
     }
-    
 }
 
 extension HealthStore {
