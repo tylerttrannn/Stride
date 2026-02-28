@@ -27,6 +27,10 @@ struct SettingsPageView: View {
     @State var displayModeSelection: DisplayModeSelection = .light
 
     @EnvironmentObject var userVM: UserProfileViewModel
+    
+    var walkingStrideLength: Double
+    
+    private let INCHES_PER_MILE: Double = 63360.0
 
     var body: some View {
         NavigationView {
@@ -66,6 +70,12 @@ struct SettingsPageView: View {
                         .pickerStyle(SegmentedPickerStyle())
                     }
                 }
+                
+                Section (header: Text("Your Data")) {
+                    Text("Walking stride length: \(walkingStrideLength, specifier: "%.1f") inches")
+                    Text("Approx. steps per mile: \(INCHES_PER_MILE / walkingStrideLength, specifier: "%.0f")")
+                }
+                
             }
             .navigationTitle("Setting")
         }
@@ -73,6 +83,6 @@ struct SettingsPageView: View {
 }
 
 #Preview {
-    SettingsPageView()
+    SettingsPageView(walkingStrideLength: 26.0)
         .environmentObject(UserProfileViewModel())
 }
