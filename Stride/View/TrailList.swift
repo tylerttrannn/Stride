@@ -37,8 +37,8 @@ struct TrailList: View {
     }
     
     var body: some View {
-        ScrollView {
-            VStack {
+        NavigationStack {
+            List {
                 if isLoading {
                     ProgressView("Finding trails...")
                         .padding()
@@ -47,7 +47,11 @@ struct TrailList: View {
                         .padding(16)
                         .background(RoundedRectangle(cornerRadius: 10).fill(.yellow))
                     ForEach(trails) { trail in
-                        TrailInfoCard(trail: trail, ratingsVM: ratingsVM)
+                        NavigationLink {
+                            TrailDetailedInfo(trail: trail)
+                        } label: {
+                            TrailInfoCard(trail: trail, ratingsVM: ratingsVM)
+                        }
                     }
                 } else if let errorMessage = errorMessage {
                     Text("Error: \(errorMessage)")
@@ -58,7 +62,11 @@ struct TrailList: View {
                         .padding()
                 } else {
                     ForEach(trails) { trail in
-                        TrailInfoCard(trail: trail, ratingsVM: ratingsVM)
+                        NavigationLink {
+                            TrailDetailedInfo(trail: trail)
+                        } label: {
+                            TrailInfoCard(trail: trail, ratingsVM: ratingsVM)
+                        }
                     }
                 }
             }
@@ -102,6 +110,6 @@ struct TrailList: View {
 }
 
 #Preview {
-    TrailList(stepsCount: 0, walkingStrideLength: 0)
+    TrailList(stepsCount: 0, walkingStrideLength: 1)
         .environmentObject(UserProfileViewModel())
 }
