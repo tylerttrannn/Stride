@@ -13,13 +13,14 @@ class HealthStore {
         }
         
         guard let stepCountType = HKQuantityType.quantityType(forIdentifier: .stepCount),
-              let calorieType = HKQuantityType.quantityType(forIdentifier: .activeEnergyBurned)
+              let calorieType = HKQuantityType.quantityType(forIdentifier: .activeEnergyBurned),
+              let walkingStrideLengthType = HKQuantityType.quantityType(forIdentifier: .walkingStepLength)
         else {
             completion(false, nil)
             return
         }
 
-        let typesToRead: Set<HKObjectType> = [stepCountType, calorieType]
+        let typesToRead: Set<HKObjectType> = [stepCountType, calorieType, walkingStrideLengthType]
         
         healthStore.requestAuthorization(toShare: [], read: typesToRead) { (success, error) in
             completion(success, error)
@@ -63,6 +64,38 @@ class HealthStore {
         healthStore.execute(query)
     }
     
+    func fetchWalkingStrideLength(completion: @escaping (Double, Error?) -> Void) {
+        guard let walkingStrideLengthType = HKQuantityType.quantityType(forIdentifier: .walkingStepLength)
+                else {
+            return
+        }
+        
+        // filter for today only
+        let calendar = Calendar.current
+        let startOfDay = calendar.startOfDay(for: Date())
+        let predicate = HKQuery.predicateForSamples(
+            withStart: startOfDay,
+            end: Date(),
+            options: .strictStartDate
+        )
+        
+        let query = HKStatisticsQuery(
+            quantityType: walkingStrideLengthType,
+            quantitySamplePredicate: nil,
+            options: [])
+        { _, result, error in
+            DispatchQueue.main.async {
+                if let error = error {
+                    completion(0, error)
+                    return
+                }
+                
+                let walkingStrideLength = result?.sumQuantity()?.doubleValue(for: HKUnit.mile())
+                completion(walkingStrideLength!, nil)
+            }
+        }
+    }
+    
 }
 
 extension HealthStore {
@@ -73,6 +106,18 @@ extension HealthStore {
                      continuation.resume(throwing: error)
                 } else {
                     continuation.resume(returning: steps)
+                }
+            }
+        }
+    }
+    
+    func fetchWalkingStrideLengthAsync() async throws -> Double {
+        try await withCheckedThrowingContinuation { continuation in fetchWalkingStrideLength {
+            strideLength, error in
+                if let error = error {
+                    continuation.resume(throwing: error)
+                } else {
+                    continuation.resume(returning: strideLength)
                 }
             }
         }
