@@ -10,4 +10,5 @@ struct Trail: Identifiable, Decodable {
     let latitude: Double
     let longitude: Double
     let score: Double
+    let terrain_type: String
 }
