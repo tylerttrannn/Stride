@@ -13,7 +13,7 @@ class TrailService {
         
         let response = try await supabase
             .rpc(
-                "rank_trails",
+                "rank_trails_k",
                 params: [
                     "user_lat": latitude,
                     "user_lon": longitude,
