@@ -13,11 +13,27 @@ import CoreLocation
 struct TrailDetailedInfo: View {
     var trail: Trail
     @State private var address: String = "Unknown"
+    @State private var position: MapCameraPosition
+
+    init(trail: Trail) {
+        self.trail = trail
+        _position = State(initialValue: .region(
+            MKCoordinateRegion(
+                center: CLLocationCoordinate2D(latitude: trail.latitude, longitude: trail.longitude),
+                span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
+            )
+        ))
+    }
     
     var body: some View {
         VStack {
-            MapView(coordinate: CLLocationCoordinate2D(latitude: trail.latitude, longitude: trail.longitude))
+            ZStack (alignment: .center) {
+                Map (position: $position) {
+                    Marker(trail.name,
+                           coordinate: CLLocationCoordinate2D(latitude: trail.latitude, longitude: trail.longitude))
+                }
                 .frame(height: 300)
+            }
             
             VStack(alignment: .leading) {
                 Text(trail.name)
