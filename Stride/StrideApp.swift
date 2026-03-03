@@ -9,6 +9,12 @@ import SwiftUI
 
 @main
 struct StrideApp: App {
+    init() {
+        Task {
+            await AuthService.shared.establishAnonSession()
+        }
+    }
+    
     var body: some Scene {
         WindowGroup {
             LandingView()
