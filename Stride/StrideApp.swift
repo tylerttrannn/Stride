@@ -9,7 +9,15 @@ import SwiftUI
 
 @main
 struct StrideApp: App {
+<<<<<<< HEAD
     @StateObject private var authService = AuthService()
+=======
+    init() {
+        Task {
+            await AuthService.shared.establishAnonSession()
+        }
+    }
+>>>>>>> df6eff5 (add establish anon session)
     
     var body: some Scene {
         WindowGroup {
