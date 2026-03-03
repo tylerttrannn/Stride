@@ -9,7 +9,7 @@ class RatingViewModel: ObservableObject {
     
     func loadUserRatings() async {
         do {
-            let userRatings = try await service.fetchUserRankings()
+            let userRatings = try await service.fetchUserRatings()
             
             // map trails to user's rating
             var map: [String: Int] = [:]

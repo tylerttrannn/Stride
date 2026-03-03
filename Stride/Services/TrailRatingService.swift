@@ -18,7 +18,7 @@ class TrailRatingService {
             .execute()
     }
     
-    func fetchUserRankings() async throws -> [TrailRating] {
+    func fetchUserRatings() async throws -> [TrailRating] {
         guard let userId = supabase.auth.currentUser?.id else { return [] }
         
         let response = try await supabase
