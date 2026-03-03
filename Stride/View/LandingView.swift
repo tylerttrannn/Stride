@@ -9,16 +9,32 @@ import SwiftUI
 
 struct LandingView: View {
     @StateObject private var userVM = UserProfileViewModel()
+    @ObservedObject var authService: AuthService
 
     var body: some View {
-        BottomNavBarView()
-            .environmentObject(userVM)
-            .task {
-                await userVM.loadProfile()
+        VStack {
+            ZStack (){
+                Text("-=+ Stride +=-")
+                    .font(Font.system(size: 24, design: .serif))
+                
+                Button("sign-out") {
+                    Task {
+                        await authService.signOut()
+                    }
+                }
+                .padding()
+                .frame(maxWidth: .infinity, alignment: .trailing)
+                .buttonStyle(.bordered)
             }
+            BottomNavBarView()
+                .environmentObject(userVM)
+                .task {
+                    await userVM.loadProfile()
+                }
+        }
     }
 }
 
 #Preview {
-    LandingView()
+    LandingView(authService: .shared)
 }
