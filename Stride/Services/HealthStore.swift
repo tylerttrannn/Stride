@@ -123,5 +123,17 @@ extension HealthStore {
             }
         }
     }
+    
+    func requestAuthorizationAsync() async throws -> Bool {
+        try await withCheckedThrowingContinuation { continuation in
+            requestAuthorization { success, error in
+                if let error = error {
+                    continuation.resume(throwing: error)
+                } else {
+                    continuation.resume(returning: success)
+                }
+            }
+        }
+    }
 }
 

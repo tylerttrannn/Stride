@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Foundation
+import HealthKit
 
 struct BottomNavBarView: View {
     @State var selectedTab: Int = 0;
@@ -51,16 +52,27 @@ struct BottomNavBarView: View {
                 .aspectRatio(0.55, contentMode: .fit)
                 .tag(2)
         }
-        .onAppear {
-            requestHealthKitAccess() // Request HealthKit permissions when view appears
-        }
         .task {
-            await loadSteps()
-            await loadWalkingStrideLength()
+            await authorizeAndLoad()
             
         }
     }
-
+    
+    func authorizeAndLoad() async {
+        do {
+            let success = try await healthStore.requestAuthorizationAsync()
+            if success {
+                stepCount = try await healthStore.fetchStepsAsync()
+                walkingStrideLength = try await healthStore.fetchWalkingStrideLengthAsync()
+            } else {
+                print("HealthKit permission denied")
+            }
+        } catch {
+            errorMessage = error.localizedDescription
+            print("Authorization error:", error.localizedDescription)
+        }
+    }
+    
     func requestHealthKitAccess() {
         healthStore.requestAuthorization { success, error in
             if let error = error {

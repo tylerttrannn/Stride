@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LandingView: View {
-    @StateObject private var userVM = UserProfileViewModel()
+    @StateObject var userVM: UserProfileViewModel
     @ObservedObject var authService: AuthService
 
     var body: some View {
@@ -36,5 +36,5 @@ struct LandingView: View {
 }
 
 #Preview {
-    LandingView(authService: .shared)
+    LandingView(userVM: UserProfileViewModel(), authService: .shared)
 }

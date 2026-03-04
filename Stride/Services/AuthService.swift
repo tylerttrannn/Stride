@@ -80,6 +80,7 @@ final class AuthService: ObservableObject {
             try await supabase.auth.signOut()
             self.session = nil
             self.isAuthenticated = false
+            print("Signed out")
         } catch {
             print("Sign out failed: \(error.localizedDescription)")
         }

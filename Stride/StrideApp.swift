@@ -10,12 +10,14 @@ import SwiftUI
 @main
 struct StrideApp: App {
     @StateObject private var authService = AuthService()
+    @StateObject private var userVM = UserProfileViewModel()
+
     
     var body: some Scene {
         WindowGroup {
             Group {
                 if authService.isAuthenticated {
-                    LandingView(authService: authService)
+                    LandingView(userVM: userVM, authService: authService)
                 } else {
                     LoginView(authService: authService)
                 }
