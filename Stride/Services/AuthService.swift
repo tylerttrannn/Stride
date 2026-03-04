@@ -4,14 +4,10 @@ import Combine
 
 @MainActor
 final class AuthService: ObservableObject {
-    static let shared = AuthService()  // delete? idk why this is here
-    
     @Published var session: Session?
     @Published var isAuthenticated = false
     @Published var isLoading = false  // Prevent duplicate requests during auth operation
-    
-    private init() {}  // delete? i think this is only used for `shared`
-    
+        
     func establishAnonSession() async {
         if let user = supabase.auth.currentUser {
             print("Existing session found:", user.id)
