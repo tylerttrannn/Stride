@@ -3,7 +3,7 @@ import Supabase
 import Combine
 
 @MainActor
-final class AuthService {
+final class AuthService: ObservableObject {
     static let shared = AuthService()  // delete? idk why this is here
     
     @Published var session: Session?
