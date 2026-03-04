@@ -12,6 +12,11 @@ struct LoginView : View {
     @State private var email = ""
     @State private var password = ""
     
+    var isFormValid: Bool {
+        !email.trimmingCharacters(in: .whitespaces).isEmpty &&
+        !password.trimmingCharacters(in: .whitespaces).isEmpty
+    }
+    
     var body : some View {
         TextField("Email", text: $email)
             .textFieldStyle(.roundedBorder)
@@ -30,6 +35,7 @@ struct LoginView : View {
             }
         }
         .buttonStyle(.borderedProminent)
+        .disabled(!isFormValid)
         
         
         Button("Sign Up") {
@@ -38,9 +44,10 @@ struct LoginView : View {
             }
         }
         .buttonStyle(.bordered)
+        .disabled(!isFormValid)
     }
 }
 
 #Preview {
-    LoginView(authService: .shared)
+    LoginView(authService: AuthService())
 }
