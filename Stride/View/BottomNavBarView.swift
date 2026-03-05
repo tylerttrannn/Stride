@@ -8,6 +8,7 @@
 import SwiftUI
 import Foundation
 
+@MainActor
 struct BottomNavBarView: View {
     @State var selectedTab: Int = 0;
     @State var errorMessage: String?
@@ -25,7 +26,7 @@ struct BottomNavBarView: View {
 
     var body: some View {
         TabView (selection: $selectedTab) {
-            HomePageView(stepsCount: Int(stepCount))
+            ProgressBar(stepsCount: Int(stepCount), stepsGoal: userVM.stepsGoal)
                 .environmentObject(self.userVM)
                 .tabItem {
                     Image(systemName: "house")
@@ -34,7 +35,7 @@ struct BottomNavBarView: View {
                 .aspectRatio(contentMode: .fit)
                 .tag(0)
             
-            TrailList(stepsCount: Int(stepCount), walkingStrideLength: walkingStrideLength)
+            TrailList(stepCount: Int(stepCount), walkingStrideLength: walkingStrideLength)
                 .environmentObject(self.userVM)
                 .tabItem {
                     Image(systemName: "map")
@@ -54,7 +55,15 @@ struct BottomNavBarView: View {
         .onAppear {
             requestHealthKitAccess() // Request HealthKit permissions when view appears
         }
+        .onChange(of: selectedTab) {
+            Task {
+                print("Running task for loadSteps and loadWalkingStrideLength, on change")
+                await loadSteps()
+                await loadWalkingStrideLength()
+            }
+        }
         .task {
+            print("Running task for loadSteps and loadWalkingStrideLength, task")
             await loadSteps()
             await loadWalkingStrideLength()
             
