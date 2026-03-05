@@ -17,19 +17,17 @@ struct BottomNavBarView: View {
     @State private var stepCount: Double = 1
     @State private var walkingStrideLength: Double = 25  // 25 inches
     
-    @State var userProfile: UserProfile
     @ObservedObject var userService: UserService
     
     @EnvironmentObject var userVM: UserProfileViewModel
 
     private let healthStore = HealthStore()
     
-    init(userService: UserService, userProfile: UserProfile) {
+    init(userService: UserService) {
         UITabBar.appearance().backgroundColor = UIColor(Color(red: 0.9647058823529412, green: 0.9647058823529412, blue: 0.9647058823529412));
         
         self.userService = userService
-        self.userProfile = userProfile
-        
+//        self.userProfile = userProfile
     }
 
     var body: some View {
@@ -111,7 +109,7 @@ struct BottomNavBarView: View {
 
 #Preview {
     BottomNavBarView(userService: UserService(),
-                     userProfile: UserProfile(id: "-1", preferred_difficulty: 1, steps_goal: 2, preferred_terrain: "paved", email: "test@email.com"))
+                    /* userProfile: UserProfile(id: "-1", preferred_difficulty: 1, steps_goal: 2, preferred_terrain: "paved", email: "test@email.com")*/)
         .environmentObject(UserProfileViewModel())
 }
 

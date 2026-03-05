@@ -39,34 +39,40 @@ struct SettingsPageView: View {
             Form {
                 Section (header: Text("Goals")){
                     HStack {
-                        Text("Steps Goal ")
-                        TextField("Enter you steps goal", value: $userVM.stepsGoal, format: .number)
-                            .padding(5)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 5) // Creates a shape for the border
-                                    .stroke(Color.gray, lineWidth: 1)
-                            )
-                            .onChange(of: $userVM.stepsGoal.wrappedValue) {
-                                Task {
-                                    await userService.updateStepsGoal(newStepsGoal: $userVM.stepsGoal.wrappedValue)
-                                    print("\t\tChanging steps goal")
-                                }
+                        TextField("Goal", value: Binding(
+                            get: { userVM.userProfile?.steps_goal ?? 0 },
+                            set: { newValue in
+                                Task { await userVM.updateSteps(userService: userService, newGoal: newValue) }
                             }
+                        ), format: .number)
                     }
                 }
-                Section (header: Text("Preferences")){
-                    VStack (alignment: .leading){
+                
+                Section(header: Text("Preferences")) {
+                    VStack(alignment: .leading) {
                         Text("Trail Difficulty")
-                        Picker("difficulty", selection: $userVM.preferredDifficulty) {
+                            .font(.caption)
+                            .foregroundColor(.secondary)
+
+                        Picker("Difficulty", selection: Binding(
+                            get: {
+                                // Supabase stores it as just a plain Int, convert to DifficultySelection Enum
+                                DifficultySelection(rawValue: userVM.userProfile?.preferred_difficulty ?? 1) ?? .one
+                            },
+                            set: { newValue in
+                                Task {
+                                    await userVM.updateDifficulty(userService: userService, newDifficulty: newValue.rawValue)
+                                }
+                            }
+                        )) {
                             ForEach(DifficultySelection.allCases, id: \.self) { option in
-                                Text("\(option.rawValue)")
-                                    .tag(option.rawValue)
+                                Text("\(option.rawValue)").tag(option)
                             }
                         }
                         .pickerStyle(SegmentedPickerStyle())
-                        
                     }
                 }
+                
                 
                 Section (header: Text("App Settings")){
                     VStack (alignment: .leading){
