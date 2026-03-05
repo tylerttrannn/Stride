@@ -8,6 +8,7 @@
 import SwiftUI
 import Foundation
 
+
 @MainActor
 struct BottomNavBarView: View {
     @State var selectedTab: Int = 0;
@@ -16,12 +17,19 @@ struct BottomNavBarView: View {
     @State private var stepCount: Double = 1
     @State private var walkingStrideLength: Double = 25  // 25 inches
     
+    @State var userProfile: UserProfile
+    @ObservedObject var userService: UserService
+    
     @EnvironmentObject var userVM: UserProfileViewModel
 
     private let healthStore = HealthStore()
     
-    init() {
+    init(userService: UserService, userProfile: UserProfile) {
         UITabBar.appearance().backgroundColor = UIColor(Color(red: 0.9647058823529412, green: 0.9647058823529412, blue: 0.9647058823529412));
+        
+        self.userService = userService
+        self.userProfile = userProfile
+        
     }
 
     var body: some View {
@@ -44,7 +52,7 @@ struct BottomNavBarView: View {
                 .aspectRatio(0.55, contentMode: .fit)
                 .tag(1)
             
-            SettingsPageView(walkingStrideLength: Double(walkingStrideLength))
+            SettingsPageView(userService: userService, walkingStrideLength: Double(walkingStrideLength))
                 .tabItem {
                     Image(systemName: "gear")
                     Text("Settings")
@@ -102,7 +110,8 @@ struct BottomNavBarView: View {
 }
 
 #Preview {
-    BottomNavBarView()
+    BottomNavBarView(userService: UserService(),
+                     userProfile: UserProfile(id: "-1", preferred_difficulty: 1, steps_goal: 2, preferred_terrain: "paved", email: "test@email.com"))
         .environmentObject(UserProfileViewModel())
 }
 

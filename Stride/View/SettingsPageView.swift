@@ -25,6 +25,8 @@ enum DisplayModeSelection : String, CaseIterable {
 
 struct SettingsPageView: View {
     @State var displayModeSelection: DisplayModeSelection = .light
+    @State var userService: UserService
+    
 
     @EnvironmentObject var userVM: UserProfileViewModel
     
@@ -44,6 +46,12 @@ struct SettingsPageView: View {
                                 RoundedRectangle(cornerRadius: 5) // Creates a shape for the border
                                     .stroke(Color.gray, lineWidth: 1)
                             )
+                            .onChange(of: $userVM.stepsGoal.wrappedValue) {
+                                Task {
+                                    await userService.updateStepsGoal(newStepsGoal: $userVM.stepsGoal.wrappedValue)
+                                    print("\t\tChanging steps goal")
+                                }
+                            }
                     }
                 }
                 Section (header: Text("Preferences")){
@@ -56,6 +64,7 @@ struct SettingsPageView: View {
                             }
                         }
                         .pickerStyle(SegmentedPickerStyle())
+                        
                     }
                 }
                 
@@ -83,6 +92,6 @@ struct SettingsPageView: View {
 }
 
 #Preview {
-    SettingsPageView(walkingStrideLength: 26.0)
+    SettingsPageView(userService: UserService(), walkingStrideLength: 26.0)
         .environmentObject(UserProfileViewModel())
 }

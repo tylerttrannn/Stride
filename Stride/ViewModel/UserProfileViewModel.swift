@@ -19,9 +19,9 @@ class UserProfileViewModel: ObservableObject {
     func loadProfile() async {
         do {
             let profile = try await UserService().fetchProfile()
-            preferredDifficulty = DifficultySelection(
-                rawValue: profile.preferred_difficulty ?? 1
-            ) ?? .one
+//            preferredDifficulty = DifficultySelection(
+//                rawValue: profile.preferred_difficulty ?? 1
+//            ) ?? .one
         } catch {
             print(error)
         }
