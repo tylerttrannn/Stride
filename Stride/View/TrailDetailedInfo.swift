@@ -12,11 +12,15 @@ import CoreLocation
 
 struct TrailDetailedInfo: View {
     var trail: Trail
+    @ObservedObject var ratingsVM: RatingViewModel
+
     @State private var address: String = "Unknown"
     @State private var position: MapCameraPosition
 
-    init(trail: Trail) {
+    init(trail: Trail, ratingsVM: RatingViewModel) {
         self.trail = trail
+        self.ratingsVM = ratingsVM
+        
         _position = State(initialValue: .region(
             MKCoordinateRegion(
                 center: CLLocationCoordinate2D(latitude: trail.latitude, longitude: trail.longitude),
@@ -61,6 +65,18 @@ struct TrailDetailedInfo: View {
                         Text("Diffculty: \(String(difficulty))/5")
                     }
                     Text("Terrain type: \(trail.terrain_type)")
+                    StarRatingView(
+                        rating: Binding(
+                            get: {ratingsVM.ratings[trail.id] ?? 0 },
+                            set: { newValue in
+                                ratingsVM.ratings[trail.id] = newValue
+                                Task {
+                                    await ratingsVM.updateRating(for: trail.id, rating: newValue)
+                                }
+                            }
+                        )
+                    )
+                    .padding(.top, 1)
                 }
                 .font(Font.system(size: 16, design: .serif))
                 .foregroundColor(Color(red: 0.0, green: 0.0, blue: 0.058823529411764705)) // #00000f
@@ -124,5 +140,5 @@ func getAddress(
 }
 
 #Preview {
-    TrailDetailedInfo(trail: Trail(id: "1", name: "Turtle Rock", length_miles: 1.2, difficulty: 1, distance_from_user: 1.2, estimated_steps: 2400, latitude: 33.6405, longitude: -117.8443, score: 1, terrain_type:"dirt"))
+//    TrailDetailedInfo(trail: Trail(id: "1", name: "Turtle Rock", length_miles: 1.2, difficulty: 1, distance_from_user: 1.2, estimated_steps: 2400, latitude: 33.6405, longitude: -117.8443, score: 1, terrain_type:"dirt"))
 }

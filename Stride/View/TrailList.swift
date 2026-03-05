@@ -46,7 +46,7 @@ struct TrailList: View {
                         .background(RoundedRectangle(cornerRadius: 10).fill(.yellow))
                     ForEach(trails) { trail in
                         NavigationLink {
-                            TrailDetailedInfo(trail: trail)
+                            TrailDetailedInfo(trail: trail, ratingsVM: ratingsVM)
                         } label: {
                             TrailInfoCard(trail: trail, ratingsVM: ratingsVM)
                         }
@@ -67,7 +67,7 @@ struct TrailList: View {
                 } else {
                     ForEach(trails) { trail in
                         NavigationLink {
-                            TrailDetailedInfo(trail: trail)
+                            TrailDetailedInfo(trail: trail, ratingsVM: ratingsVM)
                         } label: {
                             TrailInfoCard(trail: trail, ratingsVM: ratingsVM)
                         }
