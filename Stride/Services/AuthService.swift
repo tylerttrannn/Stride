@@ -7,6 +7,8 @@ final class AuthService: ObservableObject {
     @Published var session: Session?
     @Published var isAuthenticated = false
     @Published var isLoading = false  // Prevent duplicate requests during auth operation
+    
+    @Published var authErrorMessage: String?
         
     func establishAnonSession() async {
         if let user = supabase.auth.currentUser {
@@ -38,6 +40,7 @@ final class AuthService: ObservableObject {
         do {
             guard !isLoading else { return }
             isLoading = true
+            authErrorMessage = nil
             defer { isLoading = false }
             
             let response = try await supabase.auth.signUp(email: email, password: password)
@@ -48,6 +51,7 @@ final class AuthService: ObservableObject {
             print("Sign up failed: \(error.localizedDescription)")
             self.session = nil
             self.isAuthenticated = false
+            self.authErrorMessage = parseAuthError(error)
         }
     }
     
@@ -55,6 +59,7 @@ final class AuthService: ObservableObject {
         do {
             guard !isLoading else { return }
             isLoading = true
+            authErrorMessage = nil
             defer { isLoading = false }
             
             let session = try await supabase.auth.signIn(email: email, password: password)
@@ -65,6 +70,7 @@ final class AuthService: ObservableObject {
             print("Sign in failed: \(error.localizedDescription)")
             self.session = nil
             self.isAuthenticated = false
+            self.authErrorMessage = parseAuthError(error)
         }
     }
     
@@ -77,5 +83,31 @@ final class AuthService: ObservableObject {
         } catch {
             print("Sign out failed: \(error.localizedDescription)")
         }
+    }
+    
+    private func parseAuthError(_ error: Error) -> String {
+        let message = error.localizedDescription.lowercased()
+
+        if message.contains("not confirmed") {
+            return "Please confirm email to login"
+        }
+
+        if message.contains("invalid login credentials") {
+            return "Incorrect email or password."
+        }
+
+        if message.contains("password") {
+            return "Password must be at least 6 characters."
+        }
+
+        if message.contains("email") {
+            return "Please enter a valid email address."
+        }
+
+        if message.contains("already registered") {
+            return "An account with this email already exists."
+        }
+
+        return "Something went wrong. Please try again."
     }
 }

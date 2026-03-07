@@ -29,6 +29,13 @@ struct LoginView : View {
             .padding(.horizontal, 30)
             .padding(.bottom, 10)
 
+        if let error = authService.authErrorMessage {
+            Text(error)
+                .foregroundColor(.red)
+                .font(.footnote)
+                .padding(.horizontal, 30)
+        }
+        
         Button("Sign In") {
             Task {
                 await authService.signIn(email: email, password: password)
@@ -37,10 +44,14 @@ struct LoginView : View {
         .buttonStyle(.borderedProminent)
         .disabled(!isFormValid)
         
-        
         Button("Sign Up") {
             Task {
                 await authService.signUp(email: email, password: password)
+                let error = authService.authErrorMessage ?? ""
+                if error == "" {
+                    self.password = ""
+                    self.email = ""
+                }
             }
         }
         .buttonStyle(.bordered)
