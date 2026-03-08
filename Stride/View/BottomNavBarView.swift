@@ -50,7 +50,7 @@ struct BottomNavBarView: View {
                 .aspectRatio(0.55, contentMode: .fit)
                 .tag(1)
             
-            SelectTimeLimitView()
+            ScreenTimeSetupView()
                 .tabItem {
                     Image(systemName: "hourglass")
                     Text("Alert")
