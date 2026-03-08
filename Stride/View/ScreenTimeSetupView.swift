@@ -62,7 +62,7 @@ struct ScreenTimeSetupView : View {
             .navigationDestination(for : ScreenTimeSetupPage.self) { page in
                 switch page {
                     case .selectApps : SelectAppsView(path : $path)
-                    case .selectTime : LandingView()
+                    case .selectTime : LandingView(authService: AuthService(), userService: UserService())
                     case .enableNotifications : RequestNotificationView(path : $path)
                     case .activate : SelectTimeLimitView()
                 }

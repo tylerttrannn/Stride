@@ -50,6 +50,15 @@ struct BottomNavBarView: View {
                 .aspectRatio(0.55, contentMode: .fit)
                 .tag(1)
             
+            SelectTimeLimitView()
+                .tabItem {
+                    Image(systemName: "hourglass")
+                    Text("Alert")
+                }
+                .aspectRatio(0.55, contentMode: .fit)
+                .tag(2)
+            
+            
             SettingsPageView(userService: userService, walkingStrideLength: Double(walkingStrideLength))
                 .tabItem {
                     Image(systemName: "gear")
