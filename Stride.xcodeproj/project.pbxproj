@@ -14,6 +14,7 @@
 		40DC16E32F22CE87007AD6AB /* ManagedSettings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DC16CF2F22CE77007AD6AB /* ManagedSettings.framework */; };
 		40DC16E52F22CE87007AD6AB /* ManagedSettingsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DC16E42F22CE87007AD6AB /* ManagedSettingsUI.framework */; };
 		40DC16ED2F22CE87007AD6AB /* StrideShieldConfig.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 40DC16E22F22CE87007AD6AB /* StrideShieldConfig.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		40E92C832F29A7D000A29021 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 40E92C822F29A7D000A29021 /* Supabase */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -178,6 +179,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40E92C832F29A7D000A29021 /* Supabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +327,7 @@
 			);
 			name = Stride;
 			packageProductDependencies = (
+				40E92C822F29A7D000A29021 /* Supabase */,
 			);
 			productName = Stride;
 			productReference = 40DD672D2F2069CA004F9929 /* Stride.app */;
@@ -417,6 +420,9 @@
 			);
 			mainGroup = 40DD67242F2069CA004F9929;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				40E92C812F29A7D000A29021 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 40DD672E2F2069CA004F9929 /* Products */;
 			projectDirPath = "";
@@ -854,9 +860,11 @@
 				CODE_SIGN_ENTITLEMENTS = Stride/Stride.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FJA5DAQNYY;
+				DEVELOPMENT_TEAM = KZ4V3Y73DD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "We use your health data to personalize trail recommendations.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to recommend nearby trails.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -868,7 +876,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tylerttrann.Stride;
+				PRODUCT_BUNDLE_IDENTIFIER = cs125.stride;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -888,9 +896,11 @@
 				CODE_SIGN_ENTITLEMENTS = Stride/Stride.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FJA5DAQNYY;
+				DEVELOPMENT_TEAM = KZ4V3Y73DD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "We use your health data to personalize trail recommendations.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to recommend nearby trails.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -902,7 +912,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tylerttrann.Stride;
+				PRODUCT_BUNDLE_IDENTIFIER = cs125.stride;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -1065,6 +1075,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		40E92C812F29A7D000A29021 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		40E92C822F29A7D000A29021 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40E92C812F29A7D000A29021 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 40DD67252F2069CA004F9929 /* Project object */;
 }

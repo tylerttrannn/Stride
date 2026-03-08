@@ -8,17 +8,28 @@
 import SwiftUI
 
 struct LandingView: View {
+    @StateObject private var userVM = UserProfileViewModel()
+    @ObservedObject var authService: AuthService
+    @ObservedObject var userService: UserService
+        
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            VStack {
+                Button("sign-out") {
+                    Task { await authService.signOut() }
+                }
+                .padding()
+                .frame(maxWidth: .infinity, alignment: .trailing)
+                .buttonStyle(.bordered)
+                
+                BottomNavBarView(userService: userService)
+                    .environmentObject(userVM)
+            }
+            .task {
+                await userVM.loadProfile(userService: userService)
+            }
         }
-        .padding()
-    }
 }
 
 #Preview {
-    LandingView()
+    LandingView(authService: AuthService(), userService: UserService())
 }
