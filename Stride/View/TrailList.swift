@@ -12,6 +12,7 @@ struct TrailList: View {
     @State private var trails: [Trail] = []
     @State private var isLoading = true
     @State private var errorMessage: String?
+    @State private var showSheet: Bool = false
     
     @State private var latitude: CGFloat
     @State private var longitude: CGFloat
@@ -37,6 +38,15 @@ struct TrailList: View {
     var body: some View {
         NavigationStack {
             List {
+                HStack{
+                    Spacer()
+                    Button("Info"){
+                        showSheet = true
+                        print("button pressed")
+                    }
+                }
+                .listRowSeparator(.hidden)
+      
                 if isLoading {
                     ProgressView("Finding trails...")
                         .padding()
@@ -82,6 +92,9 @@ struct TrailList: View {
             await loadTrails()
             await ratingsVM.loadUserRatings()
         }
+        .sheet(isPresented: $showSheet){
+            ExplanationView()
+        }
     }
     
     private func getLocation() async {
@@ -117,6 +130,16 @@ struct TrailList: View {
         }
     }
 }
+
+
+struct ExplanationView : View {
+    var body : some View {
+        VStack{
+            Text("hello world ")
+        }
+    }
+}
+
 
 #Preview {
     TrailList(stepCount: 0, walkingStrideLength: 1)
