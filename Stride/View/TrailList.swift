@@ -19,7 +19,6 @@ struct TrailList: View {
     @State var noticeTextHeight: CGFloat = 0
     
     @StateObject private var ratingsVM = RatingViewModel()
-
     @StateObject private var locationManager: LocationManager = LocationManager()
     
     private var stepCount: Int
@@ -40,10 +39,12 @@ struct TrailList: View {
             List {
                 HStack{
                     Spacer()
-                    Button("Info"){
+                    Button("How are trails suggested?"){
                         showSheet = true
                         print("button pressed")
                     }
+                    Spacer()
+
                 }
                 .listRowSeparator(.hidden)
       
@@ -93,7 +94,7 @@ struct TrailList: View {
             await ratingsVM.loadUserRatings()
         }
         .sheet(isPresented: $showSheet){
-            ExplanationView()
+            ExplanationView(profile : userVM.userProfile ?? UserProfile(id: "asdasd", email: "sadfasdsad"))
         }
     }
     
@@ -132,10 +133,82 @@ struct TrailList: View {
 }
 
 
-struct ExplanationView : View {
-    var body : some View {
-        VStack{
-            Text("hello world ")
+/*
+ 
+ 
+ struct UserProfile: Identifiable, Decodable {
+     let id: String
+     var preferred_difficulty: Int?
+     var steps_goal: Int?
+     var preferred_terrain: String?
+     let email: String
+ */
+
+struct ExplanationView: View {
+    var profile: UserProfile
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 32) {
+            headerSection
+            infoSection
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+        .padding(.horizontal, 20)
+        .padding(.top, 40)
+    }
+    
+    private var headerSection: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("Recommendation Info")
+                .font(.title2)
+                .fontWeight(.bold)
+            
+            Text("Stride recommends trails based on your selected preferences and based on how many steps you've already taken throughout the day, giving you trails that will help you reach your goals.")
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+            
+        }
+    }
+    
+    private var infoSection: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            Text("Recommended Trails Based On")
+                .font(.headline)
+            
+            InfoRow(
+                title: "Preferred Difficulty",
+                value: "\(profile.preferred_difficulty ?? 1)"
+            )
+            
+            InfoRow(
+                title: "Step Goal",
+                value: "\(profile.steps_goal ?? 5000)"
+            )
+            
+            InfoRow(
+                title: "Preferred Terrain",
+                value: (profile.preferred_terrain ?? "Default").capitalized
+            )
+        }
+        .padding(16)
+        .background(Color(.secondarySystemBackground))
+        .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+    }
+}
+
+private struct InfoRow: View {
+    let title: String
+    let value: String
+    
+    var body: some View {
+        HStack {
+            Text(title)
+                .foregroundStyle(.secondary)
+            
+            Spacer()
+            
+            Text(value)
+                .fontWeight(.medium)
         }
     }
 }
