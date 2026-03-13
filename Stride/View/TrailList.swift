@@ -106,7 +106,8 @@ struct TrailList: View {
                 longitude: longitude,
                 remainingSteps: Double(Int(userVM.stepsGoal) - stepCount),
                 difficulty_pref: userVM.preferredDifficulty,
-                user_steps_per_mile: Int(INCHES_PER_MILE / walkingStrideLength)
+                user_steps_per_mile: Int(INCHES_PER_MILE / walkingStrideLength),
+                terrain_pref: userVM.preferredTerrain
             )
             trails = results
             isLoading = false

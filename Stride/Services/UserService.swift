@@ -60,7 +60,20 @@ class UserService: ObservableObject {
     }
     
     @MainActor
-    func updatePreferredTerrain(newTerrain: String) async throws {
+    func updatePreferredTerrain(newTerrain: String) async {
+        guard let profile = currentUserProfile else { return }
+        do {
+            try await supabase
+                .from("profiles")
+                .update(["preferred_terrain": newTerrain])
+                .eq("id", value: profile.id)
+                .execute()
+            
+            self.currentUserProfile?.preferred_terrain = newTerrain
+            print("Updated preferred difficulty to \(newTerrain)")
+        } catch {
+            print("Error in updatePreferredTerrain: \(error.localizedDescription)")
+        }
         return
     }
 }
