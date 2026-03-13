@@ -19,6 +19,10 @@ class UserProfileViewModel: ObservableObject {
      var stepsGoal: Int {
         userProfile?.steps_goal ?? 5000
     }
+    
+    var preferredTerrain : TerrainSelection {
+        TerrainSelection(rawValue: userProfile?.preferred_terrain ?? "dirt") ?? .dirt
+    }
 
     func loadProfile(userService: UserService) async {
         do {
@@ -35,6 +39,11 @@ class UserProfileViewModel: ObservableObject {
 
     func updateDifficulty(userService: UserService, newDifficulty: Int) async {
         await userService.updatePreferredDifficulty(newDifficulty: newDifficulty)
+        self.userProfile = userService.currentUserProfile
+    }
+    
+    func updateTerrain(userService: UserService, newTerrain: String) async {
+        await userService.updatePreferredTerrain(newTerrain: newTerrain)
         self.userProfile = userService.currentUserProfile
     }
 }

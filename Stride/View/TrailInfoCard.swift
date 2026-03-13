@@ -36,8 +36,9 @@ struct TrailInfoCard: View {
                 VStack(alignment: .leading) {
                     let trail_distance_from_user_miles = trail.distance_from_user / 1609.344
                     Text("\(trail_distance_from_user_miles, specifier: "%.2f") mi away")
-                    Text("Approx. \(trail.estimated_steps, specifier: "%.0f") steps")
                     Text("Length: \(trail.length_miles, specifier: "%.2f") miles")
+                    Text("Approx. \(trail.estimated_steps, specifier: "%.0f") steps")
+                    Text("Terrain: \(trail.terrain_type)")
                     if let difficulty = trail.difficulty {
                         Text("Diffculty: \(String(difficulty))/5")
                     }

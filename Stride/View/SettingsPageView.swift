@@ -22,6 +22,11 @@ enum DisplayModeSelection : String, CaseIterable {
     case system = "System"
 }
 
+enum TerrainSelection : String, CaseIterable {
+    case dirt = "Dirt"
+    case paved = "Paved"
+}
+
 
 struct SettingsPageView: View {
     @State var displayModeSelection: DisplayModeSelection = .light
@@ -70,21 +75,42 @@ struct SettingsPageView: View {
                             }
                         }
                         .pickerStyle(SegmentedPickerStyle())
-                    }
-                }
-                
-                
-                Section (header: Text("App Settings")){
-                    VStack (alignment: .leading){
-                        Text("Appearance")
-                        Picker("displayMode", selection: $displayModeSelection) {
-                            ForEach(DisplayModeSelection.allCases, id: \.self) { option in
-                                Text(option.rawValue)
+
+                        Text("Trail Terrain")
+                            .font(.caption)
+                            .foregroundColor(.secondary)
+
+                        Picker("Difficulty", selection: Binding(
+                            get: {
+                                // Supabase stores it as just a plain Int, convert to DifficultySelection Enum
+                                TerrainSelection(rawValue: userVM.userProfile?.preferred_terrain ?? "dirt") ?? .dirt
+                            },
+                            set: { newValue in
+                                Task {
+                                    await userVM.updateTerrain(userService: userService, newTerrain: newValue.rawValue)
+                                }
+                            }
+                        )) {
+                            ForEach(TerrainSelection.allCases, id: \.self) { option in
+                                Text("\(option.rawValue)").tag(option)
                             }
                         }
                         .pickerStyle(SegmentedPickerStyle())
                     }
                 }
+                
+                
+//                Section (header: Text("App Settings")){
+//                    VStack (alignment: .leading){
+//                        Text("Appearance")
+//                        Picker("displayMode", selection: $displayModeSelection) {
+//                            ForEach(DisplayModeSelection.allCases, id: \.self) { option in
+//                                Text(option.rawValue)
+//                            }
+//                        }
+//                        .pickerStyle(SegmentedPickerStyle())
+//                    }
+//                }
                 
                 Section (header: Text("Your Data")) {
                     Text("Walking stride length: \(walkingStrideLength, specifier: "%.1f") inches")
