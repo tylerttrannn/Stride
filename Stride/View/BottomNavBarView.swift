@@ -65,7 +65,7 @@ struct BottomNavBarView: View {
                     Text("Settings")
                 }
                 .aspectRatio(0.55, contentMode: .fit)
-                .tag(2)
+                .tag(3)
         }
         .onAppear {
             requestHealthKitAccess() // Request HealthKit permissions when view appears
@@ -121,4 +121,3 @@ struct BottomNavBarView: View {
                     /* userProfile: UserProfile(id: "-1", preferred_difficulty: 1, steps_goal: 2, preferred_terrain: "paved", email: "test@email.com")*/)
         .environmentObject(UserProfileViewModel())
 }
-
